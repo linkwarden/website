@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next,
+html,
+body {
+}
+
+.faq > summary {
+  list-style-type: none;
+}
+
+.faq > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq > summary::before {
+  padding-right: 0.5rem;
+  font-family: "Material Symbols Rounded";
+  font-size: 1rem;
+  content: "\e5cc";
+}
+
+.faq[open] > summary::before {
+  font-family: "Material Symbols Rounded";
+  content: "\e5cf";
+}
+
+.faq[open] > summary {
+  margin-bottom: 0.5rem;
+}
