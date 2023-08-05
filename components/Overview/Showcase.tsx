@@ -19,7 +19,10 @@ export default function Showcase() {
         manager to collect, organize and archive webpages.
       </p>
       <div className="flex justify-center gap-5">
-        <PrimaryButton text="Start Free Trial" path="" />
+        <PrimaryButton
+          text="Start Free Trial"
+          path="https://cloud.linkwarden.app/register"
+        />
         <Link
           href="https://github.com/linkwarden/linkwarden"
           target="_blank"
