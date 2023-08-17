@@ -49,7 +49,7 @@ export default function UseCases() {
             </Tab>
           </Tab.List>
           <Tab.Panels>
-            <Tab.Panel className="flex gap-5 lg:flex-flex lg:flex-row flex-col justify-between items-start">
+            <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
               <div className="w-full">
                 <p className="lg:text-3xl text-2xl font-bold mb-5">
                   Personal Use
@@ -72,7 +72,7 @@ export default function UseCases() {
                 width={1960}
                 height={962}
                 alt=""
-                className="w-full rounded-2xl relative z-10"
+                className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
             <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
@@ -97,7 +97,7 @@ export default function UseCases() {
                 width={1960}
                 height={962}
                 alt=""
-                className="w-full rounded-2xl relative z-10"
+                className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
             <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
@@ -123,7 +123,7 @@ export default function UseCases() {
                 width={1960}
                 height={962}
                 alt=""
-                className="w-full rounded-2xl relative z-10"
+                className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
             <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
@@ -144,7 +144,7 @@ export default function UseCases() {
                 width={1960}
                 height={962}
                 alt=""
-                className="w-full rounded-2xl relative z-10"
+                className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
           </Tab.Panels>

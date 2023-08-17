@@ -54,7 +54,7 @@ export default function Features() {
             width={900}
             height={900}
             alt=""
-            className="md:w-full max-w-sm lg:max-w-full w-full rounded-2xl relative z-10"
+            className="md:w-full max-w-sm lg:max-w-lg w-full rounded-2xl relative z-10"
           />
         </div>
 
@@ -113,7 +113,7 @@ export default function Features() {
             width={900}
             height={900}
             alt=""
-            className="md:w-full max-w-sm lg:max-w-full w-full rounded-2xl relative z-10"
+            className="md:w-full max-w-sm lg:max-w-lg w-full rounded-2xl relative z-10"
           />
         </div>
 
@@ -165,7 +165,7 @@ export default function Features() {
             width={900}
             height={900}
             alt=""
-            className="md:w-full max-w-sm lg:max-w-full w-full rounded-2xl relative z-10"
+            className="md:w-full max-w-sm lg:max-w-lg w-full rounded-2xl relative z-10"
           />
         </div>
 
