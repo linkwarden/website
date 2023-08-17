@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full z-20 backdrop-blur bg-white border-b border-slate-200 bg-opacity-50 fixed top-0 left-0 flex items-center justify-between p-5">
+    <div className="w-full z-30 sm:backdrop-blur bg-white border-b border-slate-200 sm:bg-opacity-50 fixed top-0 left-0 flex items-center justify-between p-5">
       <Link href="/">
         <Image
           src="/linkwarden.png"
@@ -45,16 +45,26 @@ export default function Navbar() {
       />
 
       <div className="block sm:hidden">
-        <div
+        {/* <div
           className="material-symbols-rounded text-3xl cursor-pointer select-none"
           onClick={toggleMenu}
         >
           {isMenuOpen ? "close" : "menu"}
+        </div> */}
+        <div
+          id="nav-menu"
+          className={`cursor-pointer select-none ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
 
       {isMenuOpen ? (
-        <div className="block sm:hidden fixed top-20 left-0 right-0 p-5 z-20 bg-white border-t border-b border-slate-200">
+        <div className="slide-down block sm:hidden fixed top-20 left-0 right-0 p-5 z-20 bg-white border-b border-slate-200">
           <div className="items-center justify-between flex flex-col gap-5">
             <Link href="/" className="text-slate-600">
               Overview
