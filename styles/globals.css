@@ -5,10 +5,42 @@
 #__next,
 html,
 body {
+  background: #02121c;
+  color: white;
+  scroll-behavior: smooth !important;
+}
+
+::-moz-selection {
+  background: #0ea5e960;
+}
+
+::selection {
+  background: #0ea5e960;
 }
 
 .faq > summary {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.faq > summary * {
+  list-style-type: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.15s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0.5;
+    margin-top: -5px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 
 .faq > summary::-webkit-details-marker {
@@ -16,19 +48,17 @@ body {
 }
 
 .faq > summary::before {
-  padding-right: 0.5rem;
   font-family: "Material Symbols Rounded";
-  font-size: 1rem;
-  content: "\e5cc";
+  font-size: 1.75rem;
+  margin-right: 0.25rem;
+  content: "\e145";
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  display: inline-block;
 }
 
 .faq[open] > summary::before {
-  font-family: "Material Symbols Rounded";
-  content: "\e5cf";
-}
-
-.faq[open] > summary {
-  margin-bottom: 0.5rem;
+  transform: rotate(45deg);
 }
 
 .slide-down {
@@ -47,16 +77,16 @@ body {
 }
 
 #nav-menu span:nth-child(1) {
-  top: 0px;
+  top: 3px;
 }
 
 #nav-menu span:nth-child(2),
 #nav-menu span:nth-child(3) {
-  top: 10px;
+  top: 11px;
 }
 
 #nav-menu span:nth-child(4) {
-  top: 20px;
+  top: 19px;
 }
 
 #nav-menu.open span:nth-child(1) {
@@ -86,8 +116,8 @@ body {
 }
 
 #nav-menu {
-  width: 30px;
-  height: 29px;
+  width: 27px;
+  height: 24.5px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -103,9 +133,9 @@ body {
 #nav-menu span {
   display: block;
   position: absolute;
-  height: 3px;
+  height: 1.5px;
   width: 100%;
-  background: #000000;
+  background: #ffffff;
   border-radius: 50px;
   opacity: 1;
   left: 0;

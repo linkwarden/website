@@ -4,8 +4,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="mt-10 bg-gradient-to-t from-slate-300 to-white">
-      <div className="px-5 pb-5 max-w-7xl mx-auto flex gap-5 sm:flex-row flex-col justify-between items-center">
+    <div className="mt-10">
+      <div className="px-5 pb-5 max-w-7xl mx-auto flex gap-2 sm:flex-row flex-col justify-between items-center">
         <div className="w-fit">
           <Image
             src="/linkwarden.png"
@@ -15,11 +15,11 @@ export default function Footer() {
             alt=""
           />
 
-          <div className="flex justify-center my-2 gap-7 w-fit">
+          <div className="flex justify-center my-2 gap-2 sm:w-fit">
             <Link
               href="https://discord.gg/CtuYV47nuJ"
               target="_blank"
-              className="text-lg p-2 h-8 w-8 bg-sky-700 text-white rounded-full flex items-center justify-center"
+              className="text-lg h-8 w-8 duration-100 hover:text-slate-400 flex items-center justify-center"
             >
               <i className="fa-brands fa-discord"></i>
             </Link>
@@ -27,7 +27,7 @@ export default function Footer() {
             <Link
               href="https://fosstodon.org/@linkwarden"
               target="_blank"
-              className="text-lg p-2 h-8 w-8 bg-sky-700 text-white rounded-full flex items-center justify-center"
+              className="text-lg h-8 w-8 duration-100 hover:text-slate-400 flex items-center justify-center"
             >
               <i className="fa-brands fa-mastodon"></i>
             </Link>
@@ -35,15 +35,15 @@ export default function Footer() {
             <Link
               href="https://twitter.com/linkwarden_app"
               target="_blank"
-              className="text-lg p-2 h-8 w-8 bg-sky-700 text-white rounded-full flex items-center justify-center"
+              className="text-lg h-8 w-8 duration-100 hover:text-slate-400 flex items-center justify-center"
             >
-              <i className="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-x-twitter"></i>
             </Link>
 
             <Link
               href="https://github.com/linkwarden"
               target="_blank"
-              className="text-lg p-2 h-8 w-8 bg-sky-700 text-white rounded-full flex items-center justify-center"
+              className="text-lg h-8 w-8 duration-100 hover:text-slate-400 flex items-center justify-center"
             >
               <i className="fa-brands fa-github"></i>
             </Link>
@@ -51,20 +51,16 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="flex items-center justify-between gap-7">
-            <Link href="/">Overview</Link>
-            <Link href="https://docs.linkwarden.app" target="_blank">
-              Docs
-            </Link>
-            <Link href="/pricing">Pricing</Link>
-          </div>
           <p className="text-center sm:text-right">
-            <Link href="/tos" className="text-gray-500">
+            <Link href="#">Back to Top</Link>
+          </p>
+          <p className="text-center sm:text-right">
+            <Link href="/tos" className="text-gray-400">
               Terms Of Service
             </Link>
           </p>
           <p className="text-center sm:text-right">
-            <Link href="/privacy-policy" className="text-gray-500">
+            <Link href="/privacy-policy" className="text-gray-400">
               Privacy Policy
             </Link>
           </p>
