@@ -218,9 +218,10 @@ export default function Features() {
                 your collections effortlessly.
               </p>
             </ShortendFeatures>
-            <ShortendFeatures icon="sync_alt" title="Import/Export your data">
+            <ShortendFeatures icon="extension" title="Browser Extention">
               <p>
-                You can easily import and export your data from the settings.
+                Collect webpages directly from your browser with our open-source
+                extension.
               </p>
             </ShortendFeatures>
           </div>
