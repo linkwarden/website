@@ -4,17 +4,17 @@ import Image from "next/image";
 
 export default function UseCases() {
   return (
-    <div>
+    <div className="min-h-[40rem]">
       <div className="p-5 max-w-7xl mx-auto">
-        <p className="lg:text-4xl text-3xl font-bold mb-5 text-center">
+        <p className="lg:text-4xl text-3xl font-bold mb-10 text-center">
           Exploring the Use Cases
         </p>
         <Tab.Group>
-          <Tab.List className="flex justify-center flex-col min-[800px]:flex-row gap-3 lg:text-lg w-full my-5">
+          <Tab.List className="grid grid-cols-2 justify-center flex-col md:grid-cols-4 gap-3 w-fit mx-auto lg:text-lg my-5">
             <Tab
               className={({ selected }) =>
-                `px-4 py-2 rounded-full font-semibold outline-none duration-100 ${
-                  selected ? "bg-sky-700 text-white" : "hover:bg-slate-100"
+                `px-2 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] ${
+                  selected ? "bg-[#07334F]" : "hover:border-[#1e5779]"
                 }`
               }
             >
@@ -22,8 +22,8 @@ export default function UseCases() {
             </Tab>
             <Tab
               className={({ selected }) =>
-                `px-4 py-2 rounded-full font-semibold outline-none duration-100 ${
-                  selected ? "bg-sky-700 text-white" : "hover:bg-slate-100"
+                `px-2 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] ${
+                  selected ? "bg-[#07334F]" : "hover:border-[#1e5779]"
                 }`
               }
             >
@@ -31,8 +31,8 @@ export default function UseCases() {
             </Tab>
             <Tab
               className={({ selected }) =>
-                `px-4 py-2 rounded-full font-semibold outline-none duration-100 ${
-                  selected ? "bg-sky-700 text-white" : "hover:bg-slate-100"
+                `px-2 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] ${
+                  selected ? "bg-[#07334F]" : "hover:border-[#1e5779]"
                 }`
               }
             >
@@ -40,8 +40,8 @@ export default function UseCases() {
             </Tab>
             <Tab
               className={({ selected }) =>
-                `px-4 py-2 rounded-full font-semibold outline-none duration-100 ${
-                  selected ? "bg-sky-700 text-white" : "hover:bg-slate-100"
+                `px-2 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] ${
+                  selected ? "bg-[#07334F]" : "hover:border-[#1e5779]"
                 }`
               }
             >
@@ -49,12 +49,9 @@ export default function UseCases() {
             </Tab>
           </Tab.List>
           <Tab.Panels>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p className="lg:text-3xl text-2xl font-bold mb-5">
-                  Personal Use
-                </p>
-                <p>
+                <p className="lg:mt-10">
                   Linkwarden can be a valuable tool for personal use, helping
                   individuals stay organized and efficient while browsing the
                   internet. Users can collect and store links to their favorite
@@ -69,18 +66,15 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/personal.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p className="lg:text-3xl text-2xl font-bold mb-5">
-                  Education and Learning
-                </p>
-                <p>
+                <p className="lg:mt-10">
                   Linkwarden can enhance the learning experience for students
                   and educators alike. Students can bookmark relevant articles,
                   educational videos, and online resources for their coursework
@@ -94,18 +88,15 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/study.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p className="lg:text-3xl text-2xl font-bold mb-5">
-                  Research and Reference
-                </p>
-                <p>
+                <p className="lg:mt-10">
                   For researchers, scholars, and anyone in need of extensive
                   information gathering, Linkwarden serves as an invaluable
                   tool. Researchers can use Linkwarden to collect and organize
@@ -120,18 +111,15 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/research.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p className="lg:text-3xl text-2xl font-bold mb-5">
-                  Project Collaboration
-                </p>
-                <p>
+                <p className="lg:mt-10">
                   For collaborative projects involving multiple team members,
                   Linkwarden streamlines information sharing and collaboration.
                   Team members can collectively gather and organize web links
@@ -141,8 +129,8 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/project.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />

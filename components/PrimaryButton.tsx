@@ -18,11 +18,9 @@ export default function PrimaryButton({
     <Link
       href={path}
       target={target}
-      className={`group relative w-36 h-10 block cursor-pointer ${className}`}
+      className={`border select-none duration-100 border-[#0071B7] hover:border-[#059bf8] bg-gradient-to-t from-[#0071B7] via-black via-70% hover:via-90% to-black rounded-lg text-center px-4 py-2 text-slate-200 hover:text-white ${className}`}
     >
-      <div className="w-36 p-2 top-0 left-0 text-center absolute text-white font-semibold rounded-md cursor-pointer select-none group-hover:-top-1 group-hover:shadow-lg group-active:shadow-none group-active:top-0 group-hover:bg-sky-600 group-active:bg-sky-700 duration-100 bg-sky-700">
-        {text}
-      </div>
+      {text}
     </Link>
   );
 }

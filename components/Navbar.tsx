@@ -11,83 +11,82 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full z-30 sm:backdrop-blur bg-white border-b border-slate-200 sm:bg-opacity-50 fixed top-0 left-0 flex items-center justify-between p-5">
-      <Link href="/">
-        <Image
-          src="/linkwarden.png"
-          className="w-40"
-          width={518}
-          height={145}
-          alt=""
+    <>
+      <div
+        className={`w-full z-30 backdrop-blur bg-[#02121C] border-b border-[#07334F] ${
+          isMenuOpen
+            ? "bg-opacity-100 min-[700px]:bg-opacity-50"
+            : "bg-opacity-50"
+        } fixed top-0 left-0 flex items-center justify-between p-2`}
+      >
+        <Link href="/">
+          <Image
+            src="/linkwarden.png"
+            className=" w-52"
+            width={453}
+            height={96}
+            alt=""
+          />
+        </Link>
+
+        <div className="items-center justify-between gap-5 hidden min-[700px]:flex border border-[#07334F] bg-[#002f4c] bg-opacity-20 rounded-2xl px-4 py-1">
+          <Link href="/#features">Features</Link>
+          <Link href="/#pricing">Pricing</Link>
+          <Link href="/#faqs">FAQs</Link>
+          <Link href="https://docs.linkwarden.app" target="_blank">
+            Docs
+          </Link>
+        </div>
+
+        <PrimaryButton
+          text="Start Free Trial"
+          path="https://cloud.linkwarden.app/register"
+          className="hidden min-[700px]:block"
         />
-      </Link>
 
-      <div className="items-center justify-between md:gap-10 lg:gap-20 gap-5 hidden sm:flex">
-        <Link href="/" className="text-slate-600">
-          Overview
-        </Link>
-        <Link
-          href="https://docs.linkwarden.app"
-          target="_blank"
-          className="text-slate-600"
-        >
-          Docs
-        </Link>
-        <Link href="/pricing" className="text-slate-600">
-          Pricing
-        </Link>
-      </div>
-
-      <PrimaryButton
-        text="Start Free Trial"
-        path="https://cloud.linkwarden.app/register"
-        className="hidden sm:block"
-      />
-
-      <div className="block sm:hidden">
-        {/* <div
-          className="material-symbols-rounded text-3xl cursor-pointer select-none"
-          onClick={toggleMenu}
-        >
-          {isMenuOpen ? "close" : "menu"}
-        </div> */}
-        <div
-          id="nav-menu"
-          className={`cursor-pointer select-none ${isMenuOpen ? "open" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="block min-[700px]:hidden">
+          <div
+            id="nav-menu"
+            className={`cursor-pointer select-none ${isMenuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
-
       {isMenuOpen ? (
-        <div className="slide-down block sm:hidden fixed top-20 left-0 right-0 p-5 z-20 bg-white border-b border-slate-200">
-          <div className="items-center justify-between flex flex-col gap-5">
-            <Link href="/" className="text-slate-600">
-              Overview
-            </Link>
-            <Link
-              href="https://docs.linkwarden.app"
-              target="_blank"
-              className="text-slate-600"
-            >
-              Docs
-            </Link>
-            <Link href="/pricing" className="text-slate-600">
-              Pricing
-            </Link>
-          </div>
+        <div className="fixed top-14 left-0 right-0 bottom-0 bg-black bg-opacity-20 z-50">
+          <div className="slide-down block min-[700px]:hidden p-5 z-20 bg-[#02121c] border-b border-[#07334F]">
+            <div className="items-center justify-between flex flex-col gap-5">
+              <Link href="/#features" onClick={toggleMenu}>
+                Features
+              </Link>
+              <Link href="/#pricing" onClick={toggleMenu}>
+                Pricing
+              </Link>
+              <Link href="/#faqs" onClick={toggleMenu}>
+                FAQs
+              </Link>
+              <Link
+                href="https://docs.linkwarden.app"
+                onClick={toggleMenu}
+                target="_blank"
+              >
+                Docs
+              </Link>
+            </div>
 
-          <PrimaryButton
-            text="Start Free Trial"
-            path="https://cloud.linkwarden.app/register"
-            className="mt-5 mx-auto"
-          />
+            <PrimaryButton
+              text="Start Free Trial"
+              path="https://cloud.linkwarden.app/register"
+              className="mt-10 mx-auto block w-fit"
+            />
+          </div>
         </div>
       ) : null}
-    </div>
+    </>
   );
 }
