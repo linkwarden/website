@@ -17,7 +17,10 @@ export default function PrimaryButton({
     <div
       className={`p-4 text-sm border border-[#07334F] rounded-xl ${className}`}
     >
-      <span className="material-symbols-rounded text-5xl select-none">
+      <span
+        className="material-symbols-rounded select-none"
+        style={{ fontSize: "3rem" }}
+      >
         {icon}
       </span>
       <p className="font-bold mb-2">{title}</p>
