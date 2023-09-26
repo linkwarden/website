@@ -66,7 +66,7 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/personal.png"
-                width={14 - 7}
+                width={1407}
                 height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
@@ -88,7 +88,7 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/study.png"
-                width={14 - 7}
+                width={1407}
                 height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
@@ -111,7 +111,7 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/research.png"
-                width={14 - 7}
+                width={1407}
                 height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
@@ -129,7 +129,7 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/project.png"
-                width={14 - 7}
+                width={1407}
                 height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
