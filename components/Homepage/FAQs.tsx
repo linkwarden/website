@@ -14,8 +14,8 @@ function FAQs() {
             The paid plan offers several advantages, such as hassle-free
             maintenance, automatic updates, and priority support, saving you
             time and effort. It also ensures that you have access to the latest
-            stable features and improvements. It's the most convenient way to
-            enjoy the full power of Linkwarden without the technical
+            stable features and improvements. It&apos;s the most convenient way
+            to enjoy the full power of Linkwarden without the technical
             complexities of self-hosting it.
           </p>
           <p>
@@ -64,7 +64,7 @@ function FAQs() {
             >
               support@linkwarden.app
             </Link>{" "}
-            to discuss your specific needs, and we'll create the perfect
+            to discuss your specific needs, and we&apos;ll create the perfect
             solution just for you.
           </p>
         </QuestionAndAnswer>
