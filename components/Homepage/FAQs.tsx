@@ -81,8 +81,8 @@ function FAQs() {
               support@linkwarden.app
             </Link>{" "}
             about the inquiry, or by simply logging into your account and
-            clicking on your profile photo &gt; “Settings” &gt; “Billing Portal”
-            &gt; “Go to Billing Portal”, the billing portal is being handled by
+            clicking on your profile photo &gt; “Settings” &gt; “Billing” &gt;
+            “Go to Billing Portal”, the billing portal is being handled by
             Stripe, after logging in, from there you can see the “Cancel Plan”
             option. After that, your account will be disabled in less than a
             month.

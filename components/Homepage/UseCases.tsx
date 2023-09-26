@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function UseCases() {
   return (
-    <div>
+    <div className="min-h-[40rem]">
       <div className="p-5 max-w-7xl mx-auto">
         <p className="lg:text-4xl text-3xl font-bold mb-10 text-center">
           Exploring the Use Cases
@@ -49,9 +49,9 @@ export default function UseCases() {
             </Tab>
           </Tab.List>
           <Tab.Panels>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col-reverse justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p>
+                <p className="lg:mt-10">
                   Linkwarden can be a valuable tool for personal use, helping
                   individuals stay organized and efficient while browsing the
                   internet. Users can collect and store links to their favorite
@@ -66,15 +66,15 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/personal.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col-reverse justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p>
+                <p className="lg:mt-10">
                   Linkwarden can enhance the learning experience for students
                   and educators alike. Students can bookmark relevant articles,
                   educational videos, and online resources for their coursework
@@ -88,15 +88,15 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/study.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col-reverse justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p>
+                <p className="lg:mt-10">
                   For researchers, scholars, and anyone in need of extensive
                   information gathering, Linkwarden serves as an invaluable
                   tool. Researchers can use Linkwarden to collect and organize
@@ -111,15 +111,15 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/research.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />
             </Tab.Panel>
-            <Tab.Panel className="flex gap-5 lg:flex-row flex-col-reverse justify-between items-start">
+            <Tab.Panel className="flex lg:flex-row flex-col-reverse justify-between items-start">
               <div className="w-full">
-                <p>
+                <p className="lg:mt-10">
                   For collaborative projects involving multiple team members,
                   Linkwarden streamlines information sharing and collaboration.
                   Team members can collectively gather and organize web links
@@ -129,8 +129,8 @@ export default function UseCases() {
               </div>
               <Image
                 src="./app/project.png"
-                width={1960}
-                height={962}
+                width={14 - 7}
+                height={947}
                 alt=""
                 className="lg:max-w-2xl lg:w-full md:w-3/4 mx-auto rounded-2xl relative z-10"
               />

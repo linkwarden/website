@@ -224,7 +224,7 @@ export default function Features() {
               </p>
             </ShortendFeatures>
           </div>
-          <Title text="And many more features..." />
+          <Title className="rounded-lg" text="And many more features..." />
         </div>
       </div>
     </>

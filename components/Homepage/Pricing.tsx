@@ -11,15 +11,15 @@ function Pricing() {
   const [plan, setPlan] = useState<Plan>(0);
 
   return (
-    <div className="max-w-5xl px-5 mx-auto pt-20" id="pricing">
+    <div className="max-w-5xl px-5 mx-auto pt-16" id="pricing">
       <p className="lg:text-4xl text-3xl font-bold text-center">
         Simple, Straightforward Plans & Pricing
       </p>
 
-      <div className="flex text-white dark:text-black gap-3 border-2 border-solid border-[#d3d3d31d] w-72 mx-auto p-1 rounded-xl relative mt-10 mb-5">
+      <div className="flex gap-3 border-2 border-solid border-[#d3d3d31d] w-72 mx-auto p-1 rounded-xl relative mt-10 mb-5">
         <button
           onClick={() => setPlan(Plan.monthly)}
-          className={`w-full text-black dark:text-white duration-75 text-sm rounded-lg p-1 ${
+          className={`w-full duration-75 text-sm rounded-lg p-1 ${
             plan === Plan.monthly
               ? "text-white bg-sky-700 dark:bg-sky-700"
               : "hover:opacity-80"
@@ -30,7 +30,7 @@ function Pricing() {
 
         <button
           onClick={() => setPlan(Plan.yearly)}
-          className={`w-full text-black dark:text-white duration-75 text-sm rounded-lg p-1 ${
+          className={`w-full duration-75 text-sm rounded-lg p-1 ${
             plan === Plan.yearly
               ? "text-white bg-sky-700 dark:bg-sky-700"
               : "hover:opacity-80"
