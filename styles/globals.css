@@ -148,3 +148,11 @@ details[open] summary ~ * {
   -o-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
 }
+
+.primary-btn-gradient {
+  box-shadow: inset 0px -10px 10px #0071b7;
+}
+
+.primary-btn-gradient:hover {
+  box-shadow: inset 0px -15px 10px #059bf8;
+}
