@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <script
           defer
           data-domain="linkwarden.app"
-          src="https://plausible.io/js/script.js"
+          src="http://5.161.187.134/js/script.js"
         ></script>
       </Head>
       <Component {...pageProps} />
