@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <script
           defer
           data-domain="linkwarden.app"
-          src="http://5.161.187.134/js/script.js"
+          src="https://linkwarden-meta.xyz/js/script.js"
         ></script>
       </Head>
       <Component {...pageProps} />
