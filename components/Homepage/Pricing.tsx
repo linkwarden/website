@@ -38,8 +38,8 @@ function Pricing() {
         >
           <p>Yearly</p>
         </button>
-        <div className="absolute -top-4 -right-4 px-1 bg-red-500 text-white rounded-md rotate-[22deg]">
-          %25 Off
+        <div className="absolute -top-3 -right-4 text-sm px-1 bg-red-500 text-white rounded-md rotate-[22deg]">
+          25% Off
         </div>
       </div>
 
