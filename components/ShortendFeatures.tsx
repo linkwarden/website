@@ -15,7 +15,7 @@ export default function PrimaryButton({
 }: Props) {
   return (
     <div
-      className={`p-4 text-sm border border-[#07334F] rounded-xl ${className}`}
+      className={`p-4 text-sm border z-10 border-[#07334F] bg-[#0e212e] h-full rounded-xl ${className}`}
     >
       <span
         className="material-symbols-rounded select-none"

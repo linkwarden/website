@@ -1,5 +1,4 @@
 import PrimaryButton from "@/components/PrimaryButton";
-import Link from "next/link";
 import { useState } from "react";
 
 function Pricing() {
@@ -8,7 +7,7 @@ function Pricing() {
     yearly,
   }
 
-  const [plan, setPlan] = useState<Plan>(0);
+  const [plan, setPlan] = useState<Plan>(1);
 
   return (
     <div className="max-w-5xl px-5 mx-auto pt-16" id="pricing">
