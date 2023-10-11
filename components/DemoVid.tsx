@@ -34,6 +34,7 @@ export default function DemoVid({ src }: Props) {
         className="lg:rounded-[100px] rounded-[50px]"
         onPlay={() => setIsPlaying(true)}
         onEnded={handleVideoEnd}
+        playsInline
       >
         <source src={src} type="video/mp4" />
       </video>
