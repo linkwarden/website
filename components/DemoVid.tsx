@@ -4,7 +4,7 @@ type Props = {
   src: string;
 };
 
-export default function myComponent({ src }: Props) {
+export default function DemoVid({ src }: Props) {
   const vidRef = useRef<any>(null);
   const [isPlaying, setIsPlaying] = useState(true);
 
