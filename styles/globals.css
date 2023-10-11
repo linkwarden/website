@@ -156,3 +156,28 @@ details[open] summary ~ * {
 .primary-btn-gradient:hover {
   box-shadow: inset 0px -15px 10px #059bf8;
 }
+
+.fade-in {
+  animation: fadeIn 100ms ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blob {
+  filter: blur(40px);
+  position: absolute;
+  z-index: 0; /* to keep it at below everything else */
+  top: 0; /* to align it at top */
+  left: 0; /* to align it at left */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* to make it circular */
+  background: rgb(255, 255, 255, 0.5);
+}
