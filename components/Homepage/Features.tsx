@@ -419,7 +419,8 @@ export default function Features() {
                 title="And Many More Features..."
               >
                 <p>
-                  We've got tons of updates planned, some are outlined in our{" "}
+                  We&apos;ve got tons of updates planned, some are outlined in
+                  our{" "}
                   <a
                     className="underline"
                     target="_blank"
