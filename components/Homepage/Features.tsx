@@ -3,7 +3,8 @@ import React from "react";
 import Title from "../Title";
 import ShortendFeatures from "../ShortendFeatures";
 import DemoVid from "../DemoVid";
-import { delay, motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+import FadeInWhenVisible from "../FadeInWhenVisible";
 
 const leftToRightVariants1: Variants = {
   offscreen: {
@@ -315,14 +316,8 @@ export default function Features() {
           <p className="lg:text-4xl text-3xl mb-10 font-bold text-center">
             Hold on, there&apos;s more!
           </p>
-          <motion.ul
-            className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5"
-            variants={container}
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
-          >
-            <motion.li variants={item}>
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5">
+            <FadeInWhenVisible>
               <ShortendFeatures
                 icon="code"
                 title="Open Source and Fully Self-Hostable"
@@ -339,27 +334,27 @@ export default function Features() {
                   so you can easily deploy it onto your own machine at any time.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures icon="shield_lock" title="Privacy Friendly">
                 <p>
                   Privacy is one of the core fundamentals of human rights, which
                   is why we won’t sell your data to third party.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures icon="devices" title="Responsive Design">
                 <p>
                   Designed for every screen size, from widescreen monitors down
                   to smartphones.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures
                 icon="push_pin"
                 title="Pin your Favorite Webpages"
@@ -369,27 +364,27 @@ export default function Features() {
                   easily access them anytime.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures icon="search" title="Powerful Search">
                 <p>
                   You can search and filter all your curated contents across all
                   your collections effortlessly.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures icon="extension" title="Browser Extention">
                 <p>
                   Collect webpages directly from your browser with our
                   open-source extension.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures
                 icon="partly_cloudy_night"
                 title="Dark & Light Mode Supported"
@@ -399,9 +394,9 @@ export default function Features() {
                   prefer.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures
                 icon="vertical_align_bottom"
                 title="Import Your Bookmarks"
@@ -411,9 +406,9 @@ export default function Features() {
                   modern browsers are supported.
                 </p>
               </ShortendFeatures>
-            </motion.li>
+            </FadeInWhenVisible>
 
-            <motion.li variants={item}>
+            <FadeInWhenVisible>
               <ShortendFeatures
                 icon="rocket_launch"
                 title="And Many More Features..."
@@ -431,8 +426,8 @@ export default function Features() {
                   .
                 </p>
               </ShortendFeatures>
-            </motion.li>
-          </motion.ul>
+            </FadeInWhenVisible>
+          </div>
         </div>
       </div>
     </>
