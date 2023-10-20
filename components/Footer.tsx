@@ -33,7 +33,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://twitter.com/linkwarden_app"
+              href="https://twitter.com/LinkwardenHQ"
               target="_blank"
               className="text-lg h-8 w-8 duration-100 hover:text-slate-400 flex items-center justify-center"
             >
