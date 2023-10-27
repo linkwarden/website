@@ -1,23 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 type Props = {
   src: string;
 };
 
 export default function DemoVid({ src }: Props) {
-  const vidRef = useRef<any>(null);
-  const [isPlaying, setIsPlaying] = useState(true);
-
-  const handlePlayVideo = () => {
-    vidRef.current.pause();
-    vidRef.current.currentTime = "0";
-    vidRef.current.play();
-  };
-
-  const handleVideoEnd = () => {
-    setIsPlaying(false);
-  };
-
   return (
     <div
       style={{
@@ -30,24 +17,12 @@ export default function DemoVid({ src }: Props) {
         width={720}
         height={720}
         autoPlay
-        ref={vidRef}
         className="lg:rounded-[100px] rounded-[50px]"
-        onPlay={() => setIsPlaying(true)}
-        onEnded={handleVideoEnd}
         playsInline
+        loop
       >
         <source src={src} type="video/mp4" />
       </video>
-      {!isPlaying ? (
-        <div className="text-center mt-3 mx-auto fade-in text-sky-200 left-0 right-0 absolute">
-          <p
-            onClick={handlePlayVideo}
-            className="w-fit mx-auto select-none cursor-pointer"
-          >
-            Replay?
-          </p>
-        </div>
-      ) : undefined}
     </div>
   );
 }
