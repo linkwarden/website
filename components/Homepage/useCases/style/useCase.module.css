@@ -1,0 +1,33 @@
+
+
+.rainbow {
+  background: linear-gradient(45deg, #ff0000, #ff9900, #33cc33, #0099cc, #9900cc, #ff33cc);
+  background-size: 400% 400%;
+  animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.rainbow :focus {
+border: none;
+}
+
+.typography :active{
+  background-color: #ff0000;
+
+}
+
+
+@media (max-width: 768px) and (min-width: 640px){
+  .useCaseMobile{
+    display: none;
+  }
+}
