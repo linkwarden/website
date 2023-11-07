@@ -22,22 +22,22 @@ export default function UseCases() {
 
               <Tab
                 className={({ selected }) =>
-                  `active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] w-full ${selected ? `${style.rainbow}` : "hover:border-[#1e5779]"
+                  ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
                   }`
                 }
               >
-                <div className="bg-[#07334F] w-full py-3  rounded-lg text-center">
+                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
                   <Image className="mx-auto mb-2" src={'/student.png'} alt="" height={50} width={50} />
                   <p >Student</p>
                 </div>
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  `  px-1 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] w-full ${selected ? `${style.rainbow}` : "hover:border-[#1e5779]"
-                  }`
+                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
+              }`
                 }
               >
-                <div className="bg-[#07334F] w-full py-3  rounded-lg text-center">
+                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
                   <Image className="mx-auto mb-2" src={'/hat.png'} alt="" height={50} width={50} />
                   <p >Academics</p>
                 </div>
@@ -45,11 +45,11 @@ export default function UseCases() {
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  `  px-1 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] w-full ${selected ? `${style.rainbow}` : "hover:border-[#1e5779]"
-                  }`
+                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
+              }`
                 }
               >
-                <div className="bg-[#07334F] w-full py-3  rounded-lg text-center">
+                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
                   <Image className="mx-auto mb-2" src={'/pen.png'} alt="" height={50} width={50} />
                   <p >Writers</p>
                 </div>
@@ -57,11 +57,11 @@ export default function UseCases() {
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  `  px-1 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] w-full ${selected ? `${style.rainbow}` : "hover:border-[#1e5779]"
-                  }`
+                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
+              }`
                 }
               >
-                <div className="bg-[#07334F] w-full py-3  rounded-lg text-center">
+                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
                   <Image className="mx-auto mb-2" src={'/date.png'} alt="" height={50} width={50} />
                   <p className="text-[10px]">Project Managers</p>
                 </div>
@@ -70,11 +70,11 @@ export default function UseCases() {
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  `px-1 py-1 text-sm rounded-xl font-semibold duration-100 border border-[#07334F] w-full ${selected ? `${style.rainbow}` : "hover:border-[#1e5779]"
-                  }`
+                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
+              }`
                 }
               >
-                <div className="bg-[#07334F] w-full py-3  rounded-lg text-center">
+                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
                   <Image className="mx-auto mb-2" src={'/computer.png'} alt="" height={50} width={50} />
                   <p >Developers</p>
                 </div>
