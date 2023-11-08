@@ -51,9 +51,19 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-center sm:text-right">
-            <Link href="#">Back to Top</Link>
-          </p>
+          <div className="flex gap-2">
+            {" "}
+            <Link href="/#features">Features</Link> |
+            <Link href="/#pricing">Pricing</Link> |
+            <Link href="/#faqs">FAQs</Link> |
+            <Link href="https://docs.linkwarden.app" target="_blank">
+              Docs
+            </Link>{" "}
+            |
+            <Link href="https://blog.linkwarden.app" target="_blank">
+              Blog
+            </Link>
+          </div>
           <p className="text-center sm:text-right">
             <Link href="/tos" className="text-gray-400">
               Terms Of Service
