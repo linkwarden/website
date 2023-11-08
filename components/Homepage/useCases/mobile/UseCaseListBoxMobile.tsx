@@ -7,7 +7,7 @@ import style from '../style/useCase.module.css'
 
 
 const items = [
-  { name: 'Personal Use', img: '/female.png' },
+  { name: 'Personal Use', img: '/male.png' },
   { name: 'Education & Learning', img: '/books.png' },
   { name: 'Research & Reference', img: '/hat.png' },
   { name: 'Project Collaboration', img: '/file.png' },
@@ -22,30 +22,30 @@ function UseCaseListBoxMobile() {
       case 'Personal Use':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={`  Efficient Organization:\ Easily categorize and tag links for quick access.`}
-            textTwo={'  Content Preservation: Archive webpages to maintain a permanent record of online content.'}
-            textThree={'  Accessibility: \  Retrieve stored information at any time, ensuring no loss due to content alteration or removal.'} />
+            textOne={`  Efficient Organization`}
+            textTwo={'  Content Preservation'}
+            textThree={'  Accessibility'} />
         )
       case 'Education & Learning':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={' Resource Bookmarking: Students and educators can save and revisit academic materials.'}
-            textTwo={' Curated Learning Materials: Educators can compile resources tailored to course requirements.'}
-            textThree={'  Collaborative Learning: Share and collaborate on educational resources with peers.'} />
+            textOne={' Resource Bookmarking'}
+            textTwo={' Curated Learning Materials'}
+            textThree={'  Collaborative Learning'} />
         )
       case 'Research & Reference':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={' Reference Management: Collect and organize references for academic or project-based research.'}
-            textTwo={' Permanent Archives: Ensure permanent access to web content with webpage archiving.'}
-            textThree={'  Collaborative Research: Contribute and share in a knowledge pool with your team of researchers.'} />
+            textOne={' Reference Management'}
+            textTwo={' Permanent Archives'}
+            textThree={'  Collaborative Research'} />
         )
       case 'Project Collaboration':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={' Shared Resource Pool: Team members can contribute to a collective repository of project-related links.'}
-            textTwo={'  Centralized Access: All team members can access essential project resources and references.'}
-            textThree={'  Streamlined Collaboration: Facilitate information sharing and teamwork on projects.'} />
+            textOne={' Shared Resource Pool'}
+            textTwo={'  Centralized Access'}
+            textThree={'  Streamlined Collaboration'} />
         )
 
     }

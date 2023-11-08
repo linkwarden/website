@@ -27,7 +27,7 @@ export default function UseCases() {
                 }
               >
                 <div className="duration-500 bg-[#07334F] w-full py-5  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
-                  <Image className="mx-auto mb-2" src={'/female.png'} alt="" height={50} width={50} />
+                  <Image className="mx-auto mb-2" src={'/male.png'} alt="" height={50} width={50} />
                   <p className="text-[12px]">Personal Use</p>
                 </div>
               </Tab>

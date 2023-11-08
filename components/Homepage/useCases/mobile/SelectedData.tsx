@@ -4,8 +4,8 @@ import React from 'react';
 interface SelectedDataProps {
   src: string;
   textOne: string;
-  textTwo: string;
-  textThree: string;
+  textTwo?: string;
+  textThree?: string;
 }
 
 function SelectedData({ src, textOne, textTwo, textThree }: SelectedDataProps) {
