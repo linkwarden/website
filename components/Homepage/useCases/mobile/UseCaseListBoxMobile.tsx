@@ -57,13 +57,13 @@ function UseCaseListBoxMobile() {
         <Listbox value={selected} onChange={setSelected}>
           <div className={`${style.rainbow} px-0.5 py-0.5 rounded-lg align-middle`}>
             <div className="relative">
-              <Listbox.Button className="relative w-full cursor-default rounded-lg bg-[#0E212E] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+              <Listbox.Button className="align-middle relative w-full cursor-default rounded-lg bg-[#0E212E] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                 <div className='flex'>
-                  <span className="truncate"><Image src={selected.img} alt='' height={20} width={20} /></span>
+                  <span className="truncate mt-[2px]"><Image src={selected.img} alt='' height={20} width={20} /></span>
                   <span className="truncate ml-5">{selected.name}</span>
 
                 </div>
-                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                <span className="align-middle pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                   <Image src={'/arrow-down.svg'} width={10} height={10} alt='' />
                 </span>
               </Listbox.Button>
@@ -86,10 +86,10 @@ function UseCaseListBoxMobile() {
                       {({ selected }) => (
                         <>
                           <div
-                            className={`flex  truncate ${selected ? 'font-medium' : 'font-normal'
+                            className={`align-middle flex  truncate ${selected ? 'font-medium' : 'font-normal'
                               }`}
                           >
-                            <Image src={i.img} alt='' height={25} width={25} />
+                            <Image src={i.img} alt='' height={25} width={25}  />
                             <p className='ml-5'>
                               {i.name}
 
