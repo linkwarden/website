@@ -15,286 +15,170 @@ function UseCaseTabPanel() {
         />
         <div className="flex justify-between">
           {/* first section  */}
-          <div className="w-1/3.5">
+          <div className="w-1/3">
             <div className="flex align-bottom">
               <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-              <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
+              <p className="mb-5 text-xl mt-5 ml-2">Efficient Organization</p>
             </div>
             <p className="font-160 pl-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
+              Easily categorize and tag links for quick access.
             </p>
           </div>
           {/* second section  */}
 
-          <div className="w-1/3.5">
+          <div className="w-1/3">
             <div className="flex align-bottom">
               <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
+              <p className="mb-5 text-xl mt-5 ml-2">Content Preservation</p>
             </div>
             <p className="font-160 pl-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
+              Archive webpages to maintain a permanent record of online content.
             </p>
           </div>
           {/* third section  */}
 
-          <div className="w-1/3.5">
+          <div className="w-1/3">
             <div className="flex align-bottom">
               <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
+              <p className="mb-5 text-xl mt-5 ml-2">Accessibility</p>
             </div>
             <p className="font-160 pl-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
+              Retrieve stored information at any time, ensuring no loss due to content alteration or removal.
             </p>
           </div>
         </div>
 
       </Tab.Panel>
-      <Tab.Panel className="w-full flex flex-row-reverse">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">brain</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+      <Tab.Panel className="w-full">
+        <Image
+          src="./app/personal.png"
+          width={1407}
+          height={947}
+          alt=""
+          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+        />
+        <div className="flex justify-between">
+          {/* first section  */}
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+              <p className="mb-5 text-xl mt-5 ml-2">Resource Bookmarking</p>
             </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
+            <p className="font-160 pl-10">
+              Students and educators can save and revisit academic materials.
+            </p>
           </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+          {/* second section  */}
+
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
+              <p className="mb-5 text-xl mt-5 ml-2"> Curated Learning Materials: </p>
             </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+            <p className="font-160 pl-10">
+              Educators can compile resources tailored to course requirements.
+            </p>
+          </div>
+          {/* third section  */}
+
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
+              <p className="mb-5 text-xl mt-5 ml-2">Collaborative Learning </p>
             </div>
+            <p className="font-160 pl-10">
+              Share and collaborate on educational resources with peers.
+            </p>
           </div>
         </div>
-
 
       </Tab.Panel>
-      <Tab.Panel className="w-full flex flex-row-reverse">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">brain</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+      <Tab.Panel className="w-full">
+        <Image
+          src="./app/personal.png"
+          width={1407}
+          height={947}
+          alt=""
+          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+        />
+        <div className="flex justify-between">
+          {/* first section  */}
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+              <p className="mb-5 text-xl mt-5 ml-2">Reference Management</p>
             </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
+            <p className="font-160 pl-10">
+              Collect and organize references for academic or project-based research.
+            </p>
           </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+          {/* second section  */}
+
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
+              <p className="mb-5 text-xl mt-5 ml-2">Permanent Archives</p>
             </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+            <p className="font-160 pl-10">
+              Ensure permanent access to web content with webpage archiving.
+            </p>
+          </div>
+          {/* third section  */}
+
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
+              <p className="mb-5 text-xl mt-5 ml-2">Collaborative Research</p>
             </div>
+            <p className="font-160 pl-10">
+              Contribute and share in a knowledge pool with your team of researchers.
+            </p>
           </div>
         </div>
-
 
       </Tab.Panel>
-      <Tab.Panel className="w-full flex flex-row-reverse">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">brain</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+      <Tab.Panel className="w-full">
+        <Image
+          src="./app/personal.png"
+          width={1407}
+          height={947}
+          alt=""
+          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+        />
+        <div className="flex justify-between">
+          {/* first section  */}
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+              <p className="mb-5 text-xl mt-5 ml-2">Shared Resource Pool</p>
             </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
+            <p className="font-160 pl-10">
+              Team members can contribute to a collective repository of project-related links.
+            </p>
           </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+          {/* second section  */}
+
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
+              <p className="mb-5 text-xl mt-5 ml-2">Centralized Access</p>
             </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
+            <p className="font-160 pl-10">
+              All team members can access essential project resources and references.
+            </p>
+          </div>
+          {/* third section  */}
+
+          <div className="w-1/3">
+            <div className="flex align-bottom">
+              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
+              <p className="mb-5 text-xl mt-5 ml-2">Streamlined Collaboration</p>
             </div>
+            <p className="font-160 pl-10">
+              Facilitate information sharing and teamwork on projects.
+            </p>
           </div>
         </div>
-
-
-      </Tab.Panel>
-      <Tab.Panel className="w-full flex flex-row-reverse">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">brain</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-3xl mt-5 ml-2">Time</p>
-                </div>
-                <p className="font-160 pl-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit quam assumenda consectetur rem expedita id at totam ex sapiente.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
 
       </Tab.Panel>
 

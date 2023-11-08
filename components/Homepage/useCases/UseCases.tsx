@@ -26,9 +26,9 @@ export default function UseCases() {
                   }`
                 }
               >
-                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
-                  <Image className="mx-auto mb-2" src={'/student.png'} alt="" height={50} width={50} />
-                  <p >Student</p>
+                <div className="duration-500 bg-[#07334F] w-full py-5  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
+                  <Image className="mx-auto mb-2" src={'/female.png'} alt="" height={50} width={50} />
+                  <p className="text-[12px]">Personal Use</p>
                 </div>
               </Tab>
               <Tab
@@ -37,9 +37,21 @@ export default function UseCases() {
               }`
                 }
               >
-                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
+                <div className="duration-500 bg-[#07334F] w-full py-5  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
+                  <Image className="mx-auto mb-2" src={'/books.png'} alt="" height={50} width={50} />
+                  <p className="text-[12px]">Education & Learning</p>
+                </div>
+
+              </Tab>
+              <Tab
+                className={({ selected }) =>
+                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
+              }`
+                }
+              >
+                <div className="duration-500 bg-[#07334F] w-full py-5  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
                   <Image className="mx-auto mb-2" src={'/hat.png'} alt="" height={50} width={50} />
-                  <p >Academics</p>
+                  <p className="text-[12px]">Research & Reference</p>
                 </div>
 
               </Tab>
@@ -49,36 +61,10 @@ export default function UseCases() {
               }`
                 }
               >
-                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
-                  <Image className="mx-auto mb-2" src={'/pen.png'} alt="" height={50} width={50} />
-                  <p >Writers</p>
+                <div className="duration-500 bg-[#07334F] w-full py-5  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
+                  <Image className="mx-auto mb-2" src={'/file.png'} alt="" height={50} width={50} />
+                  <p className="text-[12px]">Project Collaboration</p>
                 </div>
-
-              </Tab>
-              <Tab
-                className={({ selected }) =>
-                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
-              }`
-                }
-              >
-                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
-                  <Image className="mx-auto mb-2" src={'/date.png'} alt="" height={50} width={50} />
-                  <p className="text-[10px]">Project Managers</p>
-                </div>
-
-
-              </Tab>
-              <Tab
-                className={({ selected }) =>
-                ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold duration-100  w-full ${selected && `${style.rainbow}` 
-              }`
-                }
-              >
-                <div className="duration-500 bg-[#07334F] w-full py-3  rounded-lg text-center shadow-lg hover:shadow-cyan-500/50">
-                  <Image className="mx-auto mb-2" src={'/computer.png'} alt="" height={50} width={50} />
-                  <p >Developers</p>
-                </div>
-
 
 
               </Tab>
