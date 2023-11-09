@@ -17,9 +17,11 @@ function UseCaseTabPanel() {
         </div>
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              widgets
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                widgets
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Bookmark Organization</p>
               <p className="text-gray-400">
@@ -29,9 +31,9 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              groups
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">groups</span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Seamless Collaboration</p>
               <p className="text-gray-400">
@@ -41,9 +43,11 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              download
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                download
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Content Preservation</p>
               <p className="text-gray-400">
@@ -53,9 +57,9 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              search
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">search</span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Easy Access</p>
               <p className="text-gray-400">
@@ -78,9 +82,9 @@ function UseCaseTabPanel() {
         </div>
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              school
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">school</span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Academic Resource Management</p>
               <p className="text-gray-400">
@@ -90,9 +94,11 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              category
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                category
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Curated Learning Materials</p>
               <p className="text-gray-400">
@@ -102,9 +108,11 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              electric_bolt
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                electric_bolt
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Enhanced Study Experience</p>
               <p className="text-gray-400">
@@ -114,9 +122,10 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              groups
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">groups</span>
+            </div>
+
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Collaborative Learning</p>
               <p className="text-gray-400">
@@ -140,9 +149,11 @@ function UseCaseTabPanel() {
 
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              widgets
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                widgets
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Resource Gathering</p>
               <p className="text-gray-400">
@@ -151,9 +162,11 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              download
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                download
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Permanent Access</p>
               <p className="text-gray-400">
@@ -163,9 +176,10 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              groups
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">groups</span>
+            </div>
+
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Collaborative Research</p>
               <p className="text-gray-400">
@@ -175,9 +189,9 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              search
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">search</span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Easy Access</p>
               <p className="text-gray-400">
@@ -201,9 +215,11 @@ function UseCaseTabPanel() {
 
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              widgets
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                widgets
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Team Resource Gathering</p>
               <p className="text-gray-400">
@@ -212,9 +228,10 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              groups
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">groups</span>
+            </div>
+
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Seamless Collaboration</p>
               <p className="text-gray-400">
@@ -223,9 +240,11 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              electric_bolt
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">
+                electric_bolt
+              </span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Project Efficiency</p>
               <p className="text-gray-400">
@@ -235,9 +254,9 @@ function UseCaseTabPanel() {
             </div>
           </div>
           <div className="flex w-full gap-2">
-            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
-              sync
-            </span>
+            <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
+              <span className="material-symbols-rounded text-2xl ">sync</span>
+            </div>
             <div className="w-full flex flex-col gap-2 mt-2">
               <p className="text-xl">Information Sharing</p>
               <p className="text-gray-400">
