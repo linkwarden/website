@@ -5,180 +5,252 @@ import React from 'react'
 function UseCaseTabPanel() {
   return (
     <>
-      <Tab.Panel className="w-full">
+      <Tab.Panel className="w-full flex flex-row-reverse mb-3">
         <Image
           src="./app/personal.png"
-          width={1407}
-          height={947}
+          width={320}
+          height={270}
           alt=""
-          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+          className="rounded-2xl relative z-10 w-320 h-auto my-auto"
         />
-        <div className="flex justify-between">
-          {/* first section  */}
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-              <p className="mb-5 text-xl mt-5 ml-2">Efficient Organization</p>
-            </div>
-            <p className="font-160 pl-10">
-              Easily categorize and tag links for quick access.
-            </p>
-          </div>
-          {/* second section  */}
 
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Content Preservation</p>
-            </div>
-            <p className="font-160 pl-10">
-              Archive webpages to maintain a permanent record of online content.
-            </p>
-          </div>
-          {/* third section  */}
+        <div className="flex w-full">
+          <div className="top">
+            <div className="flex w-full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Bookmark Organization</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Store and categorize links to articles, blog posts, and online content for easy retrieval.
 
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Accessibility</p>
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              Retrieve stored information at any time, ensuring no loss due to content alteration or removal.
-            </p>
+            <div className="flex full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Efficient Browsing</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Quickly find and access stored information through organized tags and categories.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="bottom">
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Content Preservation</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Save webpages as archives, keeping a permanent record regardless of changes to the original content.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Easy Access</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Conveniently revisit favorite or important online materials at any time.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
 
       </Tab.Panel>
-      <Tab.Panel className="w-full">
+      <Tab.Panel className="w-full flex flex-row-reverse mb-3">
         <Image
           src="./app/personal.png"
-          width={1407}
-          height={947}
+          width={320}
+          height={270}
           alt=""
-          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+          className="rounded-2xl relative z-10 w-320 h-auto my-auto"
         />
-        <div className="flex justify-between">
-          {/* first section  */}
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-              <p className="mb-5 text-xl mt-5 ml-2">Resource Bookmarking</p>
-            </div>
-            <p className="font-160 pl-10">
-              Students and educators can save and revisit academic materials.
-            </p>
-          </div>
-          {/* second section  */}
 
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2"> Curated Learning Materials: </p>
+        <div className="flex w-full">
+          <div className="top">
+            <div className="flex w-full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2"> Academic Resource Management</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Bookmark and organize educational content for easy study and reference.
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              Educators can compile resources tailored to course requirements.
-            </p>
+            <div className="flex full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Curated Learning Materials</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Educators can create and share a tailored repository of learning resources.
+                </p>
+              </div>
+            </div>
           </div>
-          {/* third section  */}
-
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Collaborative Learning </p>
+          <div className="bottom">
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Enhanced Study Experience</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Students can efficiently revisit bookmarked resources for coursework and assignments.
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              Share and collaborate on educational resources with peers.
-            </p>
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Collaborative Learning</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Share and collaborate on educational resources between educators and students.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
 
       </Tab.Panel>
-      <Tab.Panel className="w-full">
+      <Tab.Panel className="w-full flex flex-row-reverse mb-3">
         <Image
           src="./app/personal.png"
-          width={1407}
-          height={947}
+          width={320}
+          height={270}
           alt=""
-          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+          className="rounded-2xl relative z-10 w-320 h-auto my-auto"
         />
-        <div className="flex justify-between">
-          {/* first section  */}
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-              <p className="mb-5 text-xl mt-5 ml-2">Reference Management</p>
-            </div>
-            <p className="font-160 pl-10">
-              Collect and organize references for academic or project-based research.
-            </p>
-          </div>
-          {/* second section  */}
 
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Permanent Archives</p>
+        <div className="flex w-full">
+          <div className="top">
+            <div className="flex w-full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Resource Gathering</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Gather and organize academic references and project materials.
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              Ensure permanent access to web content with webpage archiving.
-            </p>
+            <div className="flex full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Permanent Access</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Archive webpages to ensure continuous access despite changes or removal of online sources.
+                </p>
+              </div>
+            </div>
           </div>
-          {/* third section  */}
-
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Collaborative Research</p>
+          <div className="bottom">
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Collaborative Research</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Pool resources and references through shared collaboration features.
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              Contribute and share in a knowledge pool with your team of researchers.
-            </p>
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Resource Reliability</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Maintain access to valuable research content with archival features.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
 
       </Tab.Panel>
-      <Tab.Panel className="w-full">
+      <Tab.Panel className="w-full flex flex-row-reverse mb-3">
         <Image
           src="./app/personal.png"
-          width={1407}
-          height={947}
+          width={320}
+          height={270}
           alt=""
-          className="md:w-1/4 mx-auto rounded-2xl relative z-10"
+          className="rounded-2xl relative z-10 w-320 h-auto my-auto"
         />
-        <div className="flex justify-between">
-          {/* first section  */}
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
-              <p className="mb-5 text-xl mt-5 ml-2">Shared Resource Pool</p>
-            </div>
-            <p className="font-160 pl-10">
-              Team members can contribute to a collective repository of project-related links.
-            </p>
-          </div>
-          {/* second section  */}
 
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/brain.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Centralized Access</p>
+        <div className="flex w-full">
+          <div className="top">
+            <div className="flex w-full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Team Resource Gathering</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Collectively gather and organize webpages relevant to a project.
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              All team members can access essential project resources and references.
-            </p>
+            <div className="flex full">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Seamless Collaboration</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Share essential resources and references among team members.
+                </p>
+              </div>
+            </div>
           </div>
-          {/* third section  */}
-
-          <div className="w-1/3">
-            <div className="flex align-bottom">
-              <Image src={'/pencil.svg'} height={30} width={30} alt="" className='text-white' />
-              <p className="mb-5 text-xl mt-5 ml-2">Streamlined Collaboration</p>
+          <div className="bottom">
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2">Project Efficiency</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Access a centralized resource hub for all project-related information.
+                </p>
+              </div>
             </div>
-            <p className="font-160 pl-10">
-              Facilitate information sharing and teamwork on projects.
-            </p>
+            <div className="flex">
+              <div className="w-full">
+                <div className="flex align-bottom">
+                  <Image src={'/time.svg'} height={30} width={30} alt="" className='text-white ' />
+                  <p className="mb-5 text-xl mt-5 ml-2"> Information Sharing</p>
+                </div>
+                <p className="font-160 pl-10 h-[100px]">
+                  Ensure all team members have access to the same materials for aligned efforts.                </p>
+              </div>
+            </div>
           </div>
         </div>
+
 
       </Tab.Panel>
 

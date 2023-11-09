@@ -6,9 +6,10 @@ interface SelectedDataProps {
   textOne: string;
   textTwo?: string;
   textThree?: string;
+  textFour?: string;
 }
 
-function SelectedData({ src, textOne, textTwo, textThree }: SelectedDataProps) {
+function SelectedData({ src, textOne, textTwo, textThree  ,textFour}: SelectedDataProps) {
   return (
     <>
       <div className="w-full  flex flex-row-reverse mt-[100px=] justify-between align-middle">
@@ -30,9 +31,13 @@ function SelectedData({ src, textOne, textTwo, textThree }: SelectedDataProps) {
             <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
             <p className="ml-3 text-left">{textTwo}</p>
           </div>
-          <div className="flex align-middle">
+          <div className="flex align-middle mb-3">
             <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
             <p className="ml-3 text-left">{textThree}</p>
+          </div>
+          <div className="flex align-middle">
+            <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
+            <p className="ml-3 text-left">{textFour}</p>
           </div>
         </div>
       </div>

@@ -22,30 +22,37 @@ function UseCaseListBoxMobile() {
       case 'Personal Use':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={`  Efficient Organization`}
-            textTwo={'  Content Preservation'}
-            textThree={'  Accessibility'} />
+            textOne={`  Bookmark Organization`}
+            textTwo={'  Efficient Browsing'}
+            textThree={'  Content Preservation'}
+            textFour={'  Easy Access'} />
         )
       case 'Education & Learning':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={' Resource Bookmarking'}
-            textTwo={' Curated Learning Materials'}
-            textThree={'  Collaborative Learning'} />
+            textOne={'Academic Resource Management'}
+            textTwo={'Curated Learning Materials'}
+            textThree={'Enhanced Study Experience'}
+            textFour={'Collaborative Learning'}
+          />
         )
       case 'Research & Reference':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={' Reference Management'}
-            textTwo={' Permanent Archives'}
-            textThree={'  Collaborative Research'} />
+            textOne={'Resource Gathering'}
+            textTwo={' Permanent Access'}
+            textThree={'Collaborative Research'}
+            textFour={'Resource Reliability'}
+          />
         )
       case 'Project Collaboration':
         return (
           <SelectedData src={'/app/personal.png'}
-            textOne={' Shared Resource Pool'}
-            textTwo={'  Centralized Access'}
-            textThree={'  Streamlined Collaboration'} />
+            textOne={'Team Resource Gathering'}
+            textTwo={'Seamless Collaboration'}
+            textThree={'Project Efficiency'}
+            textFour={'Information Sharing'}
+          />
         )
 
     }
@@ -89,7 +96,7 @@ function UseCaseListBoxMobile() {
                             className={`align-middle flex  truncate ${selected ? 'font-medium' : 'font-normal'
                               }`}
                           >
-                            <Image src={i.img} alt='' height={25} width={25}  />
+                            <Image src={i.img} alt='' height={25} width={25} />
                             <p className='ml-5'>
                               {i.name}
 
