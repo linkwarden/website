@@ -24,19 +24,19 @@ function SelectedData({ src, textOne, textTwo, textThree  ,textFour}: SelectedDa
         </div>
         <div className="w-2/4 text-right">
           <div className="flex align-middle mb-3">
-            <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
+            <Image src={'/stroke.svg'} height={30} width={30} alt="" className="text-white" />
             <p className="ml-3 text-left">{textOne}</p>
           </div>
           <div className="flex align-middle mb-3">
-            <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
+            <Image src={'/stroke.svg'} height={30} width={30} alt="" className="text-white" />
             <p className="ml-3 text-left">{textTwo}</p>
           </div>
           <div className="flex align-middle mb-3">
-            <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
+            <Image src={'/stroke.svg'} height={30} width={30} alt="" className="text-white" />
             <p className="ml-3 text-left">{textThree}</p>
           </div>
           <div className="flex align-middle">
-            <Image src={'/brain.svg'} height={30} width={30} alt="" className="text-white" />
+            <Image src={'/stroke.svg'} height={30} width={30} alt="" className="text-white" />
             <p className="ml-3 text-left">{textFour}</p>
           </div>
         </div>

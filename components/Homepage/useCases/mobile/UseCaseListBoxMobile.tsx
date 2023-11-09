@@ -64,7 +64,7 @@ function UseCaseListBoxMobile() {
         <Listbox value={selected} onChange={setSelected}>
           <div className={`${style.rainbow} px-0.5 py-0.5 rounded-lg align-middle`}>
             <div className="relative">
-              <Listbox.Button className="align-middle relative w-full cursor-default rounded-lg bg-[#0E212E] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+              <Listbox.Button className="align-middle relative w-full cursor-default rounded-lg bg-[#0E212E] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                 <div className='flex'>
                   <span className="truncate mt-[2px]"><Image src={selected.img} alt='' height={20} width={20} /></span>
                   <span className="truncate ml-5">{selected.name}</span>
@@ -85,7 +85,7 @@ function UseCaseListBoxMobile() {
                     <Listbox.Option
                       key={Idx}
                       className={({ active }) =>
-                        `relative cursor-default select-none py-2 pl-5 pr-4 ${active ? 'bg-[white] text-black' : 'text-white'
+                        `relative cursor-default select-none py-2 pl-5 pr-4 ${active ? 'bg-[#0369A1] text-white' : 'text-white'
                         }`
                       }
                       value={i}
