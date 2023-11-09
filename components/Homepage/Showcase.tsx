@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PrimaryButton from "../PrimaryButton";
 import GitHubButton from "../GitHubButton";
+import Link from "next/link";
 
 export default function Showcase() {
   return (
@@ -14,6 +15,16 @@ export default function Showcase() {
         }}
       >
         <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
+          <Link
+            href="https://blog.linkwarden.app/releases/v2.0"
+            target="_blank"
+            className="w-fit mx-auto"
+          >
+            <div className="border bg-sky-950 bg-opacity-10 border-[#07334F] hover:border-sky-500 duration-100 w-fit mx-auto py-2 px-3 text-xs rounded-full mb-3">
+              🎉️ Announcing <span className="font-bold">Linkwarden v2.0</span>!
+              🚀
+            </div>
+          </Link>
           <div className="py-2">
             <p className="lg:text-5xl sm:text-4xl text-3xl text-center font-bold relative z-10">
               Collect, Organize, and Preserve Webpages Featuring Seamless
