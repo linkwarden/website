@@ -376,7 +376,7 @@ export default function Features() {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible>
-              <ShortendFeatures icon="extension" title="Browser Extention">
+              <ShortendFeatures icon="extension" title="Browser Extension">
                 <p>
                   Collect webpages directly from your browser with our
                   open-source extension.
