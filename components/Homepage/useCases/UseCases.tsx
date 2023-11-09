@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
-import style from "./style/usecase.module.css";
 import UseCaseTabPanel from "./UseCaseTabPanel";
 import UseCaseListBoxMobile from "./mobile/UseCaseListBoxMobile";
 // import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
@@ -20,15 +19,15 @@ export default function UseCases() {
             <Tab.List className="flex gap-5 lg:text-lg my-5 w-100 justify-between">
               <Tab
                 className={({ selected }) =>
-                  ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
-                    selected && `${style.rainbow}`
+                  ` active:border-none outline-none px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
+                    selected && `rainbow`
                   }`
                 }
               >
                 <div className="duration-200 bg-[#0E212E] w-full py-5  rounded-lg text-center  shadow-lg  group-hover:shadow-cyan-500/50 ">
                   <Image
                     className="mx-auto mb-2"
-                    src={"/male.png"}
+                    src={"/developer.png"}
                     alt=""
                     height={50}
                     width={50}
@@ -38,8 +37,8 @@ export default function UseCases() {
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
-                    selected && `${style.rainbow}`
+                  ` active:border-none outline-none px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
+                    selected && `rainbow`
                   }`
                 }
               >
@@ -56,8 +55,8 @@ export default function UseCases() {
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
-                    selected && `${style.rainbow}`
+                  ` active:border-none outline-none px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
+                    selected && `rainbow`
                   }`
                 }
               >
@@ -74,8 +73,8 @@ export default function UseCases() {
               </Tab>
               <Tab
                 className={({ selected }) =>
-                  ` active:border-none  px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
-                    selected && `${style.rainbow}`
+                  ` active:border-none outline-none px-1 py-1 text-sm rounded-xl font-semibold group duration-75 shadow-inner  hover:shadow-cyan-500/50 w-full ${
+                    selected && `rainbow`
                   }`
                 }
               >

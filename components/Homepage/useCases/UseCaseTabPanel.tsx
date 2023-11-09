@@ -1,6 +1,6 @@
-import { Tab } from '@headlessui/react'
-import Image from 'next/image'
-import React from 'react'
+import { Tab } from "@headlessui/react";
+import Image from "next/image";
+import React from "react";
 
 function UseCaseTabPanel() {
   return (
@@ -8,66 +8,63 @@ function UseCaseTabPanel() {
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
         <div className="w-[33%]">
           <Image
-            src="./app/personal.png"
+            src="./app/project.png"
             width={320}
             height={270}
             alt=""
             className="rounded-2xl relative z-10 w-320 h-auto my-auto"
           />
-
         </div>
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Bookmark Organization</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Store and categorize links to articles, blog posts, and online content for easy retrieval.
-                </p>
-              </div>
-            </div>
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Efficient Browsing</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Quickly find and access stored information through organized tags and categories.
-                </p>
-              </div>
+        <div className="grid grid-cols-2 gap-4 w-full">
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              widgets
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Bookmark Organization</p>
+              <p className="text-gray-400">
+                Store and categorize links to articles, blog posts, and online
+                content for easy retrieval.
+              </p>
             </div>
           </div>
-          <div className="bottom">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Content Preservation</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Save webpages as archives, keeping a permanent record regardless of changes to the original content.
-                </p>
-              </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              groups
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Seamless Collaboration</p>
+              <p className="text-gray-400">
+                Share essential links and references among your friend or even
+                publicly.
+              </p>
             </div>
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Easy Access</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Conveniently revisit favorite or important online materials at any time.
-                </p>
-              </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              download
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Content Preservation</p>
+              <p className="text-gray-400">
+                Keep a permanent snapshot of links regardless of any changes to
+                the original content.
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              search
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Easy Access</p>
+              <p className="text-gray-400">
+                Conveniently revisit favorite or important online materials at
+                any time.
+              </p>
             </div>
           </div>
         </div>
-
-
       </Tab.Panel>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
         <div className="w-[33%]">
@@ -78,63 +75,60 @@ function UseCaseTabPanel() {
             alt=""
             className="rounded-2xl relative z-10 w-320 h-auto my-auto"
           />
-
         </div>
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2"> Academic Resource Management</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Bookmark and organize educational content for easy study and reference.
-                </p>
-              </div>
-            </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Curated Learning Materials</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Educators can create and share a tailored repository of learning resources.
-                </p>
-              </div>
+        <div className="grid grid-cols-2 gap-4 w-full">
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              school
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Academic Resource Management</p>
+              <p className="text-gray-400">
+                Bookmark and organize educational content for easy study and
+                reference.
+              </p>
             </div>
           </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Enhanced Study Experience</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Students can efficiently revisit bookmarked resources for coursework and assignments.
-                </p>
-              </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              category
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Curated Learning Materials</p>
+              <p className="text-gray-400">
+                Educators can create and share a tailored collection of online
+                learning resources.
+              </p>
             </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Collaborative Learning</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Share and collaborate on educational resources between educators and students.
-                </p>
-              </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              electric_bolt
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Enhanced Study Experience</p>
+              <p className="text-gray-400">
+                Students can efficiently revisit bookmarked resources for
+                coursework and assignments.
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              groups
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Collaborative Learning</p>
+              <p className="text-gray-400">
+                Share and collaborate on educational resources between educators
+                and students.
+              </p>
             </div>
           </div>
         </div>
-
-
       </Tab.Panel>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
-      <div className="w-[33%]">
+        <div className="w-[33%]">
           <Image
             src="./app/personal.png"
             width={320}
@@ -142,64 +136,60 @@ function UseCaseTabPanel() {
             alt=""
             className="rounded-2xl relative z-10 w-320 h-auto my-auto"
           />
-
         </div>
 
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Resource Gathering</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Gather and organize academic references and project materials.
-                </p>
-              </div>
-            </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Permanent Access</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Archive webpages to ensure continuous access despite changes or removal of online sources.
-                </p>
-              </div>
+        <div className="grid grid-cols-2 gap-4 w-full">
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              widgets
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Resource Gathering</p>
+              <p className="text-gray-400">
+                Gather and organize academic links and articles.
+              </p>
             </div>
           </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Collaborative Research</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Pool resources and references through shared collaboration features.
-                </p>
-              </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              download
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Permanent Access</p>
+              <p className="text-gray-400">
+                Archive webpages to ensure continuous access despite changes or
+                removal of online sources.
+              </p>
             </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Resource Reliability</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Maintain access to valuable research content with archival features.
-                </p>
-              </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              groups
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Collaborative Research</p>
+              <p className="text-gray-400">
+                Pool resources and references through shared collaboration
+                features.
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              search
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Easy Access</p>
+              <p className="text-gray-400">
+                Quickly store and access information through organized tags and
+                categories.
+              </p>
             </div>
           </div>
         </div>
-
-
       </Tab.Panel>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
-      <div className="w-[33%]">
+        <div className="w-[33%]">
           <Image
             src="./app/personal.png"
             width={320}
@@ -207,66 +197,58 @@ function UseCaseTabPanel() {
             alt=""
             className="rounded-2xl relative z-10 w-320 h-auto my-auto"
           />
-
         </div>
 
-        <div className="flex w-full">
-          <div className="top">
-            <div className="flex w-full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Team Resource Gathering</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Collectively gather and organize webpages relevant to a project.
-                </p>
-              </div>
-            </div>
-            <div className="flex full">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Seamless Collaboration</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Share essential resources and references among team members.
-                </p>
-              </div>
+        <div className="grid grid-cols-2 gap-4 w-full">
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              widgets
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Team Resource Gathering</p>
+              <p className="text-gray-400">
+                Collectively gather and organize webpages relevant to a project.
+              </p>
             </div>
           </div>
-          <div className="bottom">
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2">Project Efficiency</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Access a centralized resource hub for all project-related information.
-                </p>
-              </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              groups
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Seamless Collaboration</p>
+              <p className="text-gray-400">
+                Share essential resources and references among team members.
+              </p>
             </div>
-            <div className="flex">
-              <div className="w-full">
-                <div className="flex align-bottom">
-                  <Image src={'/stroke.svg'} height={30} width={30} alt="" className='text-white ' />
-                  <p className="mb-5 text-xl mt-5 ml-2"> Information Sharing</p>
-                </div>
-                <p className="font-160 pl-10 pb-5">
-                  Ensure all team members have access to the same materials for aligned efforts.                </p>
-              </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              electric_bolt
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Project Efficiency</p>
+              <p className="text-gray-400">
+                Access a centralized resource hub for all project-related
+                information.
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full gap-2">
+            <span className="material-symbols-rounded text-2xl select-none bg-sky-500 bg-opacity-30 rounded-full flex items-center justify-center w-11 h-10">
+              sync
+            </span>
+            <div className="w-full flex flex-col gap-2 mt-2">
+              <p className="text-xl">Information Sharing</p>
+              <p className="text-gray-400">
+                Ensure all team members have access to the same materials.
+              </p>
             </div>
           </div>
         </div>
-
-
       </Tab.Panel>
-
-
     </>
-
-  )
+  );
 }
 
-export default UseCaseTabPanel
+export default UseCaseTabPanel;
