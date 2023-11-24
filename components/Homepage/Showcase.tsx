@@ -1,10 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import PrimaryButton from "../PrimaryButton";
 import GitHubButton from "../GitHubButton";
 import Link from "next/link";
 
 export default function Showcase() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <>
       <div
@@ -47,7 +49,13 @@ export default function Showcase() {
         </div>
 
         <div className="pt-10 pl-2 pr-2 pb-2 max-w-7xl mx-auto">
-          <div className="slide-up relative opacity-90 bg-sky-500 sm:p-3 p-2 sm:rounded-[1.25rem] rounded-[1rem] bg-opacity-20 mx-3">
+          <div
+            className={
+              imageLoaded
+                ? "slide-up relative opacity-90 bg-sky-500 sm:p-3 p-2 sm:rounded-[1.25rem] rounded-[1rem] bg-opacity-20 mx-3"
+                : "opacity-0"
+            }
+          >
             <Image
               src="./app/dashboard.jpg"
               width={1542}
@@ -55,6 +63,7 @@ export default function Showcase() {
               alt=""
               className="relative z-10 shadow-lg rounded-lg mx-auto"
               draggable="false"
+              onLoad={() => setImageLoaded(true)}
             />
             <div className="absolute z-10 sm:top-3 top-2 sm:bottom-3 bottom-2 sm:left-3 left-2 sm:right-3 right-2 select-none pointer-events-none border-sky-500 border rounded-lg"></div>
             <div className="absolute z-10 top-0 bottom-0 left-0 right-0 select-none pointer-events-none border-sky-500 border sm:rounded-[1.25rem] rounded-[1rem]"></div>
