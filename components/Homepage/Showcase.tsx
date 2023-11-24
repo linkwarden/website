@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PrimaryButton from "../PrimaryButton";
 import GitHubButton from "../GitHubButton";
+import Link from "next/link";
 
 export default function Showcase() {
   return (
@@ -14,10 +15,7 @@ export default function Showcase() {
         }}
       >
         <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
-          <br />
-          <br />
-          <br />
-          {/* <div className="w-fit mx-auto mb-3">
+          <div className="w-fit mx-auto mb-3">
             <Link
               href="https://blog.linkwarden.app/releases/v2.0"
               target="_blank"
@@ -28,7 +26,7 @@ export default function Showcase() {
                 <span className="font-bold">Linkwarden v2.0</span>! 🚀
               </div>
             </Link>
-          </div> */}
+          </div>
           <div className="py-2">
             <p className="lg:text-5xl sm:text-4xl text-3xl text-center font-bold relative z-10">
               Collect, Organize, and Preserve Webpages Featuring Seamless
