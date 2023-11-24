@@ -75,11 +75,15 @@ function FAQs() {
           <p>To cancel your plan, follow these steps:</p>
           <ul>
             <li>Log in to your account.</li>
-            <li>Click on your profile photo, then select "Settings".</li>
+            <li>
+              Click on your profile photo, then select &quot;Settings&quot;.
+            </li>
             <ul>
               <p className="-ml-5 font-bold">For account deletion:</p>
               <ul>
-                <li>Scroll to "Delete Your Account" at the bottom.</li>
+                <li>
+                  Scroll to &quot;Delete Your Account&quot; at the bottom.
+                </li>
                 <li>
                   Enter your password, fill out the optional form, and confirm
                   deletion.
@@ -88,9 +92,10 @@ function FAQs() {
               <p className="-ml-5 font-bold">To cancel without deleting:</p>
               <ul>
                 <li>
-                  Go to "Billing", "Go to Billing Portal" (handled by Stripe).
+                  Go to &quot;Billing&quot;, &quot;Go to Billing Portal&quot;
+                  (handled by Stripe).
                 </li>
-                <li>Select "Cancel Plan".</li>
+                <li>Select &quot;Cancel Plan&quot;.</li>
               </ul>
             </ul>
           </ul>
