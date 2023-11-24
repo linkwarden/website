@@ -8,7 +8,7 @@ function FAQs() {
         Frequently Asked Questions
       </p>
 
-      <div className="pr-5 bg-[#031928] rounded-2xl">
+      <div className="pr-5 bg-[#031928] rounded-2xl border border-[#d3d3d31d]">
         <QuestionAndAnswer title="Why use the paid plan when I can already self host it?">
           <p>
             The paid plan offers several advantages, such as hassle-free
@@ -72,20 +72,40 @@ function FAQs() {
         <hr className="ml-5 border border-[#d3d3d31d]" />
 
         <QuestionAndAnswer title="How can I cancel my plan?">
+          <p>To cancel your plan, follow these steps:</p>
+          <ul>
+            <li>Log in to your account.</li>
+            <li>Click on your profile photo, then select "Settings".</li>
+            <ul>
+              <p className="-ml-5 font-bold">For account deletion:</p>
+              <ul>
+                <li>Scroll to "Delete Your Account" at the bottom.</li>
+                <li>
+                  Enter your password, fill out the optional form, and confirm
+                  deletion.
+                </li>
+              </ul>
+              <p className="-ml-5 font-bold">To cancel without deleting:</p>
+              <ul>
+                <li>
+                  Go to "Billing", "Go to Billing Portal" (handled by Stripe).
+                </li>
+                <li>Select "Cancel Plan".</li>
+              </ul>
+            </ul>
+          </ul>
           <p>
-            You can cancel your plan anytime either by contacting us at{" "}
+            After cancellation, your account will be disabled within a month, or
+            immediately if you choose to delete your account.
+            <br />
+            Alternatively, email{" "}
             <Link
               className="font-bold underline"
               href="mailto:support@linkwarden.app"
             >
               support@linkwarden.app
             </Link>{" "}
-            about the inquiry, or by simply logging into your account and
-            clicking on your profile photo &gt; “Settings” &gt; “Billing” &gt;
-            “Go to Billing Portal”, the billing portal is being handled by
-            Stripe, after logging in, from there you can see the “Cancel Plan”
-            option. After that, your account will be disabled in less than a
-            month.
+            for assistance.
           </p>
         </QuestionAndAnswer>
       </div>

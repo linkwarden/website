@@ -51,6 +51,7 @@ details[open] summary ~ * {
   font-family: "Material Symbols Rounded";
   font-size: 1.75rem;
   margin-right: 0.25rem;
+  font-weight: 100;
   content: "\e145";
   color: #ffffff;
   transition: 0.25s ease-in-out;
@@ -63,6 +64,11 @@ details[open] summary ~ * {
 
 .slide-down {
   animation: slide-down-animation 100ms;
+}
+
+.faq ul {
+  list-style: decimal;
+  margin-left: 2rem;
 }
 
 @keyframes slide-down-animation {
