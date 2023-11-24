@@ -7,7 +7,7 @@ import DemoVid from "../DemoVid";
 export default function Features() {
   return (
     <>
-      <div className="max-w-7xl pt-20 px-5 w-fit mx-auto" id="features">
+      <div className="max-w-7xl pt-5 px-5 w-fit mx-auto" id="features">
         <Title text="Collect and Organize" className="mb-10 mt-20" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
@@ -231,11 +231,11 @@ export default function Features() {
 
             <ShortendFeatures
               icon="vertical_align_bottom"
-              title="Import Your Bookmarks"
+              title="Import & Export Your Bookmarks"
             >
               <p>
-                Easily import all your bookmark from other platforms, most
-                modern browsers are supported.
+                Easily import or export all your bookmark from/to other
+                platforms.
               </p>
             </ShortendFeatures>
 

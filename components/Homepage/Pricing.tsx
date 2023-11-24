@@ -144,6 +144,18 @@ function Pricing() {
                   </span>
                   <p>Priority support.</p>
                 </li>
+                <li className="flex items-start gap-2 text-left">
+                  <span className="material-symbols-rounded text-2xl select-none text-green-500">
+                    check
+                  </span>
+                  <p>Automatic updates.</p>
+                </li>
+                <li className="flex items-center gap-2 text-left">
+                  <span className="material-symbols-rounded text-2xl select-none text-pink-500">
+                    favorite
+                  </span>
+                  <p>Support open source!</p>
+                </li>
               </ul>
             </div>
 
@@ -198,7 +210,25 @@ function Pricing() {
                   <span className="material-symbols-rounded text-2xl select-none text-green-500">
                     check
                   </span>
-                  <p>Fully custom instance.</p>
+                  <p>Priority support.</p>
+                </li>
+                <li className="flex items-start gap-2 text-left">
+                  <span className="material-symbols-rounded text-2xl select-none text-green-500">
+                    check
+                  </span>
+                  <p>Automatic updates.</p>
+                </li>
+                <li className="flex items-start gap-2 text-left">
+                  <span className="material-symbols-rounded text-2xl select-none text-green-500">
+                    check
+                  </span>
+                  <p>Fully customizable instance.</p>
+                </li>
+                <li className="flex items-center gap-2 text-left">
+                  <span className="material-symbols-rounded text-2xl select-none text-pink-500">
+                    favorite
+                  </span>
+                  <p>Support open source!</p>
                 </li>
               </ul>
             </div>

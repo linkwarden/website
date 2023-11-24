@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import PrimaryButton from "../PrimaryButton";
 import GitHubButton from "../GitHubButton";
-import Link from "next/link";
 
 export default function Showcase() {
   return (
@@ -15,7 +14,10 @@ export default function Showcase() {
         }}
       >
         <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
-          <div className="w-fit mx-auto mb-3">
+          <br />
+          <br />
+          <br />
+          {/* <div className="w-fit mx-auto mb-3">
             <Link
               href="https://blog.linkwarden.app/releases/v2.0"
               target="_blank"
@@ -26,7 +28,7 @@ export default function Showcase() {
                 <span className="font-bold">Linkwarden v2.0</span>! 🚀
               </div>
             </Link>
-          </div>
+          </div> */}
           <div className="py-2">
             <p className="lg:text-5xl sm:text-4xl text-3xl text-center font-bold relative z-10">
               Collect, Organize, and Preserve Webpages Featuring Seamless
@@ -47,14 +49,18 @@ export default function Showcase() {
         </div>
 
         <div className="pt-10 pl-2 pr-2 pb-2 max-w-7xl mx-auto">
-          <div className="pl-2 pr-2 pb-2 relative mx-auto">
+          <div className="slide-up relative opacity-90 bg-sky-500 sm:p-3 p-2 sm:rounded-[1.25rem] rounded-[1rem] bg-opacity-20 mx-3">
             <Image
-              src="./app/links.png"
-              width={1920}
-              height={922}
+              src="./app/dashboard.jpg"
+              width={1542}
+              height={1124}
               alt=""
-              className="relative z-10 rounded-xl shadow-lg slide-up"
+              className="relative z-10 shadow-lg rounded-lg mx-auto"
+              draggable="false"
             />
+            <div className="absolute z-10 sm:top-3 top-2 sm:bottom-3 bottom-2 sm:left-3 left-2 sm:right-3 right-2 select-none pointer-events-none border-sky-500 border rounded-lg"></div>
+            <div className="absolute z-10 top-0 bottom-0 left-0 right-0 select-none pointer-events-none border-sky-500 border sm:rounded-[1.25rem] rounded-[1rem]"></div>
+            <div className="absolute bg-gradient-to-t from-[#02121c] to-transparent z-10 top-0 bottom-0 left-0 right-0 select-none pointer-events-none"></div>
           </div>
         </div>
       </div>
