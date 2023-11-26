@@ -59,7 +59,7 @@ export default function Showcase() {
             <Image
               src="./app/dashboard.jpg"
               width={1542}
-              height={1124}
+              height={869}
               alt=""
               className="relative z-10 shadow-lg rounded-lg mx-auto"
               draggable="false"
