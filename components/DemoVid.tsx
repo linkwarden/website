@@ -19,6 +19,7 @@ export default function DemoVid({ src }: Props) {
         autoPlay
         className="lg:rounded-[100px] rounded-[50px]"
         playsInline
+        muted
         loop
       >
         <source src={src} type="video/mp4" />
