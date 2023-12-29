@@ -118,7 +118,7 @@ function Pricing() {
                   <span className="material-symbols-rounded text-2xl select-none text-green-500">
                     check
                   </span>
-                  <p>Unlimited Links.</p>
+                  <p>Up to 30,000 Links.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <span className="material-symbols-rounded text-2xl select-none text-green-500">
