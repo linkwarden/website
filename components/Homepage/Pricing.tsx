@@ -227,6 +227,12 @@ function Pricing() {
                   </span>
                   <p>Fully customizable instance.</p>
                 </li>
+                <li className="flex items-start gap-2 text-left">
+                  <span className="material-symbols-rounded text-2xl select-none text-green-500">
+                    check
+                  </span>
+                  <p>Single Sign-On (SSO).</p>
+                </li>
                 <li className="flex items-center gap-2 text-left">
                   <span className="material-symbols-rounded text-2xl select-none text-pink-500">
                     favorite

@@ -40,7 +40,13 @@ export default function Showcase() {
         <GitHubButton />
       </div>
 
-      <div className="pt-10 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-10 mb-20">
+      <div
+        className={
+          imageLoaded
+            ? "pt-10 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-10 mb-20"
+            : " opacity-0"
+        }
+      >
         <div className="slide-up relative">
           <Image
             src="./app/dashboard.jpeg"
