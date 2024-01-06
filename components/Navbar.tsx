@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import PrimaryButton from "./PrimaryButton";
 import Link from "next/link";
+import AccentSubmitButton from "./AccentSubmitButton";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,23 +13,23 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`w-full z-30 backdrop-blur bg-[#02121C] border-b border-[#07334F] ${
+        className={`w-full z-30 backdrop-blur bg-[#02121c] border-b border-[#07334F] ${
           isMenuOpen
-            ? "bg-opacity-100 min-[750px]:bg-opacity-50"
+            ? "bg-opacity-100 min-[770px]:bg-opacity-50"
             : "bg-opacity-50"
         } fixed top-0 left-0 flex items-center justify-between p-2`}
       >
         <Link href="/">
           <Image
             src="/linkwarden.png"
-            className=" w-52"
+            className="w-40"
             width={453}
             height={96}
             alt=""
           />
         </Link>
 
-        <div className="items-center justify-between gap-5 hidden min-[750px]:flex border border-[#07334F] bg-[#002f4c] bg-opacity-20 rounded-2xl px-4 py-1">
+        <div className="items-center justify-between gap-10 hidden min-[770px]:flex rounded-2xl px-4 py-1">
           <Link href="/#features" className="hover:opacity-50 duration-100">
             Features
           </Link>
@@ -59,19 +59,19 @@ export default function Navbar() {
           <Link
             href="https://cloud.linkwarden.app/login"
             target="_blank"
-            className="text-gray-300 hover:opacity-50 duration-100 max-[790px]:hidden"
+            className="text-gray-300 hover:opacity-50 duration-100 max-[850px]:hidden"
           >
             Login
           </Link>
 
-          <PrimaryButton
-            text="Start Free Trial"
-            path="https://cloud.linkwarden.app/register"
-            className="hidden min-[750px]:block"
+          <AccentSubmitButton
+            label="Start Free Trial"
+            href="https://cloud.linkwarden.app/register"
+            className="hidden min-[770px]:block"
           />
         </div>
 
-        <div className="block min-[750px]:hidden">
+        <div className="block min-[770px]:hidden">
           <div
             id="nav-menu"
             className={`cursor-pointer select-none ${isMenuOpen ? "open" : ""}`}
@@ -85,8 +85,8 @@ export default function Navbar() {
         </div>
       </div>
       {isMenuOpen ? (
-        <div className="fixed top-14 left-0 right-0 bottom-0 bg-black bg-opacity-20 z-50">
-          <div className="slide-down block min-[750px]:hidden p-5 z-20 bg-[#02121c] border-b border-[#07334F]">
+        <div className="fixed top-12 left-0 right-0 bottom-0 bg-black bg-opacity-20 z-50">
+          <div className="slide-down block min-[770px]:hidden p-5 z-20 bg-[#02121c] border-b border-[#07334F]">
             <div className="items-center justify-between flex flex-col gap-5">
               <Link
                 href="/#features"
@@ -135,9 +135,9 @@ export default function Navbar() {
               Login
             </Link>
 
-            <PrimaryButton
-              text="Start Free Trial"
-              path="https://cloud.linkwarden.app/register"
+            <AccentSubmitButton
+              label="Start Free Trial"
+              href="https://cloud.linkwarden.app/register"
               className="mt-3 mx-auto block w-fit"
             />
           </div>

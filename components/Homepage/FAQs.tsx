@@ -11,16 +11,12 @@ function FAQs() {
       <div className="pr-5 bg-[#031928] rounded-2xl border border-[#d3d3d31d]">
         <QuestionAndAnswer title="Why use the paid plan when I can already self host it?">
           <p>
-            The paid plan offers several advantages, such as hassle-free
-            maintenance, automatic updates, and priority support, saving you
-            time and effort. It also ensures that you have access to the latest
-            stable features and improvements. It&apos;s the most convenient way
-            to enjoy the full power of Linkwarden without the technical
-            complexities of self-hosting it.
+            The paid plan provides automatic updates, priority support, and
+            access to the latest features, saving you time and effort.
           </p>
           <p>
-            Plus, your subscription helps us continue improving the app for
-            everyone.
+            Plus, your subscription helps us continue improving Linkwarden for
+            everyone!
           </p>
         </QuestionAndAnswer>
 

@@ -6,7 +6,11 @@ type Props = {
   className?: string;
 };
 
-export default function PrimaryButton({ title, children, className }: Props) {
+export default function QuestionAndAnswer({
+  title,
+  children,
+  className,
+}: Props) {
   return (
     <details className={`faq ${className}`}>
       <summary className="p-5 cursor-pointer font-semibold select-none text-lg text-slate-300">

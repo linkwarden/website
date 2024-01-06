@@ -18,17 +18,7 @@ function UseCaseListBoxMobile() {
     switch (selected.name) {
       case "Personal Use":
         return (
-          <div className="w-full flex flex-col-reverse gap-5 sm:flex-row-reverse">
-            <div className="w-full">
-              <Image
-                src="/app/personal.png"
-                width={1407}
-                height={947}
-                alt=""
-                className="rounded-2xl"
-              />
-            </div>
-
+          <div className="w-full flex flex-col gap-5 sm:flex-row-reverse">
             <div className="text-right flex flex-col gap-3 w-full">
               <SingleItem icon="widgets" text="Bookmark Organization" />
               <SingleItem icon="groups" text="Seamless Collaboration" />
@@ -39,17 +29,7 @@ function UseCaseListBoxMobile() {
         );
       case "Education & Learning":
         return (
-          <div className="w-full flex flex-col-reverse gap-5 sm:flex-row-reverse">
-            <div className="w-full">
-              <Image
-                src="/app/study.png"
-                width={1407}
-                height={947}
-                alt=""
-                className="rounded-2xl"
-              />
-            </div>
-
+          <div className="w-full flex flex-col gap-5 sm:flex-row-reverse">
             <div className="text-right flex flex-col gap-3">
               <SingleItem icon="school" text="Academic Resource Management" />
               <SingleItem icon="category" text="Curated Learning Materials" />
@@ -63,17 +43,7 @@ function UseCaseListBoxMobile() {
         );
       case "Research & Reference":
         return (
-          <div className="w-full flex flex-col-reverse gap-5 sm:flex-row-reverse">
-            <div className="w-full">
-              <Image
-                src="/app/research.png"
-                width={1407}
-                height={947}
-                alt=""
-                className="rounded-2xl"
-              />
-            </div>
-
+          <div className="w-full flex flex-col gap-5 sm:flex-row-reverse">
             <div className="text-right flex flex-col gap-3">
               <SingleItem icon="widgets" text="Resource Gathering" />
               <SingleItem icon="download" text="Permanent Access" />
@@ -84,17 +54,7 @@ function UseCaseListBoxMobile() {
         );
       case "Project Collaboration":
         return (
-          <div className="w-full flex flex-col-reverse gap-5 sm:flex-row-reverse">
-            <div className="w-full">
-              <Image
-                src="/app/project.png"
-                width={1407}
-                height={947}
-                alt=""
-                className="rounded-2xl"
-              />
-            </div>
-
+          <div className="w-full flex flex-col gap-5 sm:flex-row-reverse">
             <div className="text-right flex flex-col gap-3">
               <SingleItem icon="widgets" text="Team Resource Gathering" />
               <SingleItem icon="groups" text="Seamless Collaboration" />

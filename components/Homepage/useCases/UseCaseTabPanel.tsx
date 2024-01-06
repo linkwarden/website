@@ -6,15 +6,6 @@ function UseCaseTabPanel() {
   return (
     <>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
-        <div className="w-[33%]">
-          <Image
-            src="./app/project.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-        </div>
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
             <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
@@ -71,15 +62,6 @@ function UseCaseTabPanel() {
         </div>
       </Tab.Panel>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
-        <div className="w-[33%]">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-        </div>
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
             <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
@@ -137,16 +119,6 @@ function UseCaseTabPanel() {
         </div>
       </Tab.Panel>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
-        <div className="w-[33%]">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-        </div>
-
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
             <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">
@@ -203,16 +175,6 @@ function UseCaseTabPanel() {
         </div>
       </Tab.Panel>
       <Tab.Panel className="w-full flex flex-row-reverse mb-3">
-        <div className="w-[33%]">
-          <Image
-            src="./app/personal.png"
-            width={320}
-            height={270}
-            alt=""
-            className="rounded-2xl relative z-10 w-320 h-auto my-auto"
-          />
-        </div>
-
         <div className="grid grid-cols-2 gap-4 w-full">
           <div className="flex w-full gap-2">
             <div className="rounded-full flex items-center justify-center w-11 h-10 select-none bg-sky-500 bg-opacity-30">

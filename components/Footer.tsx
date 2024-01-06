@@ -5,16 +5,60 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="mt-10">
-      <div className="px-5 pb-5 max-w-7xl mx-auto flex gap-2 sm:flex-row flex-col justify-between items-center">
-        <div className="w-fit">
-          <Image
-            src="/linkwarden.png"
-            className="w-60"
-            width={518}
-            height={145}
-            alt=""
-          />
+      <div className="px-5 pb-5 max-w-7xl mx-auto flex flex-col justify-between items-center">
+        <div>
+          <div className="flex gap-20 md:gap-6">
+            {" "}
+            <div className="flex md:flex-row flex-col gap-6">
+              <Link
+                href="/#features"
+                className="duration-100 hover:text-slate-400"
+              >
+                Features
+              </Link>
+              <Link
+                href="/#pricing"
+                className="duration-100 hover:text-slate-400"
+              >
+                Pricing
+              </Link>
+              <Link href="/#faqs" className="duration-100 hover:text-slate-400">
+                FAQs
+              </Link>
+              <Link
+                href="https://github.com/orgs/linkwarden/projects/1"
+                className="duration-100 hover:text-slate-400"
+              >
+                Roadmap
+              </Link>
+            </div>
+            <div className="flex md:flex-row flex-col gap-6">
+              <Link
+                href="https://docs.linkwarden.app"
+                className="duration-100 hover:text-slate-400"
+              >
+                Docs
+              </Link>{" "}
+              <Link
+                href="https://blog.linkwarden.app"
+                className="duration-100 hover:text-slate-400"
+              >
+                Blog
+              </Link>
+              <Link href="/tos" className="duration-100 hover:text-slate-400">
+                Terms Of Service
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="duration-100 hover:text-slate-400"
+              >
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
+        </div>
 
+        <div className="w-fit mt-6">
           <div className="flex justify-center my-2 gap-2 sm:w-fit">
             <Link
               href="https://discord.gg/CtuYV47nuJ"
@@ -48,32 +92,6 @@ export default function Footer() {
               <i className="fa-brands fa-github"></i>
             </Link>
           </div>
-        </div>
-
-        <div>
-          <div className="flex gap-2">
-            {" "}
-            <Link href="/#features">Features</Link> |
-            <Link href="/#pricing">Pricing</Link> |
-            <Link href="/#faqs">FAQs</Link> |
-            <Link href="https://docs.linkwarden.app" target="_blank">
-              Docs
-            </Link>{" "}
-            |
-            <Link href="https://blog.linkwarden.app" target="_blank">
-              Blog
-            </Link>
-          </div>
-          <p className="text-center sm:text-right">
-            <Link href="/tos" className="text-gray-400">
-              Terms Of Service
-            </Link>
-          </p>
-          <p className="text-center sm:text-right">
-            <Link href="/privacy-policy" className="text-gray-400">
-              Privacy Policy
-            </Link>
-          </p>
         </div>
       </div>
       <p className="text-sm px-5 pb-5 max-w-7xl mx-auto text-center">
