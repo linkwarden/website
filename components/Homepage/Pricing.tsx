@@ -1,5 +1,5 @@
-import PrimaryButton from "@/components/PrimaryButton";
 import { useState } from "react";
+import AccentSubmitButton from "../AccentSubmitButton";
 
 function Pricing() {
   enum Plan {
@@ -87,9 +87,10 @@ function Pricing() {
               </ul>
             </div>
 
-            <PrimaryButton
-              text="Get Started"
-              path="https://github.com/linkwarden/linkwarden"
+            <AccentSubmitButton
+              label="Get Started"
+              className="mx-auto"
+              href="https://github.com/linkwarden/linkwarden"
             />
           </div>
 
@@ -118,7 +119,7 @@ function Pricing() {
                   <span className="material-symbols-rounded text-2xl select-none text-green-500">
                     check
                   </span>
-                  <p>Unlimited Links.</p>
+                  <p>Up to 30,000 Links.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <span className="material-symbols-rounded text-2xl select-none text-green-500">
@@ -162,9 +163,11 @@ function Pricing() {
             <p className="text-gray-400 text-sm text-center mt-5 mb-2">
               14-day free trial, cancel anytime.
             </p>
-            <PrimaryButton
-              text="Start Free Trial"
-              path="https://cloud.linkwarden.app/register"
+
+            <AccentSubmitButton
+              label="Start Free Trial"
+              className="mx-auto"
+              href="https://cloud.linkwarden.app/register"
             />
           </div>
 
@@ -233,9 +236,10 @@ function Pricing() {
               </ul>
             </div>
 
-            <PrimaryButton
-              text="Contact Us"
-              path="mailto:support@linkwarden.app"
+            <AccentSubmitButton
+              label="Contact Us"
+              className="mx-auto"
+              href="mailto:support@linkwarden.app"
             />
           </div>
         </div>

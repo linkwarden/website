@@ -171,11 +171,11 @@ details[open] summary ~ * {
 }
 
 .primary-btn-gradient {
-  box-shadow: inset 0px -10px 10px #0071b7;
+  box-shadow: inset 0px -9px 10px #0071b7;
 }
 
 .primary-btn-gradient:hover {
-  box-shadow: inset 0px -15px 10px #059bf8;
+  box-shadow: inset 0px -20px 40px #00436c;
 }
 
 .fade-in {
@@ -241,4 +241,47 @@ details[open] summary ~ * {
   .useCaseMobile {
     display: none;
   }
+}
+
+.glow-gradient {
+  z-index: 0;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #ffffff, #199ced);
+    background-size: 200% 200%;
+    animation: animateGlow 5s ease infinite;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+    filter: blur(40px);
+  }
+
+  50% {
+    background-position: 100% 50%;
+    filter: blur(30px);
+  }
+
+  100% {
+    background-position: 0% 50%;
+    filter: blur(40px);
+  }
+}
+
+.sticky-demo-vid {
+  position: -webkit-sticky;
+  position: sticky;
+  height: fit-content;
+  top: 0;
 }

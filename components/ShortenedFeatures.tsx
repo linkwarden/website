@@ -7,7 +7,7 @@ type Props = {
   className?: string;
 };
 
-export default function PrimaryButton({
+export default function ShortenedFeatures({
   title,
   icon,
   children,
