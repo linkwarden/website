@@ -8,7 +8,7 @@ type Props = {
 export default function Title({ text, className }: Props) {
   return (
     <p
-      className={`mx-auto w-fit px-3 py-1 text-sm border border-[#07334F] rounded-2xl ${className}`}
+      className={`mx-auto w-fit px-3 py-1 text-sm border border-outline glass-gradient rounded-2xl ${className}`}
     >
       {text}
     </p>

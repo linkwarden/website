@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
-import AccentSubmitButton from "./AccentSubmitButton";
+import AccentButton from "./AccentButton";
+import SecondaryButton from "./SecondaryButton";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +14,11 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`w-full z-30 backdrop-blur bg-[#02121c] border-b border-[#07334F] ${
+        className={`w-full z-30 backdrop-blur max-[770px]:fixed bg-[#111111] ${
           isMenuOpen
             ? "bg-opacity-100 min-[770px]:bg-opacity-50"
             : "bg-opacity-50"
-        } fixed top-0 left-0 flex items-center justify-between p-2`}
+        } flex items-center justify-between p-2 max-w-5xl mx-auto min-[770px]:mt-5`}
       >
         <Link href="/">
           <Image
@@ -30,45 +31,47 @@ export default function Navbar() {
         </Link>
 
         <div className="items-center justify-between gap-10 hidden min-[770px]:flex rounded-2xl px-4 py-1">
-          <Link href="/#features" className="hover:opacity-50 duration-100">
+          <Link
+            href="/#features"
+            className="hover:opacity-50 duration-100 text-text"
+          >
             Features
           </Link>
-          <Link href="/#pricing" className="hover:opacity-50 duration-100">
+          <Link
+            href="/#pricing"
+            className="hover:opacity-50 duration-100 text-text"
+          >
             Pricing
           </Link>
-          <Link href="/#faqs" className="hover:opacity-50 duration-100">
+          <Link
+            href="/#faqs"
+            className="hover:opacity-50 duration-100 text-text"
+          >
             FAQs
           </Link>
           <Link
             href="https://docs.linkwarden.app"
             target="_blank"
-            className="hover:opacity-50 duration-100"
+            className="hover:opacity-50 duration-100 text-text"
           >
             Docs
           </Link>
           <Link
             href="https://blog.linkwarden.app"
             target="_blank"
-            className="hover:opacity-50 duration-100"
+            className="hover:opacity-50 duration-100 text-text"
           >
             Blog
           </Link>
         </div>
 
-        <div className="flex items-center gap-5">
-          <Link
-            href="https://cloud.linkwarden.app/login"
-            target="_blank"
-            className="text-gray-300 hover:opacity-50 duration-100 max-[850px]:hidden"
+        <div className="items-center gap-5 hidden min-[770px]:flex">
+          <SecondaryButton
+            path="https://cloud.linkwarden.app/login"
+            className="py-1"
           >
             Login
-          </Link>
-
-          <AccentSubmitButton
-            label="Start Free Trial"
-            href="https://cloud.linkwarden.app/register"
-            className="hidden min-[770px]:block"
-          />
+          </SecondaryButton>
         </div>
 
         <div className="block min-[770px]:hidden">
@@ -85,8 +88,8 @@ export default function Navbar() {
         </div>
       </div>
       {isMenuOpen ? (
-        <div className="fixed top-12 left-0 right-0 bottom-0 bg-black bg-opacity-20 z-50">
-          <div className="slide-down block min-[770px]:hidden p-5 z-20 bg-[#02121c] border-b border-[#07334F]">
+        <div className="fixed top-12 left-0 right-0 bottom-0 bg-black backdrop-blur-sm bg-opacity-20 z-50">
+          <div className="slide-down block min-[770px]:hidden p-5 z-20 bg-background border-b border-outline">
             <div className="items-center justify-between flex flex-col gap-5">
               <Link
                 href="/#features"
@@ -127,15 +130,14 @@ export default function Navbar() {
               </Link>
             </div>
 
-            <Link
-              href="https://cloud.linkwarden.app/login"
-              target="_blank"
-              className="text-gray-300 hover:opacity-50 duration-100 mx-auto block w-fit mt-10"
+            <SecondaryButton
+              path="https://cloud.linkwarden.app/login"
+              className="mx-auto mt-5 py-1"
             >
               Login
-            </Link>
+            </SecondaryButton>
 
-            <AccentSubmitButton
+            <AccentButton
               label="Start Free Trial"
               href="https://cloud.linkwarden.app/register"
               className="mt-3 mx-auto block w-fit"

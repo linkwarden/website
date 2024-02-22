@@ -1,17 +1,19 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import GitHubButton from "../GitHubButton";
+import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
-import AccentSubmitButton from "../AccentSubmitButton";
+import AccentButton from "../AccentButton";
+import SVGShowcase from "../SVGShowcase";
+import { Star } from "@phosphor-icons/react";
 
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
-    <div className="relative bg-gradient-to-b from-black via-60% via-violet-800 pb-20">
+    <div className="relative pb-40 lg:pb-0 max-w-fit mx-auto">
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
         <div className="w-fit mx-auto mb-3">
-          <Link
+          {/* <Link
             href="https://blog.linkwarden.app/releases/v2.4"
             target="_blank"
             className="rounded-full"
@@ -20,49 +22,60 @@ export default function Showcase() {
               🎉️ Announcing <span className="font-bold">Linkwarden v2.4</span>!
               🚀
             </div>
-          </Link>
+          </Link> */}
         </div>
         <div className="py-2">
-          <p className="lg:text-5xl sm:text-4xl text-3xl text-center font-bold relative z-10">
-            Effortless Webpage Management for Individuals and Teams
+          <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10 mb-3">
+            Webpage Management for
+          </p>
+          <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10">
+            Individuals and Teams
           </p>
         </div>
       </div>
-      <p className="relative z-10 max-w-2xl p-5 mx-auto text-center text-neutral-300 font-semibold text-xl">
+      <p className="relative z-10 max-w-2xl p-5 mx-auto text-center text-text sm:text-xl">
         Linkwarden is an open-source collaborative bookmark manager to collect,
         organize and preserve webpages.
       </p>
-      <div className="relative z-10 flex justify-center gap-5">
-        <AccentSubmitButton
+
+      <div className="relative z-10 flex justify-center gap-2 sm:gap-5">
+        <AccentButton
           label="Start Free Trial"
           href="https://cloud.linkwarden.app/register"
         />
-        <GitHubButton />
+        <SecondaryButton path="https://github.com/linkwarden/linkwarden">
+          <Star
+            weight="fill"
+            className="text-2xl text-slate-300 duration-100 group-hover:text-yellow-500"
+          />
+          Star on GitHub!
+        </SecondaryButton>
       </div>
+
+      <SVGShowcase className="absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] svg-hero-gradient" />
 
       <div
         className={
           imageLoaded
-            ? "pt-10 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-10 mb-20"
+            ? "pt-10 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-5 mb-20"
             : " opacity-0"
         }
       >
         <div className="slide-up relative">
           <Image
+            priority
             src="./app/dashboard.jpeg"
             width={1270}
             height={770}
             alt=""
-            className="relative z-10 rounded-lg mx-auto"
+            className="relative z-10 rounded-lg mx-auto border border-outline"
             onLoad={() => setImageLoaded(true)}
           />
-          <div className="absolute z-10 top-0 left-0 bottom-0 right-0 select-none pointer-events-none rounded-lg glow-gradient"></div>
-          <div className="absolute z-10 top-0 left-0 bottom-0 right-0 select-none pointer-events-none border-sky-500 border rounded-lg"></div>
         </div>
       </div>
 
       <div className="p-5">
-        <p className="text-center text-2xl">
+        <p className="text-center text-2xl max-w-sm mx-auto">
           Loved by thousands at the world&apos;s most innovative companies,
           including
         </p>
