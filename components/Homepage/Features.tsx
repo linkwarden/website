@@ -95,8 +95,8 @@ export default function Features() {
             title="Privacy Friendly"
           >
             <p>
-              Privacy is a fundamental human right. We won't sell your data to
-              third parties.
+              Privacy is a fundamental human right. We won&apos;t sell your data
+              to third parties.
             </p>
           </ShortenedFeatures>
 
