@@ -6,7 +6,7 @@ import { User, Lightbulb, GraduationCap, Kanban } from "@phosphor-icons/react";
 export default function UseCases() {
   return (
     <div className="min-h-auto">
-      <div className="max-w-6xl mx-auto p-5">
+      <div className="max-w-6xl mx-auto lg:px-20 px-5">
         <p className="lg:text-4xl text-3xl font-bold mb-10 text-center">
           Exploring the Use Cases
         </p>
