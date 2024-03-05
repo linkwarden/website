@@ -9,6 +9,9 @@ import { Star } from "@phosphor-icons/react";
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
+  const isSafari =
+    typeof window !== "undefined" && (window as any)?.safari !== undefined;
+
   return (
     <div className="relative pb-40 lg:pb-0 max-w-fit mx-auto">
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
@@ -52,7 +55,11 @@ export default function Showcase() {
         </SecondaryButton>
       </div>
 
-      <SVGShowcase className="absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] svg-hero-gradient" />
+      <SVGShowcase
+        className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] svg-hero-gradient ${
+          isSafari ? "opacity-60" : ""
+        }`}
+      />
 
       <div
         className={
