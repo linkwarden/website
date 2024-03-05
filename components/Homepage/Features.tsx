@@ -350,8 +350,11 @@ function MainFeaturesDesktop() {
               className={`video ${
                 activeVideo === src ? "active" : ""
               } rounded-3xl border border-outline z-10`}
-              width={880}
+              style={{
+                width: "880px",
+              }}
               height={720}
+              width={880}
               autoPlay
               muted
               loop

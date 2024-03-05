@@ -240,8 +240,6 @@ body {
 }
 
 .locker__video video {
-  width: auto;
-  height: auto;
   position: absolute;
   transition: all 0.3s ease;
 }
