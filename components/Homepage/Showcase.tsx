@@ -16,16 +16,16 @@ export default function Showcase() {
     <div className="relative pb-40 lg:pb-0 max-w-fit mx-auto">
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
         <div className="w-fit mx-auto mb-3">
-          {/* <Link
+          <Link
             href="https://blog.linkwarden.app/releases/v2.4"
             target="_blank"
             className="rounded-full"
           >
-            <div className="border bg-opacity-70 border-[#07334F] hover:border-sky-500 duration-200 w-fit py-2 px-3 text-xs rounded-full">
-              🎉️ Announcing <span className="font-bold">Linkwarden v2.4</span>!
+            <div className="border bg-opacity-80 border-[#07334F] hover:border-sky-500 bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
+              🎉️ Announcing <span className="font-bold">Linkwarden v2.5</span>!
               🚀
             </div>
-          </Link> */}
+          </Link>
         </div>
         <div className="py-2">
           <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10 mb-3">
