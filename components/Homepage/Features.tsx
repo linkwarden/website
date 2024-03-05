@@ -349,7 +349,9 @@ function MainFeaturesDesktop() {
               key={src}
               className={`video ${
                 activeVideo === src ? "active" : ""
-              } rounded-3xl border border-outline`}
+              } rounded-3xl border border-outline z-10`}
+              width={880}
+              height={720}
               autoPlay
               muted
               loop
@@ -359,6 +361,17 @@ function MainFeaturesDesktop() {
               Your browser does not support the video tag.
             </video>
           ))}
+          <div className="relative">
+            <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+              <div>
+                <div className="loader" id="loader-4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

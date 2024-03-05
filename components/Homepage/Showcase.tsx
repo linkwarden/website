@@ -75,7 +75,7 @@ export default function Showcase() {
       </div>
 
       <div className="p-5">
-        <p className="text-center text-2xl max-w-sm mx-auto">
+        <p className="text-center text-2xl max-w-md mx-auto">
           Loved by thousands at the world&apos;s most innovative companies,
           including
         </p>
