@@ -3,12 +3,28 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import Image from "next/image";
 import SingleItem from "./SingleItem";
+import {
+  CaretDown,
+  Lightbulb,
+  User,
+  GraduationCap,
+  Kanban,
+} from "@phosphor-icons/react";
 
 const items = [
-  { name: "Personal Use", img: "/developer.png" },
-  { name: "Education & Learning", img: "/books.png" },
-  { name: "Research & Reference", img: "/hat.png" },
-  { name: "Project Collaboration", img: "/file.png" },
+  { name: "Personal Use", icon: <User weight="fill" size="1.7rem" /> },
+  {
+    name: "Design Inspirations",
+    icon: <Lightbulb weight="fill" size="1.7rem" />,
+  },
+  {
+    name: "Research & Reference",
+    icon: <GraduationCap weight="fill" size="1.7rem" />,
+  },
+  {
+    name: "Project Collaboration",
+    icon: <Kanban weight="fill" size="1.7rem" />,
+  },
 ];
 
 function UseCaseListBoxMobile() {
@@ -27,7 +43,7 @@ function UseCaseListBoxMobile() {
             </div>
           </div>
         );
-      case "Education & Learning":
+      case "Design Inspirations":
         return (
           <div className="w-full flex flex-col gap-5 sm:flex-row-reverse">
             <div className="text-right flex flex-col gap-3">
@@ -70,22 +86,15 @@ function UseCaseListBoxMobile() {
     <>
       <div className={`w-full block md:hidden useCaseMobile pb-5 `}>
         <Listbox value={selected} onChange={setSelected}>
-          <div className={`rainbow px-0.5 py-0.5 rounded-lg align-middle`}>
+          <div className={`px-0.5 py-0.5 rounded-lg align-middle`}>
             <div className="relative">
-              <Listbox.Button className="align-middle relative w-full cursor-default rounded-lg bg-[#0E212E] py-2 pl-3 pr110 shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
-                <div className="flex">
-                  <span className="truncate mt-[2px]">
-                    <Image src={selected.img} alt="" height={20} width={20} />
-                  </span>
+              <Listbox.Button className="align-middle relative w-full rounded-lg py-2 pl-3 pr110 shadow-md focus:outline-none bg-gradient-to-br from-[#673AB7] to-[#3A00A1] active:scale-[98%] duration-100 cursor-pointer text-white text-base sm:text-sm">
+                <div className="flex items-center">
+                  <span className="truncate">{selected.icon}</span>
                   <span className="truncate ml-5">{selected.name}</span>
                 </div>
                 <span className="align-middle pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <Image
-                    src={"/arrow-down.svg"}
-                    width={10}
-                    height={10}
-                    alt=""
-                  />
+                  <CaretDown />
                 </span>
               </Listbox.Button>
               <Transition
@@ -94,13 +103,13 @@ function UseCaseListBoxMobile() {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-[#0E212E] py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
+                <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-[#1a1a1a] py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
                   {items.map((i, Idx) => (
                     <Listbox.Option
                       key={Idx}
                       className={({ active }) =>
-                        `relative cursor-default select-none py-2 pl-5 pr-4 ${
-                          active ? "bg-[#0369A1] text-white" : "text-white"
+                        `relative cursor-default duration-100 select-none py-2 pl-5 pr-4 ${
+                          active ? "bg-[#2d2d2d] text-white" : "text-white"
                         }`
                       }
                       value={i}
@@ -108,11 +117,11 @@ function UseCaseListBoxMobile() {
                       {({ selected }) => (
                         <>
                           <div
-                            className={`align-middle flex  truncate ${
+                            className={`align-middle flex items-center truncate ${
                               selected ? "font-medium" : "font-normal"
                             }`}
                           >
-                            <Image src={i.img} alt="" height={25} width={25} />
+                            {i.icon}
                             <p className="ml-5">{i.name}</p>
                           </div>
                         </>

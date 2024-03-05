@@ -1,5 +1,6 @@
 import Link from "next/link";
 import QuestionAndAnswer from "../QuestionAndAnswer";
+import Seperator from "../Seperator";
 
 function FAQs() {
   return (
@@ -8,7 +9,21 @@ function FAQs() {
         Frequently Asked Questions
       </p>
 
-      <div className="pr-5 bg-[#031928] rounded-2xl border border-[#d3d3d31d]">
+      <div
+        className="pr-5 rounded-2xl border border-outline bg-gradient-to-br from-[#a27dff29] via-transparent to-[#ffffff0a]"
+        style={{
+          boxShadow: "#ffffff10 0px 5px 20px 0px",
+        }}
+      >
+        <QuestionAndAnswer title="How can I try out the product?">
+          <p>
+            You can try out Linkwarden Cloud for free by signing up for a 14-day
+            trial. The reason we require a credit card is to prevent spam.
+          </p>
+        </QuestionAndAnswer>
+
+        <Seperator />
+
         <QuestionAndAnswer title="Why use the paid plan when I can already self host it?">
           <p>
             The paid plan provides automatic updates, priority support, and
@@ -20,7 +35,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <hr className="ml-5 border border-[#d3d3d31d]" />
+        <Seperator />
 
         <QuestionAndAnswer title="How does the free trial work?">
           <p>
@@ -32,7 +47,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <hr className="ml-5 border border-[#d3d3d31d]" />
+        <Seperator />
 
         <QuestionAndAnswer title="How will I be billed?">
           <p>
@@ -48,7 +63,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <hr className="ml-5 border border-[#d3d3d31d]" />
+        <Seperator />
 
         <QuestionAndAnswer title="Where's my data stored?">
           <p>
@@ -62,7 +77,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <hr className="ml-5 border border-[#d3d3d31d]" />
+        <Seperator />
 
         <QuestionAndAnswer title="Can I have a customized instance designed specifically for my needs?">
           <p>
@@ -79,7 +94,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <hr className="ml-5 border border-[#d3d3d31d]" />
+        <Seperator />
 
         <QuestionAndAnswer title="How can I cancel my plan?">
           <p>To cancel your plan, follow these steps:</p>
@@ -113,19 +128,12 @@ function FAQs() {
             After cancellation, your account will be disabled within a month, or
             immediately if you choose to delete your account.
             <br />
-            Alternatively, email{" "}
-            <Link
-              className="font-bold underline"
-              href="mailto:support@linkwarden.app"
-            >
-              support@linkwarden.app
-            </Link>{" "}
-            for assistance.
+            Either way, your subscription will be cancelled immediately.
           </p>
         </QuestionAndAnswer>
       </div>
 
-      <p className="my-5 text-center text-sm text-gray-400">
+      <p className="my-5 text-center text-sm text-text">
         For any other questions, feel free to reach out to us at{" "}
         <Link
           className="font-bold underline"

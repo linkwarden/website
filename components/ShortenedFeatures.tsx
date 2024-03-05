@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 
 type Props = {
   title: string;
-  icon: string;
+  icon: ReactNode;
   children: ReactNode;
   className?: string;
 };
@@ -15,15 +15,15 @@ export default function ShortenedFeatures({
 }: Props) {
   return (
     <div
-      className={`p-4 text-sm border z-10 border-[#07334F] bg-[#0e212e] h-full rounded-xl ${className}`}
+      className={`p-5 text-sm border z-10 border-[#333333] bg-gradient-to-r from-[#29b8fb11] to-[#2618503a] h-full rounded-xl text-center ${className}`}
     >
-      <span
-        className="material-symbols-rounded select-none"
+      <div
+        className="select-none bg-gradient-to-br from-[#673AB7] to-[#3A00A1] w-fit aspect-square p-2 rounded-2xl mx-auto mb-5"
         style={{ fontSize: "3rem" }}
       >
         {icon}
-      </span>
-      <p className="font-bold mb-2">{title}</p>
+      </div>
+      <p className="font-bold mb-2 text-center text-lg">{title}</p>
       {children}
     </div>
   );
