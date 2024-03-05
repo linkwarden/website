@@ -17,7 +17,7 @@ export default function Showcase() {
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
         <div className="w-fit mx-auto mb-3">
           <Link
-            href="https://blog.linkwarden.app/releases/v2.4"
+            href="https://blog.linkwarden.app/releases/v2.5"
             target="_blank"
             className="rounded-full"
           >
