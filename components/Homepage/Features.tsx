@@ -415,14 +415,25 @@ function MainFeaturesMobile() {
             </li>
           </ul>
 
-          <video
-            className={`rounded-3xl border border-outline max-w-xl mx-auto w-full`}
-            src="./app/collect.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
+          <div className="relative">
+            <video
+              className={`rounded-3xl border border-outline max-w-xl mx-auto w-full z-10 relative`}
+              src="./app/collect.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+            ></video>
+            <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+              <div>
+                <div className="loader" id="loader-4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="w-full flex flex-col gap-5">
           <p className="lg:text-4xl text-3xl font-bold max-w-xl mx-auto w-full">
@@ -454,14 +465,25 @@ function MainFeaturesMobile() {
               <p>Download your archived webpages.</p>
             </li>
           </ul>
-          <video
-            className={`rounded-3xl border border-outline max-w-xl mx-auto w-full`}
-            src="./app/preserve.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
+          <div className="relative">
+            <video
+              className={`rounded-3xl border border-outline max-w-xl mx-auto w-full z-10 relative`}
+              src="./app/preserve.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+            ></video>
+            <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+              <div>
+                <div className="loader" id="loader-4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="w-full flex flex-col gap-5">
           <p className="lg:text-4xl text-3xl font-bold max-w-xl mx-auto w-full">
@@ -483,14 +505,25 @@ function MainFeaturesMobile() {
               <p>Easily share curated collections with the world.</p>
             </li>
           </ul>
-          <video
-            className={`rounded-3xl border border-outline max-w-xl mx-auto w-full`}
-            src="./app/collaborate.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
+          <div className="relative">
+            <video
+              className={`rounded-3xl border border-outline max-w-xl mx-auto w-full z-10 relative`}
+              src="./app/collaborate.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+            ></video>
+            <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+              <div>
+                <div className="loader" id="loader-4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
