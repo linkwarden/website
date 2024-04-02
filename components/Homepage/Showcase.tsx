@@ -29,7 +29,7 @@ export default function Showcase() {
         </div>
         <div className="py-2">
           <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10 mb-3">
-            Webpage Management for
+            Bookmark Preservation for
           </p>
           <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10">
             Individuals and Teams
