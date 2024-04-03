@@ -42,10 +42,7 @@ export default function Showcase() {
       </p>
 
       <div className="relative z-10 flex justify-center gap-2 sm:gap-5">
-        <AccentButton
-          label="Start Free Trial"
-          href="https://cloud.linkwarden.app/register"
-        />
+        <AccentButton label="Start Free Trial" href="#pricing" />
         <SecondaryButton path="https://github.com/linkwarden/linkwarden">
           <Star
             weight="fill"
