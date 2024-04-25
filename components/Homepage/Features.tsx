@@ -227,6 +227,13 @@ function MainFeaturesDesktop() {
     }
 
     const videoIndex = videos.indexOf(activeVideo);
+
+    if (videoElement) {
+      videoElement.classList.remove("fade-left");
+      void videoElement.offsetWidth;
+      videoElement.classList.add("fade-left");
+    }
+
     if (videoIndex !== -1) {
       setActiveGradient(videoColors[videoIndex]);
     }
