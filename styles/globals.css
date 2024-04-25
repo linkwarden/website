@@ -328,3 +328,16 @@ body {
     opacity: 1;
   }
 }
+
+.fade-left {
+  animation: fadeLeft 300ms ease-in-out;
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
