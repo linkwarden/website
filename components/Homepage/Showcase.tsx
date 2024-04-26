@@ -53,9 +53,7 @@ export default function Showcase() {
       </div>
 
       <SVGShowcase
-        className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] svg-hero-gradient ${
-          isSafari ? "opacity-60" : ""
-        }`}
+        className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] opacity-80 bg-gradient-radial from-[#289DF230] from-20% via-[#6F30D830] to-70% to-transparent`}
       />
 
       <div
@@ -79,18 +77,18 @@ export default function Showcase() {
       </div>
 
       <div className="p-5">
-        <p className="text-center text-2xl max-w-sm mx-auto">
+        <p className="text-center sm:text-2xl text-xl max-w-sm mx-auto">
           Loved by thousands at the world&apos;s most innovative companies
         </p>
 
-        <div className="flex w-full flex-wrap items-center justify-center gap-10 mt-10 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-5 grid-cols-3 items-center mt-10 max-w-5xl mx-auto md:w-3/4 w-5/6 gap-10">
           <Image
             src="./company-logos/microsoft.png"
             width={638}
             height={136}
             alt=""
             draggable={false}
-            className="invert sm:w-1/6 w-2/6 opacity-50"
+            className="invert opacity-50"
             onLoad={() => setImageLoaded(true)}
             style={{ objectFit: "contain" }}
           />
@@ -100,7 +98,7 @@ export default function Showcase() {
             height={156}
             alt=""
             draggable={false}
-            className="invert sm:w-[13%] w-[26%] opacity-50"
+            className="invert opacity-50 w-3/4 justify-self-center"
             onLoad={() => setImageLoaded(true)}
             style={{ objectFit: "contain" }}
           />
@@ -110,7 +108,7 @@ export default function Showcase() {
             height={143}
             alt=""
             draggable={false}
-            className="invert sm:w-[13%] w-[26%] opacity-50 mt-3"
+            className="invert opacity-50 mt-3 w-3/4 justify-self-center"
             onLoad={() => setImageLoaded(true)}
             style={{ objectFit: "contain" }}
           />
@@ -120,7 +118,7 @@ export default function Showcase() {
             height={119}
             alt=""
             draggable={false}
-            className="invert sm:w-1/6 w-2/6 opacity-50"
+            className="invert opacity-50 hidden md:block"
             onLoad={() => setImageLoaded(true)}
             style={{ objectFit: "contain" }}
           />
@@ -130,7 +128,7 @@ export default function Showcase() {
             height={134}
             alt=""
             draggable={false}
-            className="invert sm:w-1/6 w-2/6 opacity-50"
+            className="invert opacity-50 hidden md:block"
             onLoad={() => setImageLoaded(true)}
             style={{ objectFit: "contain" }}
           />

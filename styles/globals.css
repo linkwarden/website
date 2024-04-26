@@ -335,9 +335,11 @@ body {
 
 @keyframes fadeLeft {
   0% {
-    transform: translateX(30px);
+    /* transform: translateY(30px); */
+    scale: 1.1;
   }
   100% {
-    transform: translateX(0);
+    /* transform: translateY(0); */
+    scale: 1;
   }
 }
