@@ -79,7 +79,7 @@ export default function UseCases() {
                 </div>
               </Tab>
             </Tab.List>
-            <Tab.Panels>
+            <Tab.Panels className="min-h-[14rem]">
               <Tab.Panel className="w-full flex flex-row-reverse mb-3">
                 <div className="grid grid-cols-2 gap-4 w-full">
                   <div className="flex w-full gap-2 items-center">
