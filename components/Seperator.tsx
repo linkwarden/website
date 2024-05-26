@@ -1,10 +1,17 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-const Seperator = (props: Props) => {
+const Seperator = ({ className }: Props) => {
   return (
-    <div className="h-[1px] bg-gradient-to-r from-transparent via-outline to-transparent"></div>
+    <div
+      className={
+        "h-[1px] bg-gradient-to-r from-transparent via-outline to-transparent " +
+          className || ""
+      }
+    ></div>
   );
 };
 

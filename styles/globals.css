@@ -48,7 +48,7 @@ body {
 
 @keyframes slide-down-animation {
   0% {
-    transform: translateY(-10%);
+    transform: translateY(-2%);
     opacity: 0;
   }
   100% {

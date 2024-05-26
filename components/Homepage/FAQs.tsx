@@ -1,8 +1,15 @@
 import Link from "next/link";
 import QuestionAndAnswer from "../QuestionAndAnswer";
 import Seperator from "../Seperator";
+import { useState } from "react";
 
 function FAQs() {
+  const [openIndex, setOpenIndex] = useState(-1);
+
+  const handleToggle = (index: any) => {
+    setOpenIndex((prevIndex) => (prevIndex === index ? -1 : index));
+  };
+
   return (
     <div className="max-w-5xl px-5 mx-auto pt-20" id="faqs">
       <p className="text-3xl text-center mb-10 font-bold">
@@ -15,7 +22,11 @@ function FAQs() {
           boxShadow: "#ffffff10 0px 5px 20px 0px",
         }}
       >
-        <QuestionAndAnswer title="How can I try out the product?">
+        <QuestionAndAnswer
+          title="How can I try out the product?"
+          isOpen={openIndex === 0}
+          onToggle={() => handleToggle(0)}
+        >
           <p>
             You can try out Linkwarden Cloud for free by signing up for a 14-day
             trial. The reason we require a credit card is to prevent spam.
@@ -24,9 +35,13 @@ function FAQs() {
 
         <Seperator />
 
-        <QuestionAndAnswer title="Why use the paid plan when I can already self host it?">
+        <QuestionAndAnswer
+          title="What does the Cloud offering provide?"
+          isOpen={openIndex === 1}
+          onToggle={() => handleToggle(1)}
+        >
           <p>
-            The paid plan provides automatic updates, priority support, and
+            The Cloud plan provides automatic updates, priority support, and
             access to the latest features, saving you time and effort.
           </p>
           <p>
@@ -37,7 +52,11 @@ function FAQs() {
 
         <Seperator />
 
-        <QuestionAndAnswer title="How does the free trial work?">
+        <QuestionAndAnswer
+          title="How does the free trial work?"
+          isOpen={openIndex === 2}
+          onToggle={() => handleToggle(2)}
+        >
           <p>
             Linkwarden Cloud&apos;s free trial will last for 14 days from the
             purchase date. The trial gives you full access to all features in
@@ -49,7 +68,11 @@ function FAQs() {
 
         <Seperator />
 
-        <QuestionAndAnswer title="How will I be billed?">
+        <QuestionAndAnswer
+          title="How will I be billed?"
+          isOpen={openIndex === 3}
+          onToggle={() => handleToggle(3)}
+        >
           <p>
             You will be billed every month. The payment is being handled by{" "}
             <Link
@@ -65,7 +88,11 @@ function FAQs() {
 
         <Seperator />
 
-        <QuestionAndAnswer title="Where's my data stored?">
+        <QuestionAndAnswer
+          title="Where's my data stored?"
+          isOpen={openIndex === 4}
+          onToggle={() => handleToggle(4)}
+        >
           <p>
             Our primary server is hosted in Hetzner&apos;s data center in
             Virginia, USA.
@@ -79,7 +106,11 @@ function FAQs() {
 
         <Seperator />
 
-        <QuestionAndAnswer title="Can I have a customized instance designed specifically for my needs?">
+        <QuestionAndAnswer
+          title="Can I have a customized instance designed specifically for my needs?"
+          isOpen={openIndex === 5}
+          onToggle={() => handleToggle(5)}
+        >
           <p>
             Absolutely! We offer a custom plan tailored to your specific
             requirements. Contact us at{" "}
@@ -96,7 +127,11 @@ function FAQs() {
 
         <Seperator />
 
-        <QuestionAndAnswer title="How can I cancel my plan?">
+        <QuestionAndAnswer
+          title="How can I cancel my plan?"
+          isOpen={openIndex === 6}
+          onToggle={() => handleToggle(6)}
+        >
           <p>To cancel your plan, follow these steps:</p>
           <ul>
             <li>Log in to your account.</li>

@@ -1,27 +1,29 @@
 import { Plus } from "@phosphor-icons/react";
-import React, { ReactNode, useState } from "react";
+import React from "react";
 
 type Props = {
   title: string;
-  children: ReactNode;
+  isOpen: boolean;
+  onToggle: () => void;
+  children: React.ReactNode;
   className?: string;
 };
 
 export default function QuestionAndAnswer({
   title,
+  isOpen,
+  onToggle,
   children,
   className,
 }: Props) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className={`faq ${className}`}>
       <div
-        className="p-5 cursor-pointer font-semibold select-none text-xl text-text flex items-center gap-2"
-        onClick={() => setIsOpen(!isOpen)}
+        className="p-5 cursor-pointer font-semibold select-none sm:text-xl text-text flex items-center gap-2"
+        onClick={onToggle}
       >
         <Plus
-          size={25}
+          size={20}
           className={`${isOpen ? "rotate-45" : ""} duration-150`}
         />
         <p className="w-full">{title}</p>
