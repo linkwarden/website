@@ -86,7 +86,7 @@ function Pricing() {
               className="mx-auto"
               path="https://github.com/linkwarden/linkwarden"
             >
-              Get Started
+              Visit GitHub
             </SecondaryButton>
           </div>
 
@@ -149,7 +149,7 @@ function Pricing() {
                 14-day free trial, cancel anytime.
               </p>
               <AccentButton
-                label="Start Free Trial"
+                label="Get Started"
                 className="mx-auto"
                 href="https://cloud.linkwarden.app/register"
               />

@@ -1,7 +1,5 @@
 import React from "react";
 import SecondaryButton from "../SecondaryButton";
-import Link from "next/link";
-import Image from "next/image";
 import AccentButton from "../AccentButton";
 import { Star } from "@phosphor-icons/react";
 
@@ -16,18 +14,12 @@ export default function GetStarted() {
           <p className="font-semibold text-center mt-2">
             14-day free trial, cancel anytime.
           </p>
-          <div className="flex justify-center sm:gap-5 gap-2 mt-8">
+          <div className="flex justify-center sm:gap-5 gap-2 mt-5">
             <AccentButton
-              label="Start Free Trial"
-              href="https://cloud.linkwarden.app/register"
+              label="Get Started"
+              href="#pricing"
+              className="text-sm sm:text-base"
             />
-            <SecondaryButton path="https://github.com/linkwarden/linkwarden">
-              <Star
-                weight="fill"
-                className="text-2xl text-slate-300 duration-100 group-hover:text-yellow-500"
-              />
-              Star on GitHub!
-            </SecondaryButton>
           </div>
         </div>
       </div>

@@ -42,14 +42,11 @@ export default function Showcase() {
       </p>
 
       <div className="relative z-10 flex justify-center gap-2 sm:gap-5">
-        <AccentButton label="Start Free Trial" href="#pricing" />
-        <SecondaryButton path="https://github.com/linkwarden/linkwarden">
-          <Star
-            weight="fill"
-            className="text-2xl text-slate-300 duration-100 group-hover:text-yellow-500"
-          />
-          Star on GitHub!
-        </SecondaryButton>
+        <AccentButton
+          label="Start Free Trial"
+          href="#pricing"
+          className="text-sm sm:text-base"
+        />
       </div>
 
       <SVGShowcase
@@ -59,7 +56,7 @@ export default function Showcase() {
       <div
         className={
           imageLoaded
-            ? "pt-10 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-5 mb-20"
+            ? "pt-5 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-5 mb-20"
             : " opacity-0"
         }
       >
