@@ -13,7 +13,7 @@ export default function Showcase() {
     typeof window !== "undefined" && (window as any)?.safari !== undefined;
 
   return (
-    <div className="relative pb-40 lg:pb-0 max-w-fit mx-auto">
+    <div className="relative pb-20 lg:pb-0 max-w-fit mx-auto">
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
         <div className="w-fit mx-auto mb-3">
           <Link

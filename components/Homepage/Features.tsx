@@ -45,7 +45,10 @@ export default function Features() {
   }, []);
 
   return (
-    <div className="max-w-7xl lg:px-20 px-5 w-fit mx-auto" id="features">
+    <div
+      className="max-w-7xl lg:px-20 px-5 w-fit mx-auto pt-20 lg:pt-0"
+      id="features"
+    >
       {isUnder1024px ? <MainFeaturesMobile /> : <MainFeaturesDesktop />}
 
       <div className="pb-10 mt-40 lg:mt-0">
