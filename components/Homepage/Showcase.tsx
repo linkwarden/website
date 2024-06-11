@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
 import AccentButton from "../AccentButton";
-import SVGShowcase from "../SVGShowcase";
+import SVGShowcase from "../svg/SVGShowcase";
 import { Star } from "@phosphor-icons/react";
 
 export default function Showcase() {

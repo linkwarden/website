@@ -12,18 +12,21 @@ import {
 } from "@phosphor-icons/react";
 
 const items = [
-  { name: "Personal Use", icon: <User weight="fill" size="1.7rem" /> },
+  {
+    name: "Personal Use",
+    icon: <User weight="fill" className="w-[1.7rem] h-[1.7rem]" />,
+  },
   {
     name: "Design Inspirations",
-    icon: <Lightbulb weight="fill" size="1.7rem" />,
+    icon: <Lightbulb weight="fill" className="w-[1.7rem] h-[1.7rem]" />,
   },
   {
     name: "Research & Reference",
-    icon: <GraduationCap weight="fill" size="1.7rem" />,
+    icon: <GraduationCap weight="fill" className="w-[1.7rem] h-[1.7rem]" />,
   },
   {
     name: "Project Collaboration",
-    icon: <Kanban weight="fill" size="1.7rem" />,
+    icon: <Kanban weight="fill" className="w-[1.7rem] h-[1.7rem]" />,
   },
 ];
 

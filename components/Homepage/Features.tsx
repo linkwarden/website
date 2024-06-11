@@ -53,7 +53,7 @@ export default function Features() {
 
       <div className="pb-10 mt-40 lg:mt-0">
         <p className="lg:text-4xl text-3xl mb-10 font-bold text-center">
-          Hold on, there&apos;s more!
+          Hold on, there&apos;s More!
         </p>
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5">
           <ShortenedFeatures

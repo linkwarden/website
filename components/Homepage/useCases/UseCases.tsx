@@ -23,7 +23,10 @@ export default function UseCases() {
                 }
               >
                 <div className="duration-200 w-full py-5 rounded-lg text-center">
-                  <User weight="fill" className="mx-auto mb-2" size="2.5rem" />
+                  <User
+                    weight="fill"
+                    className="mx-auto mb-2 w-[2.5rem] h-[2.5rem]"
+                  />
                   <p>Personal Use</p>
                 </div>
               </Tab>
@@ -37,8 +40,7 @@ export default function UseCases() {
                 <div className="duration-200 w-full py-5 rounded-lg text-center">
                   <Lightbulb
                     weight="fill"
-                    className="mx-auto mb-2"
-                    size="2.5rem"
+                    className="mx-auto mb-2 w-[2.5rem] h-[2.5rem]"
                   />
 
                   <p>Design Inspirations</p>
@@ -54,8 +56,7 @@ export default function UseCases() {
                 <div className="duration-200 w-full py-5 rounded-lg text-center">
                   <GraduationCap
                     weight="fill"
-                    className="mx-auto mb-2"
-                    size="2.5rem"
+                    className="mx-auto mb-2 w-[2.5rem] h-[2.5rem]"
                   />
 
                   <p>Research & Reference</p>
@@ -71,8 +72,7 @@ export default function UseCases() {
                 <div className="duration-200 w-full py-5 rounded-lg text-center">
                   <Kanban
                     weight="fill"
-                    className="mx-auto mb-2"
-                    size="2.5rem"
+                    className="mx-auto mb-2 w-[2.5rem] h-[2.5rem]"
                   />
 
                   <p>Project Collaboration</p>
