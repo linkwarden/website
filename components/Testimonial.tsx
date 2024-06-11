@@ -105,6 +105,7 @@ const Testimony = ({
   return (
     <Link
       href={url}
+      target="_blank"
       className={`p-5 text-sm border z-10 border-[#333333] flex flex-col gap-5 h-fit hover:border-outline duration-200 bg-gradient-to-tr from-[#202020] to-[#101010] rounded-xl ${
         className || ""
       }`}
