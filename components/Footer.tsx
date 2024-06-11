@@ -68,6 +68,7 @@ export default function Footer() {
             <Link
               href="https://fosstodon.org/@linkwarden"
               target="_blank"
+              rel="me"
               className="text-lg h-8 w-8 duration-100 hover:opacity-80 flex items-center justify-center"
             >
               <i className="fa-brands fa-mastodon"></i>
