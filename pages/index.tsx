@@ -6,6 +6,7 @@ import Pricing from "@/components/Homepage/Pricing";
 import FAQs from "@/components/Homepage/FAQs";
 import GetStarted from "@/components/Homepage/GetStarted";
 import Footer from "@/components/Footer";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Showcase />
       <Features />
       <UseCases />
+      <Testimonial />
       <Pricing />
       <FAQs />
       <GetStarted />
