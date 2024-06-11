@@ -4,6 +4,7 @@ import TwitterX from "./svg/TwitterX";
 import Mastodon from "./svg/Mastodon";
 import Link from "next/link";
 import Masonry from "react-masonry-css";
+import Image from "next/image";
 
 type Props = {
   className?: string;
@@ -108,13 +109,15 @@ const Testimony = ({
         className || ""
       }`}
     >
-      <p className="text-text">"{text}"</p>
+      <p className="text-text">&quot;{text}&quot;</p>
       <div className="flex justify-between items-end">
         <div>
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src={photo}
               alt={name}
+              width={40}
+              height={40}
               className="w-10 h-10 rounded-full object-cover"
             />
             <div>
