@@ -91,7 +91,7 @@ export default function Testimonials({ className }: Props) {
   );
 }
 
-type TestimonyProps = {
+type TestimonialProps = {
   name: string;
   photo: string;
   text: string;
@@ -107,7 +107,7 @@ const Testimonial = ({
   platform,
   url,
   className,
-}: TestimonyProps) => {
+}: TestimonialProps) => {
   return (
     <Link
       href={url}
