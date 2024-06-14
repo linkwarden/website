@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import AccentButton from "./AccentButton";
-import SecondaryButton from "./SecondaryButton";
 import { ArrowSquareOut } from "@phosphor-icons/react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import Seperator from "./Seperator";
@@ -56,6 +55,7 @@ export default function Navbar() {
                 onClick={() => {
                   if (isMenuOpen) toggleMenu();
                 }}
+                priority
               />
             </Link>
 
