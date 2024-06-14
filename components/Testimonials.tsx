@@ -10,7 +10,7 @@ type Props = {
   className?: string;
 };
 
-export default function Testimonial({ className }: Props) {
+export default function Testimonials({ className }: Props) {
   const testimonials = [
     {
       name: "propapanda",
@@ -20,11 +20,11 @@ export default function Testimonial({ className }: Props) {
       url: "https://pandas.social/@panda",
     },
     {
-      name: "Mark C",
-      photo: "./testimonial-profiles/mark_c.jpeg",
-      text: "Gotta say Linkwarden is pretty slick.  Got it up and going today, and it's great.  I don't have to keep shuffling my huge browser bookmarks file between browsers when I switch every other week.",
-      platform: "mastodon",
-      url: "https://fosstodon.org/@mcrocker@dmv.community",
+      name: "Ian Howells",
+      photo: "./testimonial-profiles/ian_howells.jpeg",
+      text: "Slick lil app to manage bookmarks while archiving the page in case it gets removed/redirected/etc: linkwarden.app",
+      platform: "twitter",
+      url: "https://x.com/ianhowells",
     },
     {
       name: "luciano",
@@ -33,13 +33,19 @@ export default function Testimonial({ className }: Props) {
       platform: "mastodon",
       url: "https://mastodon.social/@luciano@parens.social",
     },
-
     {
       name: "loop0",
       photo: "./testimonial-profiles/loop0.jpeg",
       text: "I got linkwarden installed in my nas, seems pretty nice, already started to save some links",
       platform: "mastodon",
       url: "https://mastodon.social/@loop0@freeradical.zone",
+    },
+    {
+      name: "Mark C",
+      photo: "./testimonial-profiles/mark_c.jpeg",
+      text: "Gotta say Linkwarden is pretty slick.  Got it up and going today, and it's great.  I don't have to keep shuffling my huge browser bookmarks file between browsers when I switch every other week.",
+      platform: "mastodon",
+      url: "https://fosstodon.org/@mcrocker@dmv.community",
     },
     {
       name: "BLACKVOID ⚫️",
@@ -71,7 +77,7 @@ export default function Testimonial({ className }: Props) {
         columnClassName="flex flex-col gap-5 !w-full"
       >
         {testimonials.map((testimonial, index) => (
-          <Testimony
+          <Testimonial
             key={index}
             name={testimonial.name}
             photo={testimonial.photo}
@@ -94,7 +100,7 @@ type TestimonyProps = {
   className?: string;
 };
 
-const Testimony = ({
+const Testimonial = ({
   name,
   photo,
   text,
@@ -120,6 +126,7 @@ const Testimony = ({
               width={40}
               height={40}
               className="w-10 h-10 rounded-full object-cover"
+              priority
             />
             <div>
               <p className="text-text">{name}</p>
