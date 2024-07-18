@@ -14,12 +14,19 @@ export default function GetStarted() {
           <p className="font-semibold text-center mt-2">
             14-day free trial, cancel anytime.
           </p>
-          <div className="flex justify-center sm:gap-5 gap-2 mt-5">
+          <div className="flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">
             <AccentButton
               label="Get Started"
-              href="#pricing"
-              className="text-sm sm:text-base"
+              href="https://cloud.linkwarden.app/register"
+              className="text-sm sm:text-base sm:w-44 w-full"
             />
+            <SecondaryButton
+              path="https://demo.linkwarden.app/login"
+              className="text-sm sm:text-base sm:w-44 w-full text-center justify-center"
+              openInNewTab
+            >
+              <p className="w-fit">Launch Demo</p>
+            </SecondaryButton>
           </div>
         </div>
       </div>

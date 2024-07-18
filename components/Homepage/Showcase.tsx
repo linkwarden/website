@@ -41,12 +41,19 @@ export default function Showcase() {
         organize and preserve webpages.
       </p>
 
-      <div className="relative z-10 flex justify-center gap-2 sm:gap-5">
+      <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4">
         <AccentButton
           label="Start Free Trial"
-          href="#pricing"
-          className="text-sm sm:text-base"
+          href="https://cloud.linkwarden.app/register"
+          className="text-sm sm:text-base sm:w-44 w-full"
         />
+        <SecondaryButton
+          path="https://demo.linkwarden.app/login"
+          className="text-sm sm:text-base sm:w-44 w-full text-center justify-center"
+          openInNewTab
+        >
+          <p className="w-fit">Launch Demo</p>
+        </SecondaryButton>
       </div>
 
       <SVGShowcase

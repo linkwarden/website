@@ -48,50 +48,9 @@ function Pricing() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col items-center gap-5 justify-between">
-          <div className="w-full text-center max-w-sm lg:max-w-full mx-auto flex flex-col gap-5 h-[34rem] lg:w-5/6 justify-between p-5 rounded-2xl border border-outline">
-            <div className="flex flex-col gap-5">
-              <div>
-                <p className="text-secondary">Self-Hosted</p>
-                <p className="text-3xl">Free</p>
-              </div>
-
-              <Seperator />
-
-              <ul className="flex flex-col gap-1">
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Hosted by yourself.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Links.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Collections.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Tags.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>All the premium features.</p>
-                </li>
-              </ul>
-            </div>
-
-            <SecondaryButton
-              className="mx-auto"
-              path="https://github.com/linkwarden/linkwarden"
-            >
-              Visit GitHub
-            </SecondaryButton>
-          </div>
-
+        <div className="flex sm:flex-row flex-col items-center gap-5 justify-between sm:max-w-3xl max-w-md mx-auto">
           <div
-            className="w-full text-center max-w-sm order-first lg:order-none lg:max-w-full mx-auto flex flex-col gap-10 justify-between p-5 bg-gradient-to-br from-[#52468544] via-transparent to-[#39316022] rounded-2xl border border-[#6e4da6]"
+            className="w-full text-center mx-auto flex flex-col gap-10 justify-between p-5 bg-gradient-to-br from-[#52468544] via-transparent to-[#39316022] rounded-2xl border border-[#6e4da6]"
             style={{
               boxShadow: "#ffffff20 0px 5px 20px 0px",
             }}
@@ -156,7 +115,7 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="w-full text-center max-w-sm lg:max-w-full mx-auto flex flex-col gap-5 h-[34rem] lg:w-5/6 justify-between p-5 rounded-2xl border border-outline">
+          <div className="w-full text-center mx-auto flex flex-col gap-5 justify-between p-5 rounded-2xl border border-outline">
             <div className="flex flex-col gap-5">
               <div>
                 <p className="text-secondary">Custom</p>
