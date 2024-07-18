@@ -408,7 +408,7 @@ function MainFeaturesMobile() {
           <p className="lg:text-4xl text-3xl font-bold max-w-xl mx-auto w-full">
             Collect and Organize
           </p>
-          <ul className="flex flex-col gap-1 z-10 max-w-xl mx-auto w-full mb-10">
+          <ul className="flex flex-col gap-1 z-10 max-w-xl mx-auto w-full">
             <li className="flex items-center gap-1">
               <Check className="text-2xl text-secondary" />
               <p>Collect webpages and bookmarks from any browser.</p>
