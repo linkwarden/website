@@ -48,9 +48,9 @@ function Pricing() {
           </div>
         </div>
 
-        <div className="flex sm:flex-row flex-col items-center gap-5 justify-between sm:max-w-3xl max-w-md mx-auto">
+        <div className="flex sm:flex-row flex-col items-stretch gap-5 justify-between sm:max-w-3xl max-w-md mx-auto">
           <div
-            className="w-full text-center mx-auto flex flex-col gap-10 justify-between p-5 bg-gradient-to-br from-[#52468544] via-transparent to-[#39316022] rounded-2xl border border-[#6e4da6]"
+            className="w-full text-center mx-auto flex flex-col gap-5 justify-between p-5 bg-gradient-to-br from-[#52468544] via-transparent to-[#39316022] rounded-2xl border border-[#6e4da6]"
             style={{
               boxShadow: "#ffffff20 0px 5px 20px 0px",
             }}
