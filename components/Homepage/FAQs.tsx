@@ -53,9 +53,51 @@ function FAQs() {
         <Seperator />
 
         <QuestionAndAnswer
-          title="How does the free trial work?"
+          title="How can I add more than 30,000 links?"
           isOpen={openIndex === 2}
           onToggle={() => handleToggle(2)}
+        >
+          <p>
+            You can add more than 30,000 links by reserving an additional seats
+            under your subscription.{" "}
+            <Link
+              href="https://docs.linkwarden.app/billing/seats#how-to-reserve-seats"
+              className="underline"
+              target="_blank"
+            >
+              Learn more
+            </Link>
+            .
+          </p>
+        </QuestionAndAnswer>
+
+        <Seperator />
+
+        <QuestionAndAnswer
+          title="Can I purchase additional seats?"
+          isOpen={openIndex === 3}
+          onToggle={() => handleToggle(3)}
+        >
+          <p>
+            Yes, please refer to the{" "}
+            <Link
+              href="https://docs.linkwarden.app/billing/seats"
+              className="underline"
+              target="_blank"
+            >
+              documentation
+            </Link>{" "}
+            for detailed information on managing subscriptions for multiple
+            users under your plan.
+          </p>
+        </QuestionAndAnswer>
+
+        <Seperator />
+
+        <QuestionAndAnswer
+          title="How does the free trial work?"
+          isOpen={openIndex === 4}
+          onToggle={() => handleToggle(4)}
         >
           <p>
             Linkwarden Cloud&apos;s free trial will last for 14 days from the
@@ -70,15 +112,15 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="How will I be billed?"
-          isOpen={openIndex === 3}
-          onToggle={() => handleToggle(3)}
+          isOpen={openIndex === 5}
+          onToggle={() => handleToggle(5)}
         >
           <p>
             You will be billed every month. The payment is being handled by{" "}
             <Link
               href="https://stripe.com/"
               target="_blank"
-              className="font-bold underline"
+              className="underline"
             >
               Stripe
             </Link>
@@ -90,8 +132,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="Where's my data stored?"
-          isOpen={openIndex === 4}
-          onToggle={() => handleToggle(4)}
+          isOpen={openIndex === 6}
+          onToggle={() => handleToggle(6)}
         >
           <p>
             Our primary server is hosted in Hetzner&apos;s data center in
@@ -107,16 +149,13 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="Can I have a customized instance designed specifically for my needs?"
-          isOpen={openIndex === 5}
-          onToggle={() => handleToggle(5)}
+          isOpen={openIndex === 7}
+          onToggle={() => handleToggle(7)}
         >
           <p>
             Absolutely! We offer a custom plan tailored to your specific
             requirements. Contact us at{" "}
-            <Link
-              className="font-bold underline"
-              href="mailto:support@linkwarden.app"
-            >
+            <Link className="underline" href="mailto:support@linkwarden.app">
               support@linkwarden.app
             </Link>{" "}
             to discuss your specific needs, and we&apos;ll create the perfect
@@ -128,8 +167,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="How can I cancel my plan?"
-          isOpen={openIndex === 6}
-          onToggle={() => handleToggle(6)}
+          isOpen={openIndex === 8}
+          onToggle={() => handleToggle(8)}
         >
           <p>To cancel your plan, follow these steps:</p>
           <ul>
@@ -169,10 +208,7 @@ function FAQs() {
 
       <p className="my-5 text-center text-sm text-text">
         For any other questions, feel free to reach out to us at{" "}
-        <Link
-          className="font-bold underline"
-          href="mailto:support@linkwarden.app"
-        >
+        <Link className="underline" href="mailto:support@linkwarden.app">
           support@linkwarden.app
         </Link>
         .
