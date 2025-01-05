@@ -5,10 +5,10 @@ import AccentButton from "./AccentButton";
 import { ArrowSquareOut } from "@phosphor-icons/react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import Seperator from "./Seperator";
+import ghStars from "../public/github-stars.json";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [ghStars, setGhStars] = useState(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,13 +26,6 @@ export default function Navbar() {
     setIsMenuOpen(false);
     document.body.style.overflow = "auto";
   }, [width]);
-
-  useEffect(() => {
-    fetch("https://api.github.com/repos/linkwarden/linkwarden")
-      .then((res) => res.json())
-      .then((data) => setGhStars(data.stargazers_count))
-      .catch((err) => console.error(err));
-  }, []);
 
   return (
     <>
@@ -114,7 +107,8 @@ export default function Navbar() {
               </svg>
               <p className="font-semibold">Star</p>
               <p>
-                {(ghStars && Math.round((ghStars / 1000) * 10) / 10 + "k") ||
+                {(ghStars &&
+                  Math.round((ghStars.stars / 1000) * 10) / 10 + "k") ||
                   "....."}
               </p>
             </Link>
