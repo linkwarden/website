@@ -277,16 +277,19 @@ function MainFeaturesDesktop() {
   }, []);
 
   return (
-    <div className="locker relative">
+    <div className="locker relative gap-5">
       <div className="locker__content z-10">
         <div className="w-full flex flex-col gap-5 relative locker__section cb">
           <p className="lg:text-4xl text-3xl font-bold z-10">
-            Collect and Organize
+            Collect Everything in One Place
           </p>
           <ul className="flex flex-col gap-1 z-10">
             <li className="flex items-center gap-1">
               <Check className="text-2xl text-secondary" />
-              <p>Collect webpages and bookmarks from any browser.</p>
+              <p>
+                Store your documents, bookmarks, articles, and notes in one
+                place.
+              </p>
             </li>
 
             <li className="flex items-center gap-1">
@@ -296,16 +299,21 @@ function MainFeaturesDesktop() {
 
             <li className="flex items-center gap-1">
               <Check className="text-2xl text-secondary" />
-              <p>Create new Collections to group related Links.</p>
+              <p>
+                Auto generate link tags using an optional local AI model for
+                easy retrieval.
+              </p>
             </li>
           </ul>
         </div>
         <div className="w-full flex flex-col gap-5 locker__section cb">
-          <p className="lg:text-4xl text-3xl font-bold ">Preserve Webpages</p>
+          <p className="lg:text-4xl text-3xl font-bold ">
+            Preserve Webpage Content
+          </p>
           <ul className="flex flex-col gap-1">
             <li className="flex items-center gap-1">
               <Check className="text-2xl text-secondary" />
-              <p>Access webpages even if they are taken down.</p>
+              <p>Access your webpages even if they are taken down.</p>
             </li>
 
             <li className="flex items-center gap-1">
@@ -331,7 +339,7 @@ function MainFeaturesDesktop() {
         </div>
         <div className="w-full flex flex-col gap-5 locker__section cb">
           <p className="lg:text-4xl text-3xl font-bold">
-            Collaborate and Share
+            Share and Collaborate with Others
           </p>
           <ul className="flex flex-col gap-1">
             <li className="flex items-center gap-1">
@@ -346,7 +354,7 @@ function MainFeaturesDesktop() {
 
             <li className="flex items-center gap-1">
               <Check className="text-2xl text-secondary" />
-              <p>Easily share curated collections with the world.</p>
+              <p>Easily share your curated collections with the world.</p>
             </li>
           </ul>
         </div>
