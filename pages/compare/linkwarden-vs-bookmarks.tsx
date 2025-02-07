@@ -56,7 +56,7 @@ export default function BookmarksVsLinkwarden() {
             While browser-based bookmarks rely on basic folder structures,
             Linkwarden expands your options with collections, nested tags, and
             even AI-powered tagging. If you have large volumes of saved pages or
-            need an efficient way to categorize them, Linkwarden's
+            need an efficient way to categorize them, Linkwarden&apos;s
             organizational tools offer a significant advantage.
           </p>
         </div>
