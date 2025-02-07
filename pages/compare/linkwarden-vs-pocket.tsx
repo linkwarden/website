@@ -20,8 +20,8 @@ export default function LinkwardenVsPocket() {
           Linkwarden
         </Link>{" "}
         is a tool for saving, organizing, and preserving webpages, while Pocket
-        is primarily a read-it-later service. Below, we’ll explore what they
-        share in common and how they differ.
+        is primarily a read-it-later service. Below, we&apos;ll explore what
+        they share in common and how they differ.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they similar?</h2>
@@ -66,7 +66,7 @@ export default function LinkwardenVsPocket() {
           <p>
             If you want a platform where multiple team members (or friends) can
             contribute, Linkwarden offers shared collections. In contrast,
-            Pocket’s collaboration features are more limited, making it
+            Pocket&apos;s collaboration features are more limited, making it
             primarily a personal read-it-later service.
           </p>
         </div>

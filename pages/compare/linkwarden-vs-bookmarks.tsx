@@ -22,8 +22,8 @@ export default function BookmarksVsLinkwarden() {
         is a tool for saving, organizing, and preserving webpages. Traditional
         bookmarks—whether built into your browser or managed by simple tools—let
         you store links but often lack robust organization and archival
-        features. Below, we’ll explore what they share in common and how they
-        differ.
+        features. Below, we&apos;ll explore what they share in common and how
+        they differ.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they similar?</h2>
@@ -156,9 +156,9 @@ export default function BookmarksVsLinkwarden() {
       <h2 className="text-3xl font-light mb-5">Final Thoughts</h2>
       <p className="text-lg mb-10">
         If you just need a quick way to store links, traditional bookmarks might
-        be enough. But if you’re looking for in-depth organization, archival
-        capabilities, and collaboration, Linkwarden is a more powerful solution
-        for your saved web content.
+        be enough. But if you&apos;re looking for in-depth organization,
+        archival capabilities, and collaboration, Linkwarden is a more powerful
+        solution for your saved web content.
       </p>
 
       <p className="mb-20">

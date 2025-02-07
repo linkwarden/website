@@ -21,7 +21,7 @@ export default function PinboardVsLinkwarden() {
         </Link>{" "}
         is designed for robust saving, organizing, and preserving of webpages,
         while Pinboard is a minimalist bookmarking service focused on speed and
-        simplicity. Below, we’ll discuss the ways they overlap and how they
+        simplicity. Below, we&apos;ll discuss the ways they overlap and how they
         diverge.
       </p>
 
@@ -38,10 +38,10 @@ export default function PinboardVsLinkwarden() {
         <div>
           <h3 className="text-2xl font-light mb-2">Look and Feel</h3>
           <p>
-            Pinboard’s interface is simple and text-focused, with a focus on
-            speed and efficiency. Linkwarden offers a more modern, visual, and
-            customizable approach to bookmarking, with options for custom themes
-            and a more interactive user experience.
+            Pinboard&apos;s interface is simple and text-focused, with a focus
+            on speed and efficiency. Linkwarden offers a more modern, visual,
+            and customizable approach to bookmarking, with options for custom
+            themes and a more interactive user experience.
           </p>
         </div>
 
@@ -62,8 +62,8 @@ export default function PinboardVsLinkwarden() {
             Collaboration & Public Collections
           </h3>
           <p>
-            Pinboard lets you keep bookmarks private or public, but it’s largely
-            geared toward individual use. Linkwarden supports shared
+            Pinboard lets you keep bookmarks private or public, but it&apos;s
+            largely geared toward individual use. Linkwarden supports shared
             collections, allowing teams or groups to collaboratively build
             libraries of links. You can also publish publicly accessible
             collections if you want to share your research or curated links with
