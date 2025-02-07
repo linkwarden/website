@@ -199,7 +199,7 @@ export default function PinboardVsLinkwarden() {
 
       <h2 className="text-3xl font-light mb-5">Final Thoughts</h2>
       <p className="text-lg mb-10">
-        Pinboard's straightforward approach works well for users who want a
+        Pinboard&apos;s straightforward approach works well for users who want a
         lean, no-frills bookmark manager. But if you need robust archiving,
         deeper collaboration, and open-source flexibility, Linkwarden offers a
         feature-rich alternative suited for both personal and team-based
