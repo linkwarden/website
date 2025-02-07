@@ -4,12 +4,12 @@ import React from "react";
 import Link from "next/link";
 import { CheckCircle, XCircle } from "@phosphor-icons/react";
 
-export default function BookmarksVsLinkwarden() {
+export default function RaindropVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
       <Navbar />
       <h1 className="text-4xl font-light mb-20 text-center">
-        Browser Bookmarks vs. Linkwarden
+        Linkwarden vs. Raindrop
       </h1>
 
       <p className="text-lg mb-5">
@@ -19,55 +19,53 @@ export default function BookmarksVsLinkwarden() {
         >
           Linkwarden
         </Link>{" "}
-        is a tool for saving, organizing, and preserving webpages. Traditional
-        bookmarks—whether built into your browser or managed by simple tools—let
-        you store links but often lack robust organization and archival
-        features. Below, we’ll explore what they share in common and how they
-        differ.
+        is a platform for saving, organizing, and archiving webpages, while
+        Raindrop is a popular tool for bookmarking and managing collections of
+        online content. Below, we’ll look at what they have in common and where
+        they differ.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they similar?</h2>
       <p className="text-lg mb-10">
-        Both Browser Bookmarks and Linkwarden let you save webpages for future
-        access. This basic function helps you quickly revisit important sites.
-        Each also allows you to categorize saved links, making them easier to
-        find later—though Linkwarden offers much deeper organization options.
+        Both Linkwarden and Raindrop let you save webpages, categorize them, and
+        access them across different devices. They focus on visual organization,
+        tagging, and ensuring you can quickly find what you need.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they different?</h2>
       <div className="text-lg mb-10 space-y-8">
         <div>
           <h3 className="text-2xl font-light mb-2">
-            Archival vs. Simple Storage
+            Archiving vs. Bookmarking
           </h3>
           <p>
-            Traditional bookmarks only save the URL. If the webpage is taken
-            down or significantly changed, you lose access to its original
-            content. Linkwarden addresses this by archiving the entire page,
-            ensuring you can always revisit the exact version you saved.
+            Raindrop primarily saves bookmarks with the option to capture page
+            text content on its premium tier. Linkwarden goes a step further by
+            offering full webpage archiving so you always have a copy of the
+            original content—even if the source changes or disappears.
           </p>
         </div>
 
         <div>
           <h3 className="text-2xl font-light mb-2">
-            Advanced Organization and Tagging
+            Collaboration & Public Collections
           </h3>
           <p>
-            While browser-based bookmarks rely on basic folder structures,
-            Linkwarden expands your options with collections, nested tags, and
-            even AI-powered tagging. If you have large volumes of saved pages or
-            need an efficient way to categorize them, Linkwarden's
-            organizational tools offer a significant advantage.
+            Raindrop allows users to share collections publicly or privately.
+            Linkwarden supports this as well, but it also offers deeper control
+            over shared libraries and advanced tagging capabilities, including
+            AI-based tagging to automate content organization.
           </p>
         </div>
 
         <div>
-          <h3 className="text-2xl font-light mb-2">Collaboration & Sharing</h3>
+          <h3 className="text-2xl font-light mb-2">
+            Open-source & Self-hosting
+          </h3>
           <p>
-            Most default bookmark systems are personal only. In contrast,{" "}
-            Linkwarden supports shared collections, allowing multiple users to
-            add and manage bookmarks together. This is especially useful for
-            team projects or sharing research with friends.
+            Raindrop is a commercial, hosted service only. Meanwhile, Linkwarden
+            is open-source, meaning you can inspect the code, customize it, and
+            even self-host if you want full control over your data.
           </p>
         </div>
       </div>
@@ -84,7 +82,7 @@ export default function BookmarksVsLinkwarden() {
                 Linkwarden
               </th>
               <th className="px-4 py-2 text-left font-bold border-b border-slate-800">
-                Browser Bookmarks
+                Raindrop
               </th>
             </tr>
           </thead>
@@ -97,8 +95,16 @@ export default function BookmarksVsLinkwarden() {
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
+              <td className="px-4 py-2">Limited</td>
+            </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">
+                Read-it-later Experience
+              </td>
+              <td className="px-4 py-2 border-slate-800">Limited</td>
               <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
               </td>
             </tr>
             <tr className="border-b border-slate-800">
@@ -107,9 +113,7 @@ export default function BookmarksVsLinkwarden() {
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
-              <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
-              </td>
+              <td className="px-4 py-2">Limited</td>
             </tr>
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Collaboration</td>
@@ -118,7 +122,8 @@ export default function BookmarksVsLinkwarden() {
                 Yes
               </td>
               <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
               </td>
             </tr>
             <tr className="border-b border-slate-800">
@@ -128,11 +133,22 @@ export default function BookmarksVsLinkwarden() {
                 Yes
               </td>
               <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
               </td>
             </tr>
             <tr className="border-b border-slate-800">
-              <td className="px-4 py-2 border-slate-800">Cross-browser Sync</td>
+              <td className="px-4 py-2 border-slate-800">Client App</td>
+              <td className="px-4 py-2 border-slate-800">Limited</td>
+              <td className="px-4 py-2">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+            </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">
+                Self-hosting Option
+              </td>
               <td className="px-4 py-2 border-slate-800">
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
@@ -147,7 +163,20 @@ export default function BookmarksVsLinkwarden() {
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
-              <td className="px-4 py-2">Limited</td>
+              <td className="px-4 py-2">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+            </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">Open-source</td>
+              <td className="px-4 py-2 border-slate-800">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+              <td className="px-4 py-2">
+                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+              </td>
             </tr>
           </tbody>
         </table>
@@ -155,10 +184,11 @@ export default function BookmarksVsLinkwarden() {
 
       <h2 className="text-3xl font-light mb-5">Final Thoughts</h2>
       <p className="text-lg mb-10">
-        If you just need a quick way to store links, traditional bookmarks might
-        be enough. But if you’re looking for in-depth organization, archival
-        capabilities, and collaboration, Linkwarden is a more powerful solution
-        for your saved web content.
+        Raindrop is a polished solution for bookmarking and organizing content,
+        especially if you want a clean interface for personal use. However, if
+        you prefer full-page archiving, open-source flexibility, and more
+        advanced tagging options, Linkwarden stands out as a powerful
+        alternative for long-term, collaborative content management.
       </p>
 
       <p className="mb-20">
@@ -169,7 +199,7 @@ export default function BookmarksVsLinkwarden() {
         >
           Try Linkwarden now
         </Link>{" "}
-        and experience a more robust approach to bookmarking.
+        and discover a more versatile approach to saving and organizing links.
       </p>
       <Footer />
     </div>
