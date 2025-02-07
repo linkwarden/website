@@ -4,6 +4,7 @@ import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
 import AccentButton from "../AccentButton";
 import SVGShowcase from "../svg/SVGShowcase";
+import { Lightning } from "@phosphor-icons/react";
 
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -25,17 +26,20 @@ export default function Showcase() {
         </div>
         <div className="py-2">
           <p className="lg:text-5xl sm:text-3xl md:text-4xl text-2xl text-center max-w-4xl text-neutral-300 font-bold relative z-10">
-            Link What Matters,
+            Webpages fade,
           </p>
           <p className="lg:text-5xl sm:text-3xl md:text-4xl text-2xl text-center max-w-4xl font-bold relative z-10 ">
-            Own Your Digital Archive.
+            Links persist.{" "}
+            <Lightning
+              className="inline-block text-yellow-300"
+              weight="duotone"
+            />
           </p>
         </div>
       </div>
-      <p className="relative z-10 max-w-2xl pl-5 pr-5 pb-5 mx-auto text-center text-text sm:text-xl">
-        Your collaborative tool for collecting, organizing, and preserving
-        digital content, enhanced with optional local AI tagging for easy
-        retrieval.
+      <p className="relative z-10 max-w-2xl px-5 pb-5 mx-auto text-center text-text sm:text-xl">
+        Your all-in-one collaborative tool for collecting and preserving useful
+        webpages, documents and images.
       </p>
 
       <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4">
