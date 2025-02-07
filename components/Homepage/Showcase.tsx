@@ -4,13 +4,10 @@ import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
 import AccentButton from "../AccentButton";
 import SVGShowcase from "../svg/SVGShowcase";
-import { Star } from "@phosphor-icons/react";
+import { Lightning } from "@phosphor-icons/react";
 
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
-
-  const isSafari =
-    typeof window !== "undefined" && (window as any)?.safari !== undefined;
 
   return (
     <div className="relative pb-20 lg:pb-0 max-w-fit mx-auto">
@@ -28,17 +25,21 @@ export default function Showcase() {
           </Link>
         </div>
         <div className="py-2">
-          <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10 mb-3">
-            Bookmark Preservation for
+          <p className="lg:text-5xl sm:text-3xl md:text-4xl text-2xl text-center max-w-4xl text-neutral-300 font-bold relative z-10">
+            Webpages fade,
           </p>
-          <p className="lg:text-5xl sm:text-5xl text-2xl text-center font-bold relative z-10">
-            Individuals and Teams
+          <p className="lg:text-5xl sm:text-3xl md:text-4xl text-2xl text-center max-w-4xl font-bold relative z-10 ">
+            Links persist.{" "}
+            <Lightning
+              className="inline-block text-yellow-300"
+              weight="duotone"
+            />
           </p>
         </div>
       </div>
-      <p className="relative z-10 max-w-2xl p-5 mx-auto text-center text-text sm:text-xl">
-        Linkwarden is an open-source collaborative bookmark manager to collect,
-        organize and preserve webpages.
+      <p className="relative z-10 max-w-2xl px-5 pb-5 mx-auto text-center text-text sm:text-xl">
+        Your all-in-one collaborative tool for collecting and preserving useful
+        webpages, documents and images.
       </p>
 
       <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4">
@@ -57,7 +58,7 @@ export default function Showcase() {
       </div>
 
       <SVGShowcase
-        className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] opacity-80 bg-gradient-radial from-[#289DF230] from-20% via-[#6F30D830] to-70% to-transparent`}
+        className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] opacity-60 bg-gradient-radial from-[#289DF230] from-20% via-[#6F30D830] to-70% to-transparent`}
       />
 
       <div

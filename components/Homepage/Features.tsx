@@ -52,7 +52,7 @@ export default function Features() {
       {isUnder1024px ? <MainFeaturesMobile /> : <MainFeaturesDesktop />}
 
       <div className="pb-10 mt-40 lg:mt-0">
-        <p className="lg:text-4xl text-3xl mb-10 font-bold text-center">
+        <p className="text-4xl mb-10 font-bold text-center">
           Hold on, there&apos;s More!
         </p>
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5">
@@ -277,78 +277,16 @@ function MainFeaturesDesktop() {
   }, []);
 
   return (
-    <div className="locker relative">
+    <div className="locker relative gap-5">
       <div className="locker__content z-10">
         <div className="w-full flex flex-col gap-5 relative locker__section cb">
-          <p className="lg:text-4xl text-3xl font-bold z-10">
-            Collect and Organize
-          </p>
-          <ul className="flex flex-col gap-1 z-10">
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Collect webpages and bookmarks from any browser.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Organize Links with Collections, Sub-Collections, and Tags.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Create new Collections to group related Links.</p>
-            </li>
-          </ul>
+          <Collect />
         </div>
         <div className="w-full flex flex-col gap-5 locker__section cb">
-          <p className="lg:text-4xl text-3xl font-bold ">Preserve Webpages</p>
-          <ul className="flex flex-col gap-1">
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Access webpages even if they are taken down.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>
-                Safeguard your webpages against{" "}
-                <Link
-                  target="_blank"
-                  className="underline"
-                  href="https://www.howtogeek.com/786227/what-is-link-rot-and-how-does-it-threaten-the-web/"
-                >
-                  Link Rot
-                </Link>
-                .
-              </p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Download your archived webpages.</p>
-            </li>
-          </ul>
+          <Preserve />
         </div>
         <div className="w-full flex flex-col gap-5 locker__section cb">
-          <p className="lg:text-4xl text-3xl font-bold">
-            Collaborate and Share
-          </p>
-          <ul className="flex flex-col gap-1">
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Collaborate on gathering resources under a Collection.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Assign customizable permissions to each member.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Easily share curated collections with the world.</p>
-            </li>
-          </ul>
+          <Collaborate />
         </div>
       </div>
 
@@ -405,25 +343,9 @@ function MainFeaturesMobile() {
     <div className="relative">
       <div className="z-10 flex flex-col gap-40">
         <div className="w-full flex flex-col gap-5">
-          <p className="lg:text-4xl text-3xl font-bold max-w-xl mx-auto w-full">
-            Collect and Organize
-          </p>
-          <ul className="flex flex-col gap-1 z-10 max-w-xl mx-auto w-full">
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Collect webpages and bookmarks from any browser.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Organize Links with Collections, Sub-Collections, and Tags.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Create new Collections to group related Links.</p>
-            </li>
-          </ul>
+          <MobileFeatureWrapper>
+            <Collect />
+          </MobileFeatureWrapper>
 
           <div className="relative">
             <video
@@ -446,35 +368,10 @@ function MainFeaturesMobile() {
           </div>
         </div>
         <div className="w-full flex flex-col gap-5">
-          <p className="lg:text-4xl text-3xl font-bold max-w-xl mx-auto w-full">
-            Preserve Webpages
-          </p>
-          <ul className="flex flex-col gap-1 max-w-xl mx-auto w-full">
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Access webpages even if they are taken down.</p>
-            </li>
+          <MobileFeatureWrapper>
+            <Preserve />
+          </MobileFeatureWrapper>
 
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>
-                Safeguard your webpages against{" "}
-                <Link
-                  target="_blank"
-                  className="underline"
-                  href="https://www.howtogeek.com/786227/what-is-link-rot-and-how-does-it-threaten-the-web/"
-                >
-                  Link Rot
-                </Link>
-                .
-              </p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Download your archived webpages.</p>
-            </li>
-          </ul>
           <div className="relative">
             <video
               className={`rounded-3xl border border-outline max-w-xl mx-auto w-full z-10 relative`}
@@ -496,25 +393,10 @@ function MainFeaturesMobile() {
           </div>
         </div>
         <div className="w-full flex flex-col gap-5">
-          <p className="lg:text-4xl text-3xl font-bold max-w-xl mx-auto w-full">
-            Collaborate and Share
-          </p>
-          <ul className="flex flex-col gap-1 max-w-xl mx-auto w-full">
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Collaborate on gathering resources under a Collection.</p>
-            </li>
+          <MobileFeatureWrapper>
+            <Collaborate />
+          </MobileFeatureWrapper>
 
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Assign customizable permissions to each member.</p>
-            </li>
-
-            <li className="flex items-center gap-1">
-              <Check className="text-2xl text-secondary" />
-              <p>Easily share curated collections with the world.</p>
-            </li>
-          </ul>
           <div className="relative">
             <video
               className={`rounded-3xl border border-outline max-w-xl mx-auto w-full z-10 relative`}
@@ -539,3 +421,103 @@ function MainFeaturesMobile() {
     </div>
   );
 }
+
+const Collect = () => (
+  <>
+    <p className="text-3xl font-bold">Collect Everything in One Place</p>
+    <ul className="flex flex-col gap-5 z-10 text-xl lg:max-w-md">
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Collect the webpages, articles, and documents you love in one place.
+        </p>
+      </li>
+
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Organize Links with Collections, Sub-Collections, and Tags.
+        </p>
+      </li>
+
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Optionally auto-generate tags for each Link using an AI model for easy
+          retrieval.
+        </p>
+      </li>
+    </ul>
+  </>
+);
+
+const Preserve = () => (
+  <>
+    <p className="text-3xl font-bold">Auto Preserve Webpage Content</p>
+    <ul className="flex flex-col gap-5 z-10 text-xl lg:max-w-md">
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Automatically preserve webpages as screenshot and full-page HTML
+          format.
+        </p>
+      </li>
+
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Access the webpages you collect even if they are no longer available.
+        </p>
+      </li>
+
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Safeguard your webpages against{" "}
+          <Link
+            target="_blank"
+            className="underline"
+            href="https://www.howtogeek.com/786227/what-is-link-rot-and-how-does-it-threaten-the-web/"
+          >
+            Link Rot
+          </Link>
+          , a common problem on the internet.
+        </p>
+      </li>
+    </ul>
+  </>
+);
+
+const Collaborate = () => (
+  <>
+    <p className="text-3xl font-bold">Share and Collaborate with Others</p>
+    <ul className="flex flex-col gap-5 z-10 text-xl lg:max-w-md">
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Collaborate on gathering information under a Collection with your
+          team.
+        </p>
+      </li>
+
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Assign the right permissions to each member of your team.
+        </p>
+      </li>
+
+      <li className="flex gap-1">
+        <Check className="text-2xl text-secondary w-10" />
+        <p className="w-full">
+          Easily share your curated collections with the world or keep them
+          private.
+        </p>
+      </li>
+    </ul>
+  </>
+);
+
+const MobileFeatureWrapper = ({ children }: { children: React.ReactNode }) => (
+  <div className="flex flex-col gap-5 max-w-xl w-full mx-auto">{children}</div>
+);
