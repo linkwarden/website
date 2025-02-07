@@ -21,8 +21,8 @@ export default function RaindropVsLinkwarden() {
         </Link>{" "}
         is a platform for saving, organizing, and archiving webpages, while
         Raindrop is a popular tool for bookmarking and managing collections of
-        online content. Below, we’ll look at what they have in common and where
-        they differ.
+        online content. Below, we&apos;ll look at what they have in common and
+        where they differ.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they similar?</h2>
