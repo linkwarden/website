@@ -89,7 +89,7 @@ export default function Footer() {
               >
                 Bookmarks vs Linkwarden
               </Link>
-              {/* <Link
+              <Link
                 href="/compare/linkwarden-vs-pocket"
                 className="duration-100 hover:opacity-80"
               >
@@ -106,7 +106,7 @@ export default function Footer() {
                 className="duration-100 hover:opacity-80"
               >
                 Pinboard vs Linkwarden
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>

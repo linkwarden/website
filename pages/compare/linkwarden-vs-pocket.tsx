@@ -4,12 +4,12 @@ import React from "react";
 import Link from "next/link";
 import { CheckCircle, XCircle } from "@phosphor-icons/react";
 
-export default function BookmarksVsLinkwarden() {
+export default function LinkwardenVsPocket() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
       <Navbar />
       <h1 className="text-4xl font-light mb-20 text-center">
-        Browser Bookmarks vs. Linkwarden
+        Linkwarden vs. Pocket
       </h1>
 
       <p className="text-lg mb-5">
@@ -19,55 +19,55 @@ export default function BookmarksVsLinkwarden() {
         >
           Linkwarden
         </Link>{" "}
-        is a tool for saving, organizing, and preserving webpages. Traditional
-        bookmarks—whether built into your browser or managed by simple tools—let
-        you store links but often lack robust organization and archival
-        features. Below, we’ll explore what they share in common and how they
-        differ.
+        is a tool for saving, organizing, and preserving webpages, while Pocket
+        is primarily a read-it-later service. Below, we’ll explore what they
+        share in common and how they differ.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they similar?</h2>
       <p className="text-lg mb-10">
-        Both Browser Bookmarks and Linkwarden let you save webpages for future
-        access. This basic function helps you quickly revisit important sites.
-        Each also allows you to categorize saved links, making them easier to
-        find later—though Linkwarden offers much deeper organization options.
+        Both Linkwarden and Pocket let you store links for later reference and
+        give you quick access across multiple devices. Each provides ways to
+        categorize and tag your content, ensuring you can retrieve saved pages
+        whenever you need them.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they different?</h2>
       <div className="text-lg mb-10 space-y-8">
         <div>
           <h3 className="text-2xl font-light mb-2">
-            Archival vs. Simple Storage
+            Archiving vs. Read-Friendly View
           </h3>
           <p>
-            Traditional bookmarks only save the URL. If the webpage is taken
-            down or significantly changed, you lose access to its original
-            content. Linkwarden addresses this by archiving the entire page,
-            ensuring you can always revisit the exact version you saved.
+            Pocket streamlines content for reading and offers a clean,
+            distraction-free view. Linkwarden, on the other hand, goes further
+            by archiving entire webpages. This means you can revisit the
+            original content anytime—preserving it even if the source changes or
+            disappears.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-light mb-2">Enhanced Organization</h3>
+          <p>
+            While Pocket is great for quickly saving articles to read later,{" "}
+            Linkwarden provides a more comprehensive approach to organization:
+            it enables collections, advanced tagging (including AI-based
+            tagging), and even shared content libraries for collaborative work.
+            This deeper level of organization suits users who need structured,
+            long-term management of saved content.
           </p>
         </div>
 
         <div>
           <h3 className="text-2xl font-light mb-2">
-            Advanced Organization and Tagging
+            Collaboration & Shared Collections
           </h3>
           <p>
-            While browser-based bookmarks rely on basic folder structures,
-            Linkwarden expands your options with collections, nested tags, and
-            even AI-powered tagging. If you have large volumes of saved pages or
-            need an efficient way to categorize them, Linkwarden's
-            organizational tools offer a significant advantage.
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-light mb-2">Collaboration & Sharing</h3>
-          <p>
-            Most default bookmark systems are personal only. In contrast,{" "}
-            Linkwarden supports shared collections, allowing multiple users to
-            add and manage bookmarks together. This is especially useful for
-            team projects or sharing research with friends.
+            If you want a platform where multiple team members (or friends) can
+            contribute, Linkwarden offers shared collections. In contrast,
+            Pocket’s collaboration features are more limited, making it
+            primarily a personal read-it-later service.
           </p>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function BookmarksVsLinkwarden() {
                 Linkwarden
               </th>
               <th className="px-4 py-2 text-left font-bold border-b border-slate-800">
-                Browser Bookmarks
+                Pocket
               </th>
             </tr>
           </thead>
@@ -102,14 +102,22 @@ export default function BookmarksVsLinkwarden() {
               </td>
             </tr>
             <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">
+                Read-it-later Experience
+              </td>
+              <td className="px-4 py-2 border-slate-800">Limited</td>
+              <td className="px-4 py-2">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+            </tr>
+            <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">AI-based Tagging</td>
               <td className="px-4 py-2 border-slate-800">
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
-              <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
-              </td>
+              <td className="px-4 py-2">Limited</td>
             </tr>
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Collaboration</td>
@@ -117,9 +125,7 @@ export default function BookmarksVsLinkwarden() {
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
-              <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
-              </td>
+              <td className="px-4 py-2">Limited</td>
             </tr>
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Public Collections</td>
@@ -132,7 +138,9 @@ export default function BookmarksVsLinkwarden() {
               </td>
             </tr>
             <tr className="border-b border-slate-800">
-              <td className="px-4 py-2 border-slate-800">Cross-browser Sync</td>
+              <td className="px-4 py-2 border-slate-800">
+                Self-hosting Option
+              </td>
               <td className="px-4 py-2 border-slate-800">
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
@@ -149,16 +157,24 @@ export default function BookmarksVsLinkwarden() {
               </td>
               <td className="px-4 py-2">Limited</td>
             </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">Open-source</td>
+              <td className="px-4 py-2 border-slate-800">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+              <td className="px-4 py-2">Limited</td>
+            </tr>
           </tbody>
         </table>
       </div>
 
       <h2 className="text-3xl font-light mb-5">Final Thoughts</h2>
       <p className="text-lg mb-10">
-        If you just need a quick way to store links, traditional bookmarks might
-        be enough. But if you’re looking for in-depth organization, archival
-        capabilities, and collaboration, Linkwarden is a more powerful solution
-        for your saved web content.
+        If your main interest is keeping articles handy to read later, Pocket
+        fits that purpose. But if you need a tool that not only saves links but
+        also archives pages, offers detailed organization, and supports shared
+        collections, Linkwarden may be the more versatile choice.
       </p>
 
       <p className="mb-20">
@@ -169,7 +185,7 @@ export default function BookmarksVsLinkwarden() {
         >
           Try Linkwarden now
         </Link>{" "}
-        and experience a more robust approach to bookmarking.
+        and experience a more powerful approach to saving and organizing links.
       </p>
       <Footer />
     </div>

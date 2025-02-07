@@ -4,12 +4,12 @@ import React from "react";
 import Link from "next/link";
 import { CheckCircle, XCircle } from "@phosphor-icons/react";
 
-export default function BookmarksVsLinkwarden() {
+export default function PinboardVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
       <Navbar />
       <h1 className="text-4xl font-light mb-20 text-center">
-        Browser Bookmarks vs. Linkwarden
+        Linkwarden vs. Pinboard
       </h1>
 
       <p className="text-lg mb-5">
@@ -19,55 +19,65 @@ export default function BookmarksVsLinkwarden() {
         >
           Linkwarden
         </Link>{" "}
-        is a tool for saving, organizing, and preserving webpages. Traditional
-        bookmarks—whether built into your browser or managed by simple tools—let
-        you store links but often lack robust organization and archival
-        features. Below, we’ll explore what they share in common and how they
-        differ.
+        is designed for robust saving, organizing, and preserving of webpages,
+        while Pinboard is a minimalist bookmarking service focused on speed and
+        simplicity. Below, we’ll discuss the ways they overlap and how they
+        diverge.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they similar?</h2>
       <p className="text-lg mb-10">
-        Both Browser Bookmarks and Linkwarden let you save webpages for future
-        access. This basic function helps you quickly revisit important sites.
-        Each also allows you to categorize saved links, making them easier to
-        find later—though Linkwarden offers much deeper organization options.
+        Both Pinboard and Linkwarden let you save links and add tags for quick
+        retrieval. They aim to keep your bookmarks organized and accessible from
+        any device, ensuring that the content you save is never more than a few
+        clicks away.
       </p>
 
       <h2 className="text-3xl font-light mb-5">How are they different?</h2>
       <div className="text-lg mb-10 space-y-8">
         <div>
-          <h3 className="text-2xl font-light mb-2">
-            Archival vs. Simple Storage
-          </h3>
+          <h3 className="text-2xl font-light mb-2">Look and Feel</h3>
           <p>
-            Traditional bookmarks only save the URL. If the webpage is taken
-            down or significantly changed, you lose access to its original
-            content. Linkwarden addresses this by archiving the entire page,
-            ensuring you can always revisit the exact version you saved.
+            Pinboard’s interface is simple and text-focused, with a focus on
+            speed and efficiency. Linkwarden offers a more modern, visual, and
+            customizable approach to bookmarking, with options for custom themes
+            and a more interactive user experience.
           </p>
         </div>
 
         <div>
           <h3 className="text-2xl font-light mb-2">
-            Advanced Organization and Tagging
+            Comprehensive Archiving vs. Simple Bookmarks
           </h3>
           <p>
-            While browser-based bookmarks rely on basic folder structures,
-            Linkwarden expands your options with collections, nested tags, and
-            even AI-powered tagging. If you have large volumes of saved pages or
-            need an efficient way to categorize them, Linkwarden's
-            organizational tools offer a significant advantage.
+            Pinboard offers a basic bookmarking service, with archival options
+            on its premium tier. Linkwarden, however, provides detailed
+            archiving by default—ensuring you always have a copy of the original
+            webpage.
           </p>
         </div>
 
         <div>
-          <h3 className="text-2xl font-light mb-2">Collaboration & Sharing</h3>
+          <h3 className="text-2xl font-light mb-2">
+            Collaboration & Public Collections
+          </h3>
           <p>
-            Most default bookmark systems are personal only. In contrast,{" "}
-            Linkwarden supports shared collections, allowing multiple users to
-            add and manage bookmarks together. This is especially useful for
-            team projects or sharing research with friends.
+            Pinboard lets you keep bookmarks private or public, but it’s largely
+            geared toward individual use. Linkwarden supports shared
+            collections, allowing teams or groups to collaboratively build
+            libraries of links. You can also publish publicly accessible
+            collections if you want to share your research or curated links with
+            others.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-light mb-2">Open-source vs. Hosted</h3>
+          <p>
+            Pinboard is a paid, hosted-only service, meaning the owner manages
+            everything on their servers. Linkwarden is open-source, so you can
+            self-host it for complete control over your data and customize the
+            software to fit your needs.
           </p>
         </div>
       </div>
@@ -84,7 +94,7 @@ export default function BookmarksVsLinkwarden() {
                 Linkwarden
               </th>
               <th className="px-4 py-2 text-left font-bold border-b border-slate-800">
-                Browser Bookmarks
+                Pinboard
               </th>
             </tr>
           </thead>
@@ -92,6 +102,28 @@ export default function BookmarksVsLinkwarden() {
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">
                 Full Webpage Archival
+              </td>
+              <td className="px-4 py-2 border-slate-800">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+              <td className="px-4 py-2">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+            </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">
+                Read-it-later Experience
+              </td>
+              <td className="px-4 py-2 border-slate-800">Limited</td>
+              <td className="px-4 py-2">
+                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+              </td>
+            </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">
+                Modern User Interface
               </td>
               <td className="px-4 py-2 border-slate-800">
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
@@ -132,7 +164,9 @@ export default function BookmarksVsLinkwarden() {
               </td>
             </tr>
             <tr className="border-b border-slate-800">
-              <td className="px-4 py-2 border-slate-800">Cross-browser Sync</td>
+              <td className="px-4 py-2 border-slate-800">
+                Self-hosting Option
+              </td>
               <td className="px-4 py-2 border-slate-800">
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
@@ -149,16 +183,27 @@ export default function BookmarksVsLinkwarden() {
               </td>
               <td className="px-4 py-2">Limited</td>
             </tr>
+            <tr className="border-b border-slate-800">
+              <td className="px-4 py-2 border-slate-800">Open-source</td>
+              <td className="px-4 py-2 border-slate-800">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
+              <td className="px-4 py-2">
+                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
 
       <h2 className="text-3xl font-light mb-5">Final Thoughts</h2>
       <p className="text-lg mb-10">
-        If you just need a quick way to store links, traditional bookmarks might
-        be enough. But if you’re looking for in-depth organization, archival
-        capabilities, and collaboration, Linkwarden is a more powerful solution
-        for your saved web content.
+        Pinboard's straightforward approach works well for users who want a
+        lean, no-frills bookmark manager. But if you need robust archiving,
+        deeper collaboration, and open-source flexibility, Linkwarden offers a
+        feature-rich alternative suited for both personal and team-based
+        bookmarking.
       </p>
 
       <p className="mb-20">
@@ -169,7 +214,8 @@ export default function BookmarksVsLinkwarden() {
         >
           Try Linkwarden now
         </Link>{" "}
-        and experience a more robust approach to bookmarking.
+        and take control of your saved links with comprehensive archiving and
+        advanced organization.
       </p>
       <Footer />
     </div>
