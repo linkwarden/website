@@ -148,7 +148,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex gap-4 justify-between items-end w-full text-sm px-5 pb-5 mt-6">
+        <div className="flex gap-4 justify-between items-end w-full max-w-3xl text-sm px-5 pb-5 mt-6">
           <p className="">
             © {new Date().getFullYear()} Linkwarden. All rights reserved.
           </p>
