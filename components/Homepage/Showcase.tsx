@@ -29,7 +29,7 @@ export default function Showcase() {
             Webpages fade,
           </p>
           <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10 ">
-            Links persist.{" "}
+            Preserve them.{" "}
             <Lightning
               className="inline-block text-yellow-300"
               weight="duotone"
