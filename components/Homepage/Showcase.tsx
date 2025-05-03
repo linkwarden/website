@@ -14,12 +14,12 @@ export default function Showcase() {
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
         <div className="w-fit mx-auto mb-3">
           <Link
-            href="https://blog.linkwarden.app/releases/2.9"
+            href="https://blog.linkwarden.app/releases/2.10"
             target="_blank"
             className="rounded-full"
           >
             <div className="border bg-opacity-80 border-[#07334F] hover:border-sky-500 bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
-              🎉️ Announcing <span className="font-bold">Linkwarden 2.9</span>!
+              🎉️ Announcing <span className="font-bold">Linkwarden 2.10</span>!
               🚀
             </div>
           </Link>
