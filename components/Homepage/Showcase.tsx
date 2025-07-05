@@ -4,7 +4,6 @@ import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
 import AccentButton from "../AccentButton";
 import SVGShowcase from "../svg/SVGShowcase";
-import { Lightning } from "@phosphor-icons/react";
 
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -12,7 +11,7 @@ export default function Showcase() {
   return (
     <div className="relative pb-20 lg:pb-0 max-w-fit mx-auto">
       <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
-        <div className="w-fit mx-auto mb-3">
+        <div className="w-fit mx-auto mb-5">
           <Link
             href="https://blog.linkwarden.app/releases/2.11"
             target="_blank"
@@ -24,25 +23,19 @@ export default function Showcase() {
             </div>
           </Link>
         </div>
-        <div className="py-2">
-          <p className="sm:text-5xl text-4xl text-center max-w-4xl text-neutral-300 font-bold relative z-10">
-            Webpages fade,
-          </p>
-          <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10 ">
-            Preserve them.{" "}
-            <Lightning
-              className="inline-block text-yellow-300"
-              weight="duotone"
-            />
+        <div className="py-2 text-white">
+          <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10">
+            Your Bookmark Manager, <span className="text-sky-300">Evolved</span>
           </p>
         </div>
       </div>
-      <p className="relative z-10 max-w-2xl px-5 pb-5 mx-auto text-center text-text sm:text-xl">
-        Your all-in-one collaborative tool for collecting and preserving useful
-        webpages and documents.
+      <p className="relative z-10 max-w-2xl px-5 mx-auto text-center text-text sm:text-xl mt-3">
+        One place to collect, read, and preserve the webpages that matter.
+        Supercharged with features like collaboration, AI tagging, an RSS
+        reader, browser synchronization, and more.
       </p>
 
-      <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4">
+      <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">
         <AccentButton
           label="Start Free Trial"
           href="https://cloud.linkwarden.app/register"
