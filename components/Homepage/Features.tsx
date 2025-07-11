@@ -237,7 +237,7 @@ const Accordion: React.FC = () => {
 
           <ShortenedFeatures
             icon={<PushPin weight="fill" />}
-            title="Pin links and collections"
+            title="Pin Links and Collections"
           >
             <p>
               Customize your dashboard by pinning your important links and
