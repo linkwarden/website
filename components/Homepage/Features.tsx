@@ -113,6 +113,7 @@ const Accordion: React.FC = () => {
 
               {!isMobile && isOpen && (
                 <motion.div
+                  key={`progress-${openIndex}-${inView}`}
                   className="absolute left-0 top-0 bg-indigo-500"
                   style={{ width: 1, height: "100%" }}
                   initial={{ height: 0 }}
