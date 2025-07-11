@@ -8,6 +8,7 @@ body {
   background: #111111;
   color: white;
   scroll-behavior: smooth !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-moz-selection {

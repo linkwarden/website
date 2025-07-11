@@ -1,6 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import ShortenedFeatures from "../ShortenedFeatures";
+import {
+  Laptop,
+  ShieldCheck,
+  PushPin,
+  ListMagnifyingGlass,
+  PuzzlePiece,
+  ArrowsLeftRight,
+  RocketLaunch,
+  CheckSquare,
+  Key,
+  DownloadSimple,
+  Rss,
+  ArrowsClockwise,
+} from "@phosphor-icons/react";
 
 type AccordionItem = { title: string; content: React.ReactNode };
 
@@ -189,6 +205,154 @@ const Accordion: React.FC = () => {
             />
           </motion.div>
         </AnimatePresence>
+      </div>
+      <div className="mx-auto max-w-5xl px-5">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5">
+          <ShortenedFeatures
+            icon={<Laptop weight="fill" />}
+            title="Open Source, Self-Hostable"
+          >
+            <p>
+              We published our entire source code to{" "}
+              <a
+                className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+                target="_blank"
+                href="https://github.com/linkwarden/linkwarden"
+              >
+                GitHub
+              </a>{" "}
+              for transparency and trust.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<Rss weight="fill" />}
+            title="Follow RSS Feeds"
+          >
+            <p>
+              Follow RSS feeds directly within your collections. New articles
+              and updates appear just like regular saved webpages.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<PushPin weight="fill" />}
+            title="Pin links and collections"
+          >
+            <p>
+              Customize your dashboard by pinning your important links and
+              collections for quick access.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<ShieldCheck weight="fill" />}
+            title="Privacy Friendly"
+          >
+            <p>
+              Privacy is a fundamental human right. We won&apos;t sell your data
+              to third parties.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<ListMagnifyingGlass weight="fill" />}
+            title="Powerful Search"
+          >
+            <p>
+              You can search and filter all your curated contents across all
+              your collections using our advanced{" "}
+              <Link
+                className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+                href="https://docs.linkwarden.app/Usage/advanced-search"
+                target="_blank"
+              >
+                search operators
+              </Link>
+              .
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<PuzzlePiece weight="fill" />}
+            title="Browser Extension"
+          >
+            <p>
+              Collect webpages directly from your browser with our open-source
+              extension.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<ArrowsClockwise weight="fill" />}
+            title="Browser Sync"
+          >
+            <p>
+              Sync your browser bookmarks to Linkwarden using{" "}
+              <Link
+                className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+                target="_blank"
+                href="https://floccus.org"
+              >
+                Floccus
+              </Link>
+              .
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<CheckSquare weight="fill" />}
+            title="Bulk Actions"
+          >
+            <p>Edit or delete multiple items at once easily.</p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<ArrowsLeftRight weight="fill" />}
+            title="Import & Export"
+          >
+            <p>
+              You can import and export your bookmarks easily from the settings.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<DownloadSimple weight="fill" />}
+            title="Installable PWA for Mobile"
+          >
+            <p>
+              App-like experience across devices with PWA support, ensuring
+              optimal performance and accessibility for all users.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<Key weight="fill" />}
+            title="Secure API Integration"
+          >
+            <p>
+              Connect and secure your integrations using access tokens to create
+              custom solutions and automate with ease.
+            </p>
+          </ShortenedFeatures>
+
+          <ShortenedFeatures
+            icon={<RocketLaunch weight="fill" />}
+            title="And Many More Features..."
+          >
+            <p>
+              For more information, check out our{" "}
+              <Link
+                className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+                href="https://blog.linkwarden.app/tags/release"
+              >
+                release notes
+              </Link>{" "}
+              in our blog . We are constantly adding new features and
+              improvements!
+            </p>
+          </ShortenedFeatures>
+        </div>
       </div>
     </div>
   );

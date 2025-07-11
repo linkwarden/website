@@ -19,11 +19,11 @@ export default function QuestionAndAnswer({
   return (
     <div className={`faq ${className}`}>
       <div
-        className="p-5 cursor-pointer font-semibold select-none text-text flex items-center gap-2"
+        className="p-5 cursor-pointer text-lg font-semibold select-none text-text flex items-center gap-2"
         onClick={onToggle}
       >
         <Plus
-          size={15}
+          size={20}
           className={`${isOpen ? "rotate-45" : ""} duration-150`}
           weight="bold"
         />
