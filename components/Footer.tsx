@@ -72,13 +72,6 @@ export default function Footer() {
                 Blog
                 <ArrowSquareOut size={16} />
               </Link>
-              <Link
-                href="https://github.com/orgs/linkwarden/projects/1"
-                className="hover:opacity-80 duration-100 text-text flex items-center gap-1"
-              >
-                Roadmap
-                <ArrowSquareOut size={16} />
-              </Link>
             </div>
 
             <div className="flex flex-col gap-2">
