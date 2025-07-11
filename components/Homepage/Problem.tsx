@@ -3,27 +3,27 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const components: ReactNode[] = [
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={0}>
     <p className="text-3xl font-bold">
       Have you ever landed on a{" "}
       <span className="text-5xl text-red-300">404</span> page?
     </p>
   </div>,
 
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={1}>
     <p className="text-3xl font-semibold">
-      That's the problem with traditional bookmarks.
+      That&apos;s the problem with traditional bookmarks.
     </p>
   </div>,
 
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={2}>
     <p className="text-3xl font-semibold">
-      They're prone to breaking, disappearing, or becoming outdated. A common
-      phenomenon known as <span className="text-red-300">Link Rot</span>.
+      They&apos;re prone to breaking, disappearing, or becoming outdated. A
+      common phenomenon known as <span className="text-red-300">Link Rot</span>.
     </p>
   </div>,
 
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={3}>
     <p className="text-3xl font-semibold">
       In fact, a{" "}
       <Link
@@ -38,21 +38,21 @@ const components: ReactNode[] = [
     </p>
   </div>,
 
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={4}>
     <p className="text-3xl font-semibold">
       This means your favorite articles, research, and valuable resources can{" "}
       <span className="text-red-300">vanish</span> without any notice.
     </p>
   </div>,
 
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={5}>
     <p className="text-3xl font-semibold">
       This is because the websites you bookmark can be taken down, modified, or
       simply deleted by their owners.
     </p>
   </div>,
 
-  <div className="text-center space-y-4">
+  <div className="text-center space-y-4" key={6}>
     <p className="text-3xl font-semibold">
       We created <span className="text-sky-200">Linkwarden</span> to solve this
       problem.
