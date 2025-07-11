@@ -33,8 +33,8 @@ export default function Showcase() {
         </div>
       </div>
       <p className="relative z-10 max-w-xl px-5 mx-auto text-center text-gray-200 sm:text-xl mt-3">
-        Linkwarden helps you to collect, read, and preserve your webpages, all
-        in one place.
+        Linkwarden helps you to collect, read, annotate, and preserve your
+        webpages, all in one place.
       </p>
 
       <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">

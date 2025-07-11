@@ -16,7 +16,7 @@ const items: AccordionItem[] = [
     ),
   },
   {
-    title: "Minimalist reading experience",
+    title: "Read and Annotate",
     content: (
       <>
         View your saved articles and bookmarks in our dedicated reader view
