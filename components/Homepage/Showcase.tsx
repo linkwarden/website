@@ -17,7 +17,7 @@ export default function Showcase() {
             target="_blank"
             className="rounded-full"
           >
-            <div className="border bg-opacity-80 border-[#07334F] hover:border-sky-500 bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
+            <div className="border bg-opacity-80 border-[#07334F] hover:border-[#20618a] bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
               🎉️ Announcing <span className="font-bold">Linkwarden 2.11</span>!
               🚀
             </div>
@@ -25,14 +25,16 @@ export default function Showcase() {
         </div>
         <div className="py-2 text-white">
           <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10">
-            Your Bookmark Manager, <span className="text-sky-300">Evolved</span>
+            Your bookmarks can vanish,
+          </p>
+          <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10 text-gray-300 italic">
+            if they haven’t already
           </p>
         </div>
       </div>
-      <p className="relative z-10 max-w-2xl px-5 mx-auto text-center text-text sm:text-xl mt-3">
-        One place to collect, read, and preserve the webpages that matter.
-        Supercharged with features like collaboration, AI tagging, an RSS
-        reader, browser synchronization, and more.
+      <p className="relative z-10 max-w-xl px-5 mx-auto text-center text-gray-200 sm:text-xl mt-3">
+        Linkwarden helps you to collect, read, and preserve your webpages, all
+        in one place.
       </p>
 
       <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">
@@ -75,7 +77,7 @@ export default function Showcase() {
       </div>
 
       <div className="p-5">
-        <p className="text-center sm:text-2xl text-xl max-w-sm mx-auto">
+        <p className="text-center text-xl mx-auto">
           Loved by thousands at the world&apos;s most innovative companies
         </p>
 

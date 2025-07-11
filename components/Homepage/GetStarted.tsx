@@ -9,7 +9,7 @@ export default function GetStarted() {
       <div className="flex items-center justify-between gap-5 sm:p-5 my-20 mx-auto w-fit max-w-7xl">
         <div className="w-full relative z-10 mx-auto rounded-3xl">
           <p className="lg:text-3xl text-2xl font-bold relative z-10 max-w-xl text-center">
-            Start Your Bookmarking Journey
+            Reimagine How You Save Links
           </p>
           <p className="font-semibold text-center mt-2">
             14-day free trial, cancel anytime.
