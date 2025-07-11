@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 type AccordionItem = { title: string; content: React.ReactNode };
@@ -84,7 +84,10 @@ const Accordion: React.FC = () => {
   }, [openIndex, inView, isMobile]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div
+      className="min-h-screen flex flex-col items-center justify-center"
+      id="features"
+    >
       <p className="lg:text-4xl text-3xl font-bold text-center mb-10 px-5">
         Everything you need for your bookmarks
       </p>
@@ -132,9 +135,7 @@ const Accordion: React.FC = () => {
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 className="overflow-hidden text-gray-300"
               >
-                <div className="pb-4 px-4 sm:w-2/3 md:w-1/2">
-                  {item.content}
-                </div>
+                <div className="pb-4 px-4 sm:w-1/2">{item.content}</div>
 
                 {isMobile && (
                   <div className="w-full mt-6 flex justify-center">
@@ -161,22 +162,32 @@ const Accordion: React.FC = () => {
           );
         })}
 
-        <Image
-          src={
-            openIndex === 0
-              ? "/features/preservation.png"
-              : openIndex === 1
-              ? "/features/reading.png"
-              : openIndex === 2
-              ? "/features/organization.png"
-              : "/features/collaboration.png"
-          }
-          alt="Feature Illustration"
-          className="w-1/3 absolute top-0 right-5 hidden sm:block"
-          draggable={false}
-          width={600}
-          height={600}
-        />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={openIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            <Image
+              src={
+                openIndex === 0
+                  ? "/features/preservation.png"
+                  : openIndex === 1
+                  ? "/features/reading.png"
+                  : openIndex === 2
+                  ? "/features/organization.png"
+                  : "/features/collaboration.png"
+              }
+              alt="Feature Illustration"
+              className="w-[40%] absolute top-0 right-5 hidden sm:block"
+              draggable={false}
+              width={600}
+              height={600}
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );
