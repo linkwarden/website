@@ -29,7 +29,7 @@ const components: ReactNode[] = [
       <Link
         href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
         target="_blank"
-        className="underline underline-offset-4 decoration-dotted text-gray-300"
+        className="underline underline-offset-[7px] hover:opacity-70 duration-200 decoration-dotted text-gray-300"
       >
         2024 study
       </Link>{" "}

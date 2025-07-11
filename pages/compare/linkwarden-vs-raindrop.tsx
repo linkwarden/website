@@ -101,7 +101,10 @@ export default function RaindropVsLinkwarden() {
               <td className="px-4 py-2 border-slate-800">
                 Read-it-later Experience
               </td>
-              <td className="px-4 py-2 border-slate-800">Limited</td>
+              <td className="px-4 py-2 border-slate-800">
+                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                Yes
+              </td>
               <td className="px-4 py-2">
                 <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes

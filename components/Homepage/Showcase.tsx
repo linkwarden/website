@@ -67,8 +67,8 @@ export default function Showcase() {
           <Image
             priority
             src="./app/dashboard.jpeg"
-            width={1270}
-            height={770}
+            width={2940}
+            height={1678}
             alt=""
             className="relative z-10 rounded-lg mx-auto border border-outline"
             onLoad={() => setImageLoaded(true)}
