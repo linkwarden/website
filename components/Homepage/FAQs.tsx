@@ -17,7 +17,7 @@ function FAQs() {
       </p>
 
       <div
-        className="pr-5 rounded-2xl border border-outline bg-gradient-to-br from-[#a27dff29] via-transparent to-[#ffffff0a]"
+        className="pr-5 rounded-md border border-outline bg-gradient-to-br from-[#a27dff29] via-transparent to-[#ffffff0a]"
         style={{
           boxShadow: "#ffffff10 0px 5px 20px 0px",
         }}
@@ -62,7 +62,7 @@ function FAQs() {
             under your subscription.{" "}
             <Link
               href="https://docs.linkwarden.app/billing/seats#how-to-reserve-seats"
-              className="underline"
+              className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
               target="_blank"
             >
               Learn more
@@ -82,7 +82,7 @@ function FAQs() {
             Yes, please refer to the{" "}
             <Link
               href="https://docs.linkwarden.app/billing/seats"
-              className="underline"
+              className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
               target="_blank"
             >
               documentation
@@ -120,7 +120,7 @@ function FAQs() {
             <Link
               href="https://stripe.com/"
               target="_blank"
-              className="underline"
+              className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
             >
               Stripe
             </Link>
@@ -155,7 +155,10 @@ function FAQs() {
           <p>
             Absolutely! We offer a custom plan tailored to your specific
             requirements. Contact us at{" "}
-            <Link className="underline" href="mailto:support@linkwarden.app">
+            <Link
+              className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+              href="mailto:support@linkwarden.app"
+            >
               support@linkwarden.app
             </Link>{" "}
             to discuss your specific needs, and we&apos;ll create the perfect
@@ -208,7 +211,10 @@ function FAQs() {
 
       <p className="my-5 text-center text-sm text-text">
         For any other questions, feel free to reach out to us at{" "}
-        <Link className="underline" href="mailto:support@linkwarden.app">
+        <Link
+          className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+          href="mailto:support@linkwarden.app"
+        >
           support@linkwarden.app
         </Link>
         .

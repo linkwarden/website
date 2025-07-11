@@ -15,7 +15,7 @@ export default function ShortenedFeatures({
 }: Props) {
   return (
     <div
-      className={`p-5 text-sm border z-10 border-[#333333] bg-gradient-to-tr from-[#202020] to-[#101010] h-full rounded-xl text-center ${className}`}
+      className={`p-5 text-sm border z-10 border-[#333333] bg-gradient-to-tr from-[#202020] to-[#101010] h-full rounded-md text-center ${className}`}
     >
       <div
         className="select-none bg-gradient-to-br from-[#673AB7] to-[#3A00A1] w-fit aspect-square p-2 rounded-2xl mx-auto mb-5"
