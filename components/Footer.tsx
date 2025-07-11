@@ -5,9 +5,9 @@ import { ArrowSquareOut } from "@phosphor-icons/react";
 export default function Footer() {
   return (
     <div className="mt-10 w-full">
-      <div className="px-5 pb-5 max-w-7xl mx-auto flex flex-col justify-center items-center text-text">
+      <div className="px-5 pb-5 max-w-5xl mx-auto flex flex-col justify-center items-center text-text">
         <div className="w-full">
-          <div className="flex flex-wrap sm:gap-10 md:flex-row md:gap-20 gap-6 justify-center">
+          <div className="flex flex-wrap sm:gap-10 md:flex-row md:gap-20 gap-6 justify-between">
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-semibold">Product</h3>
               <Link href="/#features" className="duration-100 hover:opacity-80">
@@ -148,7 +148,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex gap-4 justify-between items-end w-full max-w-3xl text-sm px-5 pb-5 mt-6">
+        <div className="flex gap-4 justify-between items-end w-full max-w-5xl text-sm pb-5 mt-6">
           <p className="">
             © {new Date().getFullYear()} Linkwarden. All rights reserved.
           </p>
