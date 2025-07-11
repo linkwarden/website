@@ -1,5 +1,6 @@
 import { Plus } from "@phosphor-icons/react";
-import React from "react";
+import React, { useRef, useState, useLayoutEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
   title: string;
@@ -14,8 +15,17 @@ export default function QuestionAndAnswer({
   isOpen,
   onToggle,
   children,
-  className,
+  className = "",
 }: Props) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState(0);
+
+  useLayoutEffect(() => {
+    if (contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight);
+    }
+  }, [children]);
+
   return (
     <div className={`faq ${className}`}>
       <div
@@ -24,16 +34,31 @@ export default function QuestionAndAnswer({
       >
         <Plus
           size={20}
-          className={`${isOpen ? "rotate-45" : ""} duration-150`}
           weight="bold"
+          className={`transform transition-transform duration-150 ${
+            isOpen ? "rotate-45" : ""
+          }`}
         />
-        <p className="w-full">{title}</p>
+        <p className="w-full text-left">{title}</p>
       </div>
-      {isOpen && (
-        <div className="pl-7 text-sm pb-5 pr-3 -mt-3 leading-6 fade-up">
-          {children}
-        </div>
-      )}
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            key="content"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: contentHeight, opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            style={{ overflow: "hidden" }}
+            className="text-sm leading-6"
+          >
+            <div ref={contentRef} className="pb-5 px-7">
+              {children}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
