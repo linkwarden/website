@@ -1,5 +1,5 @@
 import { Plus } from "@phosphor-icons/react";
-import React, { useRef, useState, useLayoutEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
@@ -20,7 +20,7 @@ export default function QuestionAndAnswer({
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (contentRef.current) {
       setContentHeight(contentRef.current.scrollHeight);
     }
