@@ -4,27 +4,27 @@ import Link from "next/link";
 
 const components: ReactNode[] = [
   <div className="text-center space-y-4" key={0}>
-    <p className="text-3xl font-bold">
+    <p className="text-3xl font-semibold leading-relaxed">
       Have you ever landed on a{" "}
       <span className="text-5xl text-red-300">404</span> page?
     </p>
   </div>,
 
   <div className="text-center space-y-4" key={1}>
-    <p className="text-3xl font-semibold">
+    <p className="text-3xl font-semibold leading-relaxed">
       That&apos;s the problem with traditional bookmarks.
     </p>
   </div>,
 
   <div className="text-center space-y-4" key={2}>
-    <p className="text-3xl font-semibold">
+    <p className="text-3xl font-semibold leading-relaxed">
       They&apos;re prone to breaking, disappearing, or becoming outdated. A
       common phenomenon known as <span className="text-red-300">Link Rot</span>.
     </p>
   </div>,
 
   <div className="text-center space-y-4" key={3}>
-    <p className="text-3xl font-semibold">
+    <p className="text-3xl font-semibold leading-relaxed">
       In fact, a{" "}
       <Link
         href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
@@ -39,21 +39,21 @@ const components: ReactNode[] = [
   </div>,
 
   <div className="text-center space-y-4" key={4}>
-    <p className="text-3xl font-semibold">
+    <p className="text-3xl font-semibold leading-relaxed">
       This means your favorite articles, research, and valuable resources can{" "}
-      <span className="text-red-300">vanish</span> without any notice.
+      <span className="text-red-300">Vanish</span> without any notice.
     </p>
   </div>,
 
   <div className="text-center space-y-4" key={5}>
-    <p className="text-3xl font-semibold">
+    <p className="text-3xl font-semibold leading-relaxed">
       This is because the websites you bookmark can be taken down, modified, or
       simply deleted by their owners.
     </p>
   </div>,
 
   <div className="text-center space-y-4" key={6}>
-    <p className="text-3xl font-semibold">
+    <p className="text-3xl font-semibold leading-relaxed">
       We created <span className="text-sky-200">Linkwarden</span> to solve this
       problem.
     </p>
