@@ -25,10 +25,7 @@ export default function Showcase() {
         </div>
         <div className="py-2 text-white">
           <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10">
-            Your bookmarks can vanish,
-          </p>
-          <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10 text-gray-300 italic">
-            if they haven’t already
+            Bookmarks, <span className="text-sky-200">Evolved</span>
           </p>
         </div>
       </div>
