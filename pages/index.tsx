@@ -6,14 +6,12 @@ import FAQs from "@/components/Homepage/FAQs";
 import GetStarted from "@/components/Homepage/GetStarted";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
-import Problem from "@/components/Homepage/Problem";
 
 export default function Home() {
   return (
     <div className="fade-in">
       <Navbar />
       <Showcase />
-      <Problem />
       <Features />
       <Testimonials />
       <Pricing />

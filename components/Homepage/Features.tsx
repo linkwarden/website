@@ -101,11 +101,11 @@ const Accordion: React.FC = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center"
+      className="min-h-screen flex flex-col items-center justify-center pt-20 mt-20 bg-gradient-to-b from-gray-500/20 to-transparent"
       id="features"
     >
       <p className="lg:text-4xl text-3xl font-bold text-center mb-10 px-5">
-        Everything you need for your bookmarks
+        Everything you need to save what matters
       </p>
       <div
         ref={containerRef}
@@ -206,7 +206,27 @@ const Accordion: React.FC = () => {
           </motion.div>
         </AnimatePresence>
       </div>
-      <div className="mx-auto max-w-5xl px-5">
+
+      <div className="mx-auto max-w-5xl px-5 mt-20">
+        <p className="text-2xl text-center font-bold mb-10">
+          View and{" "}
+          <span className="bg-indigo-500/80 px-1 rounded-sm italic relative">
+            Highlight
+          </span>{" "}
+          your saved articles in a distraction-free environment
+        </p>
+        <video
+          className={`rounded-md border border-outline mx-auto w-full z-10 relative`}
+          src="./app/reader.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        ></video>
+      </div>
+
+      <div className="mx-auto max-w-5xl px-5 mt-20">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5">
           <ShortenedFeatures
             icon={<Laptop weight="fill" />}
