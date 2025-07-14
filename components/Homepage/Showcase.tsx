@@ -29,20 +29,20 @@ export default function Showcase() {
           </p>
         </div>
       </div>
-      <p className="relative z-10 max-w-xl px-5 mx-auto text-center text-gray-200 sm:text-xl mt-3">
+      <p className="relative z-10 max-w-xl px-5 mx-auto text-center text-gray-200 sm:text-xl mt-3 mb-10">
         Linkwarden helps you to collect, read, annotate, and preserve your
         webpages, all in one place.
       </p>
 
-      <div className="relative z-10 flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">
+      <div className="relative z-10 flex flex-wrap justify-center px-5 gap-4 mt-5">
         <AccentButton
           label="Start Free Trial"
           href="https://cloud.linkwarden.app/register"
-          className="text-sm sm:text-base sm:w-44 w-full"
+          className="text-sm sm:text-base w-44"
         />
         <SecondaryButton
           path="https://demo.linkwarden.app/login"
-          className="text-sm sm:text-base sm:w-44 w-full text-center justify-center"
+          className="text-sm sm:text-base w-44 text-center justify-center"
           openInNewTab
         >
           <p className="w-fit">Launch Demo</p>
@@ -56,7 +56,7 @@ export default function Showcase() {
       <div
         className={
           imageLoaded
-            ? "pt-5 pl-2 pr-2 pb-2 max-w-7xl w-2/3 mx-auto min-w-[350px] mt-5 mb-20"
+            ? "pt-5 px-5 w-full max-w-5xl mx-auto mt-5 mb-20"
             : " opacity-0"
         }
       >
