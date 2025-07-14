@@ -105,7 +105,7 @@ const Accordion: React.FC = () => {
       id="features"
     >
       <p className="lg:text-4xl text-3xl font-bold text-center mb-10 px-5">
-        Everything you need to save what matters
+        Everything you need for your bookmarks
       </p>
       <div
         ref={containerRef}
