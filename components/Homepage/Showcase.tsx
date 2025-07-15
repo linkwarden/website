@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
 import AccentButton from "../AccentButton";
@@ -43,6 +43,13 @@ const tabImages = [
 
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    tabImages.forEach(({ src }) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
     <div className="relative pb-20 lg:pb-0 max-w-fit mx-auto">
