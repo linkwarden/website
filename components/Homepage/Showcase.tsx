@@ -52,9 +52,9 @@ export default function Showcase() {
   }, []);
 
   return (
-    <div className="relative pb-20 lg:pb-0 mx-auto">
+    <div className="relative mx-auto">
       <div className="bg-[radial-gradient(circle_at_bottom,rgb(30_41_59_/_0.5),transparent_70%)] pb-20">
-        <div className="relative pb-20 lg:pb-0 mx-auto max-w-fit">
+        <div className="relative mx-auto max-w-fit">
           <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
             <div className="w-fit mx-auto mb-5">
               <Link
