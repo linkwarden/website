@@ -101,7 +101,7 @@ const Accordion: React.FC = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center pt-20 mt-20 bg-[radial-gradient(circle_at_top,rgb(30_41_59_/_0.9),transparent_30%)]"
+      className="min-h-screen flex flex-col items-center justify-center pt-20 bg-[radial-gradient(circle_at_top,rgb(30_41_59_/_0.5),transparent_30%)]"
       id="features"
     >
       <p className="lg:text-4xl text-3xl font-bold text-center mb-10 px-5">
