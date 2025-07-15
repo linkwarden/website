@@ -4,6 +4,42 @@ import SecondaryButton from "../SecondaryButton";
 import Link from "next/link";
 import AccentButton from "../AccentButton";
 import SVGShowcase from "../svg/SVGShowcase";
+import { Tab } from "@headlessui/react";
+import {
+  Archive,
+  BookOpenText,
+  House,
+  Info,
+  UsersThree,
+} from "@phosphor-icons/react";
+
+const tabImages = [
+  {
+    src: "./app/home.jpeg",
+    id: "Home",
+    icon: <House className="sm:text-gray-400" size={16} />,
+  },
+  {
+    src: "./app/reader.jpeg",
+    id: "Reader View",
+    icon: <BookOpenText className="sm:text-gray-400" size={16} />,
+  },
+  {
+    src: "./app/info.jpeg",
+    id: "Link Info",
+    icon: <Info className="sm:text-gray-400" size={16} />,
+  },
+  {
+    src: "./app/preserve.jpeg",
+    id: "Preservation",
+    icon: <Archive className="sm:text-gray-400" size={16} />,
+  },
+  {
+    src: "./app/collaborate.jpeg",
+    id: "Team",
+    icon: <UsersThree className="sm:text-gray-400" size={16} />,
+  },
+];
 
 export default function Showcase() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -53,24 +89,49 @@ export default function Showcase() {
         className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] opacity-60 bg-gradient-radial from-[#289DF230] from-20% via-[#6F30D830] to-70% to-transparent`}
       />
 
-      <div
-        className={
-          imageLoaded
-            ? "pt-5 px-5 w-full max-w-5xl mx-auto mt-5 mb-20"
-            : " opacity-0"
-        }
-      >
-        <div className="slide-up relative">
-          <Image
-            priority
-            src="./app/dashboard.jpeg"
-            width={2940}
-            height={1678}
-            alt=""
-            className="relative z-10 rounded-lg mx-auto border border-outline"
-            onLoad={() => setImageLoaded(true)}
-          />
-        </div>
+      <div className="pt-5 px-5 w-full max-w-5xl mx-auto mt-5 mb-20 relative slide-up">
+        <Tab.Group>
+          <Tab.List className="flex space-x-4 justify-center mb-4">
+            {tabImages.map((img) => (
+              <Tab
+                key={img.id}
+                className={({ selected }) =>
+                  `px-3 py-1 rounded-md flex gap-1 items-center backdrop-blur-md transition-colors bg-opacity-50 text-sm font-medium focus:outline-none ${
+                    selected
+                      ? "bg-sky-600 text-white"
+                      : "bg-gray-700 text-gray-300"
+                  }`
+                }
+              >
+                {img.icon}
+                <p className="hidden sm:block">{img.id}</p>
+              </Tab>
+            ))}
+          </Tab.List>
+          <Tab.Panels>
+            {tabImages.map((img) => (
+              <Tab.Panel key={img.id} className="focus:outline-none">
+                <div
+                  className={
+                    imageLoaded ? "opacity-100 transition" : "opacity-0"
+                  }
+                >
+                  <div className="fade-in">
+                    <Image
+                      priority
+                      src={img.src}
+                      width={2940}
+                      height={1676}
+                      alt={img.id}
+                      className="relative z-10 rounded-lg mx-auto border border-outline"
+                      onLoad={() => setImageLoaded(true)}
+                    />
+                  </div>
+                </div>
+              </Tab.Panel>
+            ))}
+          </Tab.Panels>
+        </Tab.Group>
       </div>
 
       <div className="p-5">
