@@ -103,16 +103,26 @@ export default function Showcase() {
               <Tab
                 key={img.id}
                 className={({ selected }) =>
-                  `px-3 py-1 rounded-md flex gap-1 items-center backdrop-blur-md transition-colors bg-opacity-50 text-sm font-medium focus:outline-none ${
+                  `px-3 py-1 rounded-md backdrop-blur-md transition-colors bg-opacity-50 text-sm font-medium focus:outline-none ${
                     selected
                       ? "bg-sky-600 text-white"
                       : "bg-gray-700 text-gray-300"
                   }`
                 }
-              >
-                {img.icon}
-                <p className="hidden sm:block">{img.id}</p>
-              </Tab>
+                children={({ selected }) => (
+                  <div className="flex items-center gap-1 duration-150">
+                    {img.icon}
+                    <p
+                      className={
+                        "sm:block sm:text-sm text-xs" +
+                        (selected ? "" : " hidden")
+                      }
+                    >
+                      {img.id}
+                    </p>
+                  </div>
+                )}
+              />
             ))}
           </Tab.List>
           <Tab.Panels>
