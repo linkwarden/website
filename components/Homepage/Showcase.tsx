@@ -109,7 +109,8 @@ export default function Showcase() {
                       : "bg-gray-700 text-gray-300"
                   }`
                 }
-                children={({ selected }) => (
+              >
+                {({ selected }) => (
                   <div className="flex items-center gap-1 duration-150">
                     {img.icon}
                     <p
@@ -122,7 +123,7 @@ export default function Showcase() {
                     </p>
                   </div>
                 )}
-              />
+              </Tab>
             ))}
           </Tab.List>
           <Tab.Panels>
