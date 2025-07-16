@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Linkwarden - Bookmarks, Evolved</title>
         <meta property="og:title" content="Linkwarden - Bookmarks, Evolved" />
+        <meta property="og:url" content="https://linkwarden.app" />
         <meta
           property="og:description"
           content="Linkwarden helps you collect, read, annotate, and fully preserve what matters, all in one place."
