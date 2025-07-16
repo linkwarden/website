@@ -155,7 +155,7 @@ export default function Showcase() {
       </div>
 
       <div className="p-5 py-40">
-        <p className="text-center text-lg opacity-60 mx-auto">
+        <p className="text-center text-lg opacity-70 mx-auto">
           Loved by thousands at the world&apos;s most innovative companies
         </p>
 
