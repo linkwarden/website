@@ -1,7 +1,6 @@
 import React from "react";
 import SecondaryButton from "../SecondaryButton";
 import AccentButton from "../AccentButton";
-import { Star } from "@phosphor-icons/react";
 
 export default function GetStarted() {
   return (

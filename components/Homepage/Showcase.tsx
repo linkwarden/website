@@ -53,111 +53,109 @@ export default function Showcase() {
 
   return (
     <div className="relative mx-auto">
-      <div className="bg-[radial-gradient(circle_at_bottom,rgb(30_41_59_/_0.5),transparent_70%)] pb-20">
-        <div className="relative mx-auto max-w-fit">
-          <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
-            <div className="w-fit mx-auto mb-5">
-              <Link
-                href="https://blog.linkwarden.app/releases/2.11"
-                target="_blank"
-                className="rounded-full"
-              >
-                <div className="border bg-opacity-80 border-[#07334F] hover:border-[#20618a] bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
-                  🎉️ Announcing{" "}
-                  <span className="font-bold">Linkwarden 2.11</span>! 🚀
-                </div>
-              </Link>
-            </div>
-            <div className="py-2 text-white">
-              <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10">
-                Bookmarks, <span className="text-sky-200">Evolved</span>
-              </p>
-            </div>
-          </div>
-          <p className="relative z-10 max-w-xl px-5 mx-auto text-center text-gray-200 sm:text-xl mt-3 mb-10">
-            Linkwarden helps you collect, read, annotate, and fully preserve
-            what matters, all in one place.
-          </p>
-
-          <div className="relative z-10 flex flex-wrap justify-center px-5 gap-4 mt-5">
-            <AccentButton
-              label="Start Free Trial"
-              href="https://cloud.linkwarden.app/register"
-              className="text-sm sm:text-base w-44"
-            />
-            <SecondaryButton
-              path="https://demo.linkwarden.app/login"
-              className="text-sm sm:text-base w-44 text-center justify-center"
-              openInNewTab
+      <div className="relative mx-auto max-w-fit">
+        <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
+          <div className="w-fit mx-auto mb-5">
+            <Link
+              href="https://blog.linkwarden.app/releases/2.11"
+              target="_blank"
+              className="rounded-full"
             >
-              <p className="w-fit">Launch Demo</p>
-            </SecondaryButton>
+              <div className="border bg-opacity-80 border-[#07334F] hover:border-[#20618a] bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
+                🎉️ Announcing{" "}
+                <span className="font-bold">Linkwarden 2.11</span>! 🚀
+              </div>
+            </Link>
           </div>
+          <div className="py-2 text-white">
+            <p className="sm:text-5xl text-4xl text-center max-w-4xl font-bold relative z-10">
+              Bookmarks, <span className="text-sky-200">Evolved</span>
+            </p>
+          </div>
+        </div>
+        <p className="relative z-10 max-w-xl px-5 mx-auto text-center text-gray-200 sm:text-xl mt-3 mb-10">
+          Linkwarden helps you collect, read, annotate, and fully preserve what
+          matters, all in one place.
+        </p>
 
-          <SVGShowcase
-            className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] opacity-60 bg-gradient-radial from-[#289DF230] from-20% via-[#6F30D830] to-70% to-transparent`}
+        <div className="relative z-10 flex flex-wrap justify-center px-5 gap-4 mt-5">
+          <AccentButton
+            label="Start Free Trial"
+            href="https://cloud.linkwarden.app/register"
+            className="text-sm sm:text-base w-44"
           />
+          <SecondaryButton
+            path="https://demo.linkwarden.app/login"
+            className="text-sm sm:text-base w-44 text-center justify-center"
+            openInNewTab
+          >
+            <p className="w-fit">Launch Demo</p>
+          </SecondaryButton>
+        </div>
 
-          <div className="pt-5 px-5 w-full max-w-5xl mx-auto mt-5 relative slide-up">
-            <Tab.Group>
-              <Tab.List className="flex space-x-4 justify-center mb-4">
-                {tabImages.map((img) => (
-                  <Tab
-                    key={img.id}
-                    className={({ selected }) =>
-                      `px-3 py-1 rounded-md backdrop-blur-md transition-colors bg-opacity-50 text-sm font-medium focus:outline-none ${
-                        selected
-                          ? "bg-sky-600 text-white"
-                          : "bg-gray-700 text-gray-300"
-                      }`
+        <SVGShowcase
+          className={`absolute -mt-[7rem] sm:-mt-[12rem] md:-mt-[15rem] lg:-mt-[18rem] min-[1200px]:-mt-[22rem] opacity-60 bg-gradient-radial from-[#289DF230] from-20% via-[#6F30D830] to-70% to-transparent`}
+        />
+
+        <div className="pt-5 px-5 w-full max-w-5xl mx-auto mt-5 relative slide-up">
+          <Tab.Group>
+            <Tab.List className="flex space-x-4 justify-center mb-4">
+              {tabImages.map((img) => (
+                <Tab
+                  key={img.id}
+                  className={({ selected }) =>
+                    `px-3 py-1 rounded-md backdrop-blur-md transition-colors bg-opacity-50 text-sm font-medium focus:outline-none ${
+                      selected
+                        ? "bg-sky-600 text-white"
+                        : "bg-gray-700 text-gray-300"
+                    }`
+                  }
+                >
+                  {({ selected }) => (
+                    <div className="flex items-center gap-1 duration-150">
+                      {img.icon}
+                      <p
+                        className={
+                          "sm:block sm:text-sm text-xs" +
+                          (selected ? "" : " hidden")
+                        }
+                      >
+                        {img.id}
+                      </p>
+                    </div>
+                  )}
+                </Tab>
+              ))}
+            </Tab.List>
+            <Tab.Panels>
+              {tabImages.map((img) => (
+                <Tab.Panel key={img.id} className="focus:outline-none">
+                  <div
+                    className={
+                      imageLoaded ? "opacity-100 transition" : "opacity-0"
                     }
                   >
-                    {({ selected }) => (
-                      <div className="flex items-center gap-1 duration-150">
-                        {img.icon}
-                        <p
-                          className={
-                            "sm:block sm:text-sm text-xs" +
-                            (selected ? "" : " hidden")
-                          }
-                        >
-                          {img.id}
-                        </p>
-                      </div>
-                    )}
-                  </Tab>
-                ))}
-              </Tab.List>
-              <Tab.Panels>
-                {tabImages.map((img) => (
-                  <Tab.Panel key={img.id} className="focus:outline-none">
-                    <div
-                      className={
-                        imageLoaded ? "opacity-100 transition" : "opacity-0"
-                      }
-                    >
-                      <div className="fade-in">
-                        <Image
-                          priority
-                          src={img.src}
-                          width={2940}
-                          height={1676}
-                          alt={img.id}
-                          className="relative z-10 rounded-lg mx-auto border border-outline"
-                          onLoad={() => setImageLoaded(true)}
-                        />
-                      </div>
+                    <div className="fade-in">
+                      <Image
+                        priority
+                        src={img.src}
+                        width={2940}
+                        height={1676}
+                        alt={img.id}
+                        className="relative z-10 rounded-lg mx-auto border border-outline"
+                        onLoad={() => setImageLoaded(true)}
+                      />
                     </div>
-                  </Tab.Panel>
-                ))}
-              </Tab.Panels>
-            </Tab.Group>
-          </div>
+                  </div>
+                </Tab.Panel>
+              ))}
+            </Tab.Panels>
+          </Tab.Group>
         </div>
       </div>
 
-      <div className="p-5 py-10">
-        <p className="text-center text-xl mx-auto">
+      <div className="p-5 py-40">
+        <p className="text-center text-lg opacity-60 mx-auto">
           Loved by thousands at the world&apos;s most innovative companies
         </p>
 
