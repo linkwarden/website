@@ -36,6 +36,26 @@ function FAQs() {
         <Seperator />
 
         <QuestionAndAnswer
+          title="Do you offer refunds?"
+          isOpen={openIndex === 0}
+          onToggle={() => handleToggle(0)}
+        >
+          <p>
+            Sure! If you are not satisfied with your purchase, you can request a
+            refund within 3 days of your first payment. Just contact us at{" "}
+            <Link
+              className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
+              href="mailto:support@linkwarden.app"
+            >
+              support@linkwarden.app
+            </Link>{" "}
+            and we will issue a full refund.
+          </p>
+        </QuestionAndAnswer>
+
+        <Seperator />
+
+        <QuestionAndAnswer
           title="What does the Cloud offering provide?"
           isOpen={openIndex === 1}
           onToggle={() => handleToggle(1)}
