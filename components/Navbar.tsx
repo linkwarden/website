@@ -4,7 +4,7 @@ import Link from "next/link";
 import AccentButton from "./AccentButton";
 import { ArrowSquareOut } from "@phosphor-icons/react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
-import Seperator from "./Seperator";
+import Seperator from "./Separator";
 import ghStars from "../public/github-stars.json";
 
 export default function Navbar() {
