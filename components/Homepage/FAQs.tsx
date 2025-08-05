@@ -1,6 +1,6 @@
 import Link from "next/link";
 import QuestionAndAnswer from "../QuestionAndAnswer";
-import Seperator from "../Seperator";
+import Separator from "../Separator";
 import { useState } from "react";
 
 function FAQs() {
@@ -33,7 +33,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="Do you offer refunds?"
@@ -41,8 +41,9 @@ function FAQs() {
           onToggle={() => handleToggle(1)}
         >
           <p>
-            Sure! If you are not satisfied with your purchase, you can request a
-            refund within 3 days of your first payment. Just contact us at{" "}
+            Sure! If you&apos;re not satisfied with your purchase, you can
+            request a refund within 3 days of your first payment. Just contact
+            us at{" "}
             <Link
               className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
               href="mailto:support@linkwarden.app"
@@ -53,7 +54,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="What does the Cloud offering provide?"
@@ -70,7 +71,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="How can I add more than 30,000 links?"
@@ -91,7 +92,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="Can I purchase additional seats?"
@@ -112,7 +113,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="How does the free trial work?"
@@ -128,7 +129,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="How will I be billed?"
@@ -148,7 +149,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="Where's my data stored?"
@@ -165,7 +166,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="Can I have a customized instance designed specifically for my needs?"
@@ -186,7 +187,7 @@ function FAQs() {
           </p>
         </QuestionAndAnswer>
 
-        <Seperator />
+        <Separator />
 
         <QuestionAndAnswer
           title="How can I cancel my plan?"

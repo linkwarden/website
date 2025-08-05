@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AccentButton from "../AccentButton";
 import SecondaryButton from "../SecondaryButton";
-import Seperator from "../Seperator";
+import Seperator from "../Separator";
 import { Check, Heart } from "@phosphor-icons/react";
 
 function Pricing() {
@@ -78,14 +78,6 @@ function Pricing() {
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Collections.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Tags.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
                   <p>All the premium features.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
@@ -132,14 +124,6 @@ function Pricing() {
                 <li className="flex items-start gap-2 text-left">
                   <Check className="text-2xl text-secondary" />
                   <p>Unlimited Links.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Collections.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
-                  <p>Unlimited Tags.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <Check className="text-2xl text-secondary" />
