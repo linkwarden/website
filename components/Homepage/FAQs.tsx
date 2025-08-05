@@ -37,8 +37,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="Do you offer refunds?"
-          isOpen={openIndex === 0}
-          onToggle={() => handleToggle(0)}
+          isOpen={openIndex === 1}
+          onToggle={() => handleToggle(1)}
         >
           <p>
             Sure! If you are not satisfied with your purchase, you can request a
@@ -57,8 +57,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="What does the Cloud offering provide?"
-          isOpen={openIndex === 1}
-          onToggle={() => handleToggle(1)}
+          isOpen={openIndex === 2}
+          onToggle={() => handleToggle(2)}
         >
           <p>
             The Cloud plan provides automatic updates, priority support, and
@@ -74,8 +74,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="How can I add more than 30,000 links?"
-          isOpen={openIndex === 2}
-          onToggle={() => handleToggle(2)}
+          isOpen={openIndex === 3}
+          onToggle={() => handleToggle(3)}
         >
           <p>
             You can add more than 30,000 links by reserving an additional seats
@@ -95,8 +95,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="Can I purchase additional seats?"
-          isOpen={openIndex === 3}
-          onToggle={() => handleToggle(3)}
+          isOpen={openIndex === 4}
+          onToggle={() => handleToggle(4)}
         >
           <p>
             Yes, please refer to the{" "}
@@ -116,8 +116,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="How does the free trial work?"
-          isOpen={openIndex === 4}
-          onToggle={() => handleToggle(4)}
+          isOpen={openIndex === 5}
+          onToggle={() => handleToggle(5)}
         >
           <p>
             Linkwarden Cloud&apos;s free trial will last for 14 days from the
@@ -132,8 +132,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="How will I be billed?"
-          isOpen={openIndex === 5}
-          onToggle={() => handleToggle(5)}
+          isOpen={openIndex === 6}
+          onToggle={() => handleToggle(6)}
         >
           <p>
             You will be billed every month. The payment is being handled by{" "}
@@ -152,8 +152,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="Where's my data stored?"
-          isOpen={openIndex === 6}
-          onToggle={() => handleToggle(6)}
+          isOpen={openIndex === 7}
+          onToggle={() => handleToggle(7)}
         >
           <p>
             Our primary server is hosted in Hetzner&apos;s data center in
@@ -169,8 +169,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="Can I have a customized instance designed specifically for my needs?"
-          isOpen={openIndex === 7}
-          onToggle={() => handleToggle(7)}
+          isOpen={openIndex === 8}
+          onToggle={() => handleToggle(8)}
         >
           <p>
             Absolutely! We offer a custom plan tailored to your specific
@@ -190,8 +190,8 @@ function FAQs() {
 
         <QuestionAndAnswer
           title="How can I cancel my plan?"
-          isOpen={openIndex === 8}
-          onToggle={() => handleToggle(8)}
+          isOpen={openIndex === 9}
+          onToggle={() => handleToggle(9)}
         >
           <p>To cancel your plan, follow these steps:</p>
           <ul>
