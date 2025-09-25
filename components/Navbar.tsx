@@ -119,10 +119,10 @@ export default function Navbar() {
               Login
             </Link>
             <Link
-              className={`bg-gradient-to-tr from-[#673AB7] to-[#4B03CD] border border-[#926cd3] hover:border-[#cfbeed] shadow-lg hover:shadow-none select-none duration-200 rounded-full text-center px-3 py-[0.20rem] text-white w-fit flex justify-center items-center gap-2`}
+              className={`bg-gradient-to-tr from-[#673AB7] to-[#4B03CD] border w-32 border-[#926cd3] hover:border-[#cfbeed] shadow-lg hover:shadow-none select-none duration-200 rounded-full text-center px-3 py-[0.20rem] text-white flex justify-center items-center gap-2`}
               href={"https://cloud.linkwarden.app/register"}
             >
-              <p className="font-semibold">Get Started</p>
+              <p>Get Started</p>
             </Link>
           </div>
 
@@ -215,7 +215,7 @@ export default function Navbar() {
               </p>
 
               <AccentButton
-                label="Start Free Trial"
+                label="Get Started"
                 href="https://cloud.linkwarden.app/register"
                 className="mt-3 mx-auto block w-full py-3 text-xl"
               />

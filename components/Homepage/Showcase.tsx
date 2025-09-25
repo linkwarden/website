@@ -82,11 +82,11 @@ export default function Showcase() {
           <AccentButton
             label="Start Free Trial"
             href="https://cloud.linkwarden.app/register"
-            className="text-sm sm:text-base w-44"
+            className="text-sm sm:text-base w-48"
           />
           <SecondaryButton
             path="https://demo.linkwarden.app/login"
-            className="text-sm sm:text-base w-44 text-center justify-center"
+            className="text-sm sm:text-base w-48 text-center justify-center"
             openInNewTab
           >
             <p className="w-fit">Launch Demo</p>

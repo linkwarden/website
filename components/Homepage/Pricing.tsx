@@ -97,7 +97,7 @@ function Pricing() {
 
             <div>
               <p className="text-text text-sm text-center mt-5 mb-2">
-                14-day free trial, cancel anytime.
+                14-day free trial, no credit card required
               </p>
               <AccentButton
                 label="Get Started"

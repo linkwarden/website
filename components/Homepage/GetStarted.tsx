@@ -10,18 +10,18 @@ export default function GetStarted() {
           <p className="lg:text-3xl text-2xl font-bold relative z-10 max-w-xl text-center">
             Reimagine how you save links
           </p>
-          <p className="font-semibold text-center mt-2">
-            14-day free trial, cancel anytime.
+          <p className="text-center mt-2">
+            14-day free trial, no credit card required
           </p>
           <div className="flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">
             <AccentButton
-              label="Get Started"
+              label="Start Free Trial"
               href="https://cloud.linkwarden.app/register"
-              className="text-sm sm:text-base sm:w-44 w-full"
+              className="text-sm sm:text-base sm:w-48 w-full"
             />
             <SecondaryButton
               path="https://demo.linkwarden.app/login"
-              className="text-sm sm:text-base sm:w-44 w-full text-center justify-center"
+              className="text-sm sm:text-base sm:w-48 w-full text-center justify-center"
               openInNewTab
             >
               <p className="w-fit">Launch Demo</p>
