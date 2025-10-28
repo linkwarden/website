@@ -10,9 +10,7 @@ export default function GetStarted() {
           <p className="lg:text-3xl text-2xl font-bold relative z-10 max-w-xl text-center">
             Reimagine how you save links
           </p>
-          <p className="text-center mt-2">
-            14-day free trial, no credit card required
-          </p>
+          <p className="text-center mt-2">14-day free trial, cancel anytime</p>
           <div className="flex justify-center flex-col sm:flex-row px-5 gap-4 mt-5">
             <AccentButton
               label="Start Free Trial"

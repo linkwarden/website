@@ -29,7 +29,7 @@ function FAQs() {
         >
           <p>
             You can try out Linkwarden Cloud for free by signing up for a 14-day
-            trial. No credit card is required.
+            trial. The reason we require a credit card is to prevent spam.
           </p>
         </QuestionAndAnswer>
 
