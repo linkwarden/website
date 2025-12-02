@@ -1,0 +1,59 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #0284c7;
+  --ifm-color-primary-dark: #0277b3;
+  --ifm-color-primary-darker: #0270a9;
+  --ifm-color-primary-darkest: #015c8b;
+  --ifm-color-primary-light: #0291db;
+  --ifm-color-primary-lighter: #0298e5;
+  --ifm-color-primary-lightest: #09aafd;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #0ea5e9;
+  --ifm-color-primary-dark: #0d95d2;
+  --ifm-color-primary-darker: #0c8cc6;
+  --ifm-color-primary-darkest: #0a74a3;
+  --ifm-color-primary-light: #1eb0f1;
+  --ifm-color-primary-lighter: #2ab4f2;
+  --ifm-color-primary-lightest: #4dc0f4;
+}
+
+.theme-doc-sidebar-container {
+  background-color: #f7f7f7;
+}
+
+[data-theme="dark"] .theme-doc-sidebar-container {
+  background-color: #292929;
+}
+
+.footer__col {
+  text-align: center;
+}
+
+.table-of-contents {
+  display: none;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+}
+
+[data-theme="dark"] .navbar {
+  background-color: rgba(33, 33, 33, 0.6);
+  backdrop-filter: blur(15px);
+}
+
+img {
+  border-radius: 5px;
+}
+
+.navbar__toggle {
+  display: none;
+}
