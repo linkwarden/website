@@ -1,0 +1,24 @@
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.breadcrumbLink {
+  text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  opacity: 0.6;
+}
+
+.current {
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+}

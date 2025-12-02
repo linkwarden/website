@@ -1,29 +1,19 @@
 {
   "name": "website",
-  "version": "0.1.0",
+  "packageManager": "yarn@1.22.0",
+  "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "all": "concurrently \"yarn workspace @website/website dev -p 3020\" \"yarn workspace @website/blog start -p 3021\"",
+    "website": "yarn workspace @website/website dev",
+    "blog": "yarn workspace @website/blog start",
+    "build": "rm -rf ./apps/website/public/blog ./out && yarn workspace @website/blog build && mv ./apps/blog/build ./apps/website/public/blog && yarn workspace @website/website build && mv ./apps/website/out ./out && rm -rf ./apps/website/public/blog"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.15",
-    "@phosphor-icons/react": "^2.0.15",
-    "@types/node": "20.3.2",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.43.0",
-    "eslint-config-next": "13.4.7",
-    "framer-motion": "^12.23.3",
-    "next": "13.4.7",
-    "postcss": "8.4.24",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-masonry-css": "^1.0.16",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.1.6"
+    "concurrently": "^9.2.1"
   }
 }
