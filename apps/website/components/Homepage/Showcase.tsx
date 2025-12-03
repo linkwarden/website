@@ -26,7 +26,7 @@ const tabImages = [
   },
   {
     src: "./app/info.jpeg",
-    id: "Link InfoIcon",
+    id: "Link Info",
     icon: <InfoIcon className="sm:text-gray-400" size={16} />,
   },
   {
