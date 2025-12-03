@@ -1,4 +1,4 @@
-import { Plus } from "@phosphor-icons/react";
+import { PlusIcon } from "@phosphor-icons/react";
 import React, { useRef, useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -32,7 +32,7 @@ export default function QuestionAndAnswer({
         className="p-5 cursor-pointer text-lg font-semibold select-none text-text flex items-center gap-2"
         onClick={onToggle}
       >
-        <Plus
+        <PlusIcon
           size={20}
           weight="bold"
           className={`transform transition-transform duration-150 ${

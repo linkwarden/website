@@ -1,13 +1,10 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import React from "react";
 import Link from "next/link";
-import { CheckCircle, XCircle } from "@phosphor-icons/react";
+import { CheckCircleIcon, XCircleIcon } from "@phosphor-icons/react";
 
 export default function LinkwardenVsPocket() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
-      <Navbar />
       <h1 className="text-4xl font-light mb-20 text-center">
         Linkwarden vs. Pocket
       </h1>
@@ -94,11 +91,12 @@ export default function LinkwardenVsPocket() {
                 Full Webpage Archival
               </td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+                <XCircleIcon className="text-red-500 inline-block mb-[0.1rem]" />{" "}
+                No
               </td>
             </tr>
             <tr className="border-b border-slate-800">
@@ -106,18 +104,18 @@ export default function LinkwardenVsPocket() {
                 Read-it-later Experience
               </td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
             </tr>
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">AI-based Tagging</td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">Limited</td>
@@ -125,7 +123,7 @@ export default function LinkwardenVsPocket() {
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Collaboration</td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">Limited</td>
@@ -133,11 +131,12 @@ export default function LinkwardenVsPocket() {
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Public Collections</td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+                <XCircleIcon className="text-red-500 inline-block mb-[0.1rem]" />{" "}
+                No
               </td>
             </tr>
             <tr className="border-b border-slate-800">
@@ -145,17 +144,18 @@ export default function LinkwardenVsPocket() {
                 Self-hosting Option
               </td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">
-                <XCircle className="text-red-500 inline-block mb-[0.1rem]" /> No
+                <XCircleIcon className="text-red-500 inline-block mb-[0.1rem]" />{" "}
+                No
               </td>
             </tr>
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Customization</td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">Limited</td>
@@ -163,7 +163,7 @@ export default function LinkwardenVsPocket() {
             <tr className="border-b border-slate-800">
               <td className="px-4 py-2 border-slate-800">Open-source</td>
               <td className="px-4 py-2 border-slate-800">
-                <CheckCircle className="text-green-500 inline-block mb-[0.1rem]" />{" "}
+                <CheckCircleIcon className="text-green-500 inline-block mb-[0.1rem]" />{" "}
                 Yes
               </td>
               <td className="px-4 py-2">Limited</td>
@@ -190,7 +190,6 @@ export default function LinkwardenVsPocket() {
         </Link>{" "}
         and experience a more powerful approach to saving and organizing links.
       </p>
-      <Footer />
     </div>
   );
 }

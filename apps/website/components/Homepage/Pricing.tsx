@@ -2,7 +2,7 @@ import { useState } from "react";
 import AccentButton from "../AccentButton";
 import SecondaryButton from "../SecondaryButton";
 import Seperator from "../Separator";
-import { Check, Heart } from "@phosphor-icons/react";
+import { CheckIcon, HeartIcon } from "@phosphor-icons/react";
 
 function Pricing() {
   enum Plan {
@@ -69,27 +69,27 @@ function Pricing() {
 
               <ul className="mb-10 flex flex-col gap-1">
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Hosted by us.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Up to 30,000 Links.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>All the premium features.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Priority support.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Automatic updates.</p>
                 </li>
                 <li className="flex items-center gap-2 text-left">
-                  <Heart weight="fill" className="text-2xl text-pink-500" />
+                  <HeartIcon weight="fill" className="text-2xl text-pink-500" />
                   <p>Support open source!</p>
                 </li>
               </ul>
@@ -118,35 +118,35 @@ function Pricing() {
 
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Hosted by us/yourself.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Unlimited Links.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>All the premium features.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Priority support.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Automatic updates.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Fully customizable instance.</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
-                  <Check className="text-2xl text-secondary" />
+                  <CheckIcon className="text-2xl text-secondary" />
                   <p>Single Sign-On (SSO).</p>
                 </li>
                 <li className="flex items-center gap-2 text-left">
-                  <Heart weight="fill" className="text-2xl text-pink-500" />
+                  <HeartIcon weight="fill" className="text-2xl text-pink-500" />
                   <p>Support open source!</p>
                 </li>
               </ul>

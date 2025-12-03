@@ -10,14 +10,12 @@ import Testimonials from "@/components/Testimonials";
 export default function Home() {
   return (
     <div className="fade-in">
-      <Navbar />
       <Showcase />
       <Features />
       <Testimonials />
       <Pricing />
       <FAQs />
       <GetStarted />
-      <Footer />
     </div>
   );
 }

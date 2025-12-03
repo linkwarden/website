@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { ArrowSquareOut } from "@phosphor-icons/react";
+import { ArrowSquareOutIcon } from "@phosphor-icons/react";
 
 export default function Footer() {
   return (
@@ -62,7 +62,7 @@ export default function Footer() {
                 className="hover:opacity-80 duration-100 text-text flex items-center gap-1"
               >
                 Docs
-                <ArrowSquareOut size={16} />
+                <ArrowSquareOutIcon size={16} />
               </Link>
               <Link
                 href="https://blog.linkwarden.app"
@@ -70,7 +70,7 @@ export default function Footer() {
                 className="hover:opacity-80 duration-100 text-text flex items-center gap-1"
               >
                 Blog
-                <ArrowSquareOut size={16} />
+                <ArrowSquareOutIcon size={16} />
               </Link>
             </div>
 

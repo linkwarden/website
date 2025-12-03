@@ -1,13 +1,9 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import React from "react";
 import Link from "next/link";
 
 export default function BookmarksVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32 flex flex-col justify-between min-h-screen">
-      <Navbar />
-
       <h1 className="text-4xl font-light mb-20 text-center">Comparison</h1>
 
       <div>
@@ -45,8 +41,6 @@ export default function BookmarksVsLinkwarden() {
           ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
