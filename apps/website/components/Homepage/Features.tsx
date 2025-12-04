@@ -4,18 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import ShortenedFeatures from "../ShortenedFeatures";
 import {
-  Laptop,
-  ShieldCheck,
-  PushPin,
-  ListMagnifyingGlass,
-  PuzzlePiece,
-  ArrowsLeftRight,
-  RocketLaunch,
-  CheckSquare,
-  Key,
-  DownloadSimple,
-  Rss,
-  ArrowsClockwise,
+  LaptopIcon,
+  ShieldCheckIcon,
+  PushPinIcon,
+  ListMagnifyingGlassIcon,
+  PuzzlePieceIcon,
+  ArrowsLeftRightIcon,
+  RocketLaunchIcon,
+  CheckSquareIcon,
+  KeyIcon,
+  DownloadSimpleIcon,
+  RssIcon,
+  ArrowsClockwiseIcon,
 } from "@phosphor-icons/react";
 
 type AccordionItem = { title: string; content: React.ReactNode };
@@ -229,7 +229,7 @@ const Accordion: React.FC = () => {
       <div className="mx-auto max-w-5xl px-5 mt-20">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 w-fit mx-auto gap-5 my-5">
           <ShortenedFeatures
-            icon={<Laptop weight="fill" />}
+            icon={<LaptopIcon weight="fill" />}
             title="Open Source, Self-Hostable"
           >
             <p>
@@ -246,7 +246,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<Rss weight="fill" />}
+            icon={<RssIcon weight="fill" />}
             title="Follow RSS Feeds"
           >
             <p>
@@ -256,7 +256,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<PushPin weight="fill" />}
+            icon={<PushPinIcon weight="fill" />}
             title="Pin Links and Collections"
           >
             <p>
@@ -266,7 +266,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<ShieldCheck weight="fill" />}
+            icon={<ShieldCheckIcon weight="fill" />}
             title="Privacy Friendly"
           >
             <p>
@@ -276,7 +276,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<ListMagnifyingGlass weight="fill" />}
+            icon={<ListMagnifyingGlassIcon weight="fill" />}
             title="Powerful Search"
           >
             <p>
@@ -294,7 +294,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<PuzzlePiece weight="fill" />}
+            icon={<PuzzlePieceIcon weight="fill" />}
             title="Browser Extension"
           >
             <p>
@@ -304,7 +304,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<ArrowsClockwise weight="fill" />}
+            icon={<ArrowsClockwiseIcon weight="fill" />}
             title="Browser Sync"
           >
             <p>
@@ -321,14 +321,14 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<CheckSquare weight="fill" />}
+            icon={<CheckSquareIcon weight="fill" />}
             title="Bulk Actions"
           >
             <p>Edit or delete multiple items at once easily.</p>
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<ArrowsLeftRight weight="fill" />}
+            icon={<ArrowsLeftRightIcon weight="fill" />}
             title="Import & Export"
           >
             <p>
@@ -337,7 +337,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<DownloadSimple weight="fill" />}
+            icon={<DownloadSimpleIcon weight="fill" />}
             title="Installable PWA for Mobile"
           >
             <p>
@@ -347,7 +347,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<Key weight="fill" />}
+            icon={<KeyIcon weight="fill" />}
             title="Secure API Integration"
           >
             <p>
@@ -357,7 +357,7 @@ const Accordion: React.FC = () => {
           </ShortenedFeatures>
 
           <ShortenedFeatures
-            icon={<RocketLaunch weight="fill" />}
+            icon={<RocketLaunchIcon weight="fill" />}
             title="And Many More Features..."
           >
             <p>

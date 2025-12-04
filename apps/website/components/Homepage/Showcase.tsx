@@ -6,38 +6,38 @@ import AccentButton from "../AccentButton";
 import SVGShowcase from "../svg/SVGShowcase";
 import { Tab } from "@headlessui/react";
 import {
-  Archive,
-  BookOpenText,
-  House,
-  Info,
-  UsersThree,
+  ArchiveIcon,
+  BookOpenTextIcon,
+  HouseIcon,
+  InfoIcon,
+  UsersThreeIcon,
 } from "@phosphor-icons/react";
 
 const tabImages = [
   {
     src: "./app/home.jpeg",
     id: "Home",
-    icon: <House className="sm:text-gray-400" size={16} />,
+    icon: <HouseIcon className="sm:text-gray-400" size={16} />,
   },
   {
     src: "./app/reader.jpeg",
     id: "Reader View",
-    icon: <BookOpenText className="sm:text-gray-400" size={16} />,
+    icon: <BookOpenTextIcon className="sm:text-gray-400" size={16} />,
   },
   {
     src: "./app/info.jpeg",
     id: "Link Info",
-    icon: <Info className="sm:text-gray-400" size={16} />,
+    icon: <InfoIcon className="sm:text-gray-400" size={16} />,
   },
   {
     src: "./app/preserve.jpeg",
     id: "Preservation",
-    icon: <Archive className="sm:text-gray-400" size={16} />,
+    icon: <ArchiveIcon className="sm:text-gray-400" size={16} />,
   },
   {
     src: "./app/collaborate.jpeg",
     id: "Team",
-    icon: <UsersThree className="sm:text-gray-400" size={16} />,
+    icon: <UsersThreeIcon className="sm:text-gray-400" size={16} />,
   },
 ];
 

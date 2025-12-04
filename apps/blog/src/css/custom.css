@@ -32,28 +32,10 @@
   background-color: #292929;
 }
 
-.footer__col {
-  text-align: center;
-}
-
 .table-of-contents {
   display: none;
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(15px);
-}
-
-[data-theme="dark"] .navbar {
-  background-color: rgba(33, 33, 33, 0.6);
-  backdrop-filter: blur(15px);
-}
-
 img {
   border-radius: 5px;
-}
-
-.navbar__toggle {
-  display: none;
 }

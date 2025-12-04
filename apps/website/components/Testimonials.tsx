@@ -1,4 +1,4 @@
-import { Star } from "@phosphor-icons/react";
+import { StarIcon } from "@phosphor-icons/react";
 import React, { useMemo } from "react";
 import TwitterX from "./svg/TwitterX";
 import Mastodon from "./svg/Mastodon";
@@ -133,11 +133,11 @@ const Testimonial = ({
             </div>
           </div>
           <div className="flex gap-1 mt-2">
-            <Star className="w-4 h-4 text-[#FFD700]" weight="fill" />
-            <Star className="w-4 h-4 text-[#FFD700]" weight="fill" />
-            <Star className="w-4 h-4 text-[#FFD700]" weight="fill" />
-            <Star className="w-4 h-4 text-[#FFD700]" weight="fill" />
-            <Star className="w-4 h-4 text-[#FFD700]" weight="fill" />
+            <StarIcon className="w-4 h-4 text-[#FFD700]" weight="fill" />
+            <StarIcon className="w-4 h-4 text-[#FFD700]" weight="fill" />
+            <StarIcon className="w-4 h-4 text-[#FFD700]" weight="fill" />
+            <StarIcon className="w-4 h-4 text-[#FFD700]" weight="fill" />
+            <StarIcon className="w-4 h-4 text-[#FFD700]" weight="fill" />
           </div>
         </div>
         {platform === "twitter" ? (

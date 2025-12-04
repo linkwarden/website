@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import AccentButton from "./AccentButton";
-import { ArrowSquareOut } from "@phosphor-icons/react";
+import { ArrowSquareOutIcon } from "@phosphor-icons/react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import Seperator from "./Separator";
 import ghStars from "../public/github-stars.json";
@@ -72,20 +72,17 @@ export default function Navbar() {
                 FAQs
               </Link>
               <Link
-                href="https://docs.linkwarden.app"
-                target="_blank"
-                className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
-              >
-                Docs
-                <ArrowSquareOut size={16} />
-              </Link>
-              <Link
-                href="https://blog.linkwarden.app"
-                target="_blank"
+                href="https://linkwarden.app/blog"
                 className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
               >
                 Blog
-                <ArrowSquareOut size={16} />
+              </Link>
+              <Link
+                href="https://docs.linkwarden.app"
+                className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
+              >
+                Docs
+                <ArrowSquareOutIcon size={16} />
               </Link>
             </div>
           </div>
@@ -180,7 +177,7 @@ export default function Navbar() {
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4 flex items-center gap-1"
               >
                 Docs
-                <ArrowSquareOut size={18} />
+                <ArrowSquareOutIcon size={18} />
               </Link>
               <Seperator className="-mx-5 -my-4" />
               <Link
@@ -189,7 +186,7 @@ export default function Navbar() {
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4 flex items-center gap-1"
               >
                 Blog
-                <ArrowSquareOut size={18} />
+                <ArrowSquareOutIcon size={18} />
               </Link>
               <Seperator className="-mx-5 -my-4" />
               <Link
@@ -198,7 +195,7 @@ export default function Navbar() {
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4 flex items-center gap-1"
               >
                 GitHub
-                <ArrowSquareOut size={18} />
+                <ArrowSquareOutIcon size={18} />
               </Link>
               <Seperator className="-mx-5 -my-4" />
             </div>
