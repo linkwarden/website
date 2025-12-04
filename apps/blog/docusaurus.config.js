@@ -9,20 +9,12 @@ const config = {
   title: "Linkwarden",
   tagline: "Blog",
   favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
   url: "https://linkwarden.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/blog/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "linkwarden", // Usually your GitHub org/user name.
-  projectName: "blog", // Usually your repo name.
+  organizationName: "linkwarden",
+  projectName: "blog",
   trailingSlash: false,
   deploymentBranch: "deployment",
-
   scripts: [
     {
       src: "https://linkwarden-meta.xyz/js/script.js",
@@ -31,13 +23,8 @@ const config = {
       "data-domain": "linkwarden.app",
     },
   ],
-
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -49,7 +36,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         blog: {
-          // sidebarPath: require.resolve("./sidebars.js"),
           blogSidebarCount: 0,
           routeBasePath: "/",
         },
@@ -66,8 +52,9 @@ const config = {
     ({
       colorMode: {
         defaultMode: "dark",
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
-      // Replace with your project's social card
       image: "img/logo.png",
       navbar: {
         title: "Linkwarden",
@@ -82,71 +69,106 @@ const config = {
             position: "left",
           },
           {
-            to: "https://docs.linkwarden.app",
-            label: "Documentation",
-            position: "left",
-          },
-          {
             to: "https://linkwarden.app",
             label: "Website",
             position: "left",
+            target: "_self",
           },
           {
-            href: "https://github.com/linkwarden",
+            href: "https://docs.linkwarden.app",
+            label: "Docs",
+            position: "right",
+          },
+          {
+            href: "https://github.com/linkwarden/linkwarden",
             label: "GitHub",
             position: "right",
           },
         ],
       },
       footer: {
-        copyright: `Copyright © ${new Date().getFullYear()} Linkwarden.`,
         links: [
           {
-            title: "Explore",
+            title: "Product",
             items: [
               {
-                label: "Our Website",
+                label: "Linkwarden",
                 to: "https://linkwarden.app",
+                target: "_self",
               },
               {
-                label: "Read our blog",
-                to: "https://blog.linkwarden.app",
+                label: "Features",
+                to: "https://linkwarden.app/#features",
+                target: "_self",
               },
               {
-                label: "Our public roadmap",
-                to: "https://github.com/orgs/linkwarden/projects/1",
+                label: "Pricing",
+                to: "https://linkwarden.app/#pricing",
+                target: "_self",
               },
               {
-                label: "Study the documentation",
-                to: "https://docs.linkwarden.app",
+                label: "FAQs",
+                to: "https://linkwarden.app/#faqs",
+                target: "_self",
+              },
+              {
+                label: "Docs",
+                href: "https://docs.linkwarden.app",
+                target: "_self",
               },
             ],
           },
           {
-            title: "Community",
+            title: "Social",
             items: [
               {
-                label: "GitHub",
-                href: "https://github.com/linkwarden",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/LinkwardenHQ",
+                label: "Discord",
+                to: "https://discord.gg/CtuYV47nuJ",
               },
               {
                 label: "Mastodon",
-                href: "https://fosstodon.org/@linkwarden",
+                to: "https://fosstodon.org/@linkwarden",
               },
               {
-                label: "Discord",
-                href: "https://discord.gg/CtuYV47nuJ",
+                label: "Twitter",
+                to: "https://twitter.com/LinkwardenHQ",
+              },
+              {
+                label: "GitHub",
+                to: "https://github.com/linkwarden/linkwarden",
+              },
+            ],
+          },
+          {
+            title: "Comparison",
+            items: [
+              {
+                label: "Bookmarks vs Linkwarden",
+                to: "https://linkwarden.app/compare/linkwarden-vs-bookmarks",
+                target: "_self",
+              },
+              {
+                label: "Pocket vs Linkwarden",
+                to: "https://linkwarden.app/compare/linkwarden-vs-pocket",
+                target: "_self",
+              },
+              {
+                label: "Raindrop vs Linkwarden",
+                to: "https://linkwarden.app/compare/linkwarden-vs-raindrop",
+                target: "_self",
+              },
+              {
+                label: "Pinboard vs Linkwarden",
+                to: "https://linkwarden.app/compare/linkwarden-vs-pinboard",
+                target: "_self",
               },
             ],
           },
         ],
+        copyright: `© ${new Date().getFullYear()} Linkwarden. All rights reserved.`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),

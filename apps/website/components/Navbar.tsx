@@ -72,19 +72,16 @@ export default function Navbar() {
                 FAQs
               </Link>
               <Link
-                href="https://docs.linkwarden.app"
-                target="_blank"
-                className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
-              >
-                Docs
-                <ArrowSquareOutIcon size={16} />
-              </Link>
-              <Link
-                href="https://blog.linkwarden.app"
-                target="_blank"
+                href="https://linkwarden.app/blog"
                 className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
               >
                 Blog
+              </Link>
+              <Link
+                href="https://docs.linkwarden.app"
+                className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
+              >
+                Docs
                 <ArrowSquareOutIcon size={16} />
               </Link>
             </div>
