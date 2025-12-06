@@ -1,13 +1,11 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Linkwarden",
-  tagline: "Blog",
+  title: "Linkwarden Blog",
   favicon: "img/favicon.ico",
   url: "https://linkwarden.github.io",
   baseUrl: "/blog/",
