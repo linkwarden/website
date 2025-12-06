@@ -39,3 +39,7 @@
 img {
   border-radius: 5px;
 }
+
+.navbar--fixed-top {
+  position: static;
+}
