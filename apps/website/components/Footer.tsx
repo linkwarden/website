@@ -10,13 +10,22 @@ export default function Footer() {
           <div className="flex flex-wrap sm:gap-10 md:flex-row md:gap-20 gap-6 justify-between">
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-semibold">Product</h3>
-              <Link href="/#features" className="duration-100 hover:opacity-80">
+              <Link
+                href="https://linkwarden.app/#features"
+                className="duration-100 hover:opacity-80"
+              >
                 Features
               </Link>
-              <Link href="/#pricing" className="duration-100 hover:opacity-80">
+              <Link
+                href="https://linkwarden.app/#pricing"
+                className="duration-100 hover:opacity-80"
+              >
                 Pricing
               </Link>
-              <Link href="/#faqs" className="duration-100 hover:opacity-80">
+              <Link
+                href="https://linkwarden.app/#faqs"
+                className="duration-100 hover:opacity-80"
+              >
                 FAQs
               </Link>
               <Link
@@ -71,25 +80,25 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-semibold">Comparison</h3>
               <Link
-                href="/compare/linkwarden-vs-bookmarks"
+                href="https://linkwarden.app/compare/linkwarden-vs-bookmarks"
                 className="duration-100 hover:opacity-80"
               >
                 Bookmarks vs Linkwarden
               </Link>
               <Link
-                href="/compare/linkwarden-vs-pocket"
+                href="https://linkwarden.app/compare/linkwarden-vs-pocket"
                 className="duration-100 hover:opacity-80"
               >
                 Pocket vs Linkwarden
               </Link>
               <Link
-                href="/compare/linkwarden-vs-raindrop"
+                href="https://linkwarden.app/compare/linkwarden-vs-raindrop"
                 className="duration-100 hover:opacity-80"
               >
                 Raindrop vs Linkwarden
               </Link>
               <Link
-                href="/compare/linkwarden-vs-pinboard"
+                href="https://linkwarden.app/compare/linkwarden-vs-pinboard"
                 className="duration-100 hover:opacity-80"
               >
                 Pinboard vs Linkwarden
@@ -141,11 +150,14 @@ export default function Footer() {
           </p>
 
           <div className="flex justify-center gap-4">
-            <Link href="/tos" className="duration-100 hover:opacity-80">
+            <Link
+              href="https://linkwarden.app/tos"
+              className="duration-100 hover:opacity-80"
+            >
               Terms
             </Link>
             <Link
-              href="/privacy-policy"
+              href="https://linkwarden.app/privacy-policy"
               className="duration-100 hover:opacity-80"
             >
               Privacy
