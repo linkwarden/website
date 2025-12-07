@@ -11,7 +11,7 @@
     "all": "concurrently \"yarn workspace @website/website dev -p 3020\" \"yarn workspace @website/blog start -p 3021\"",
     "website": "yarn workspace @website/website dev",
     "blog": "yarn workspace @website/blog start",
-    "build": "rm -rf ./apps/website/public/blog ./out && yarn workspace @website/blog build && mv ./apps/blog/build ./apps/website/public/blog && yarn workspace @website/website build && mv ./apps/website/out ./out && rm -rf ./apps/website/public/blog"
+    "build-and-move-blog-to-nextjs": "rm -rf ./apps/website/public/blog ./out && yarn workspace @website/blog build && mv ./apps/blog/build ./apps/website/public/blog"
   },
   "dependencies": {
     "concurrently": "^9.2.1"
