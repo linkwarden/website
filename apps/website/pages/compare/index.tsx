@@ -15,19 +15,19 @@ export default function BookmarksVsLinkwarden() {
         <div className="flex flex-col gap-4 mb-20">
           {[
             {
-              href: "/compare/linkwarden-vs-bookmarks",
+              href: "https://linkwarden.app/compare/linkwarden-vs-bookmarks",
               label: "Browser Bookmarks vs Linkwarden",
             },
             {
-              href: "/compare/linkwarden-vs-pocket",
+              href: "https://linkwarden.app/compare/linkwarden-vs-pocket",
               label: "Pocket vs Linkwarden",
             },
             {
-              href: "/compare/linkwarden-vs-raindrop",
+              href: "https://linkwarden.app/compare/linkwarden-vs-raindrop",
               label: "Raindrop vs Linkwarden",
             },
             {
-              href: "/compare/linkwarden-vs-pinboard",
+              href: "https://linkwarden.app/compare/linkwarden-vs-pinboard",
               label: "Pinboard vs Linkwarden",
             },
           ].map((link) => (

@@ -11,7 +11,7 @@ export default function PinboardVsLinkwarden() {
 
       <p className="text-lg mb-5">
         <Link
-          href="/"
+          href="https://linkwarden.app"
           className="text-violet-300 underline decoration-dotted underline-offset-4"
         >
           Linkwarden
