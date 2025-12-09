@@ -45,7 +45,7 @@ Here are the highlights so far:
 
 - 📱 **Built for different screen sizes:** Supports iOS / iPadOS, and Android (phones and tablets).
 
-- 🔜 **With more coming soon!**
+- 🔜 **And more coming soon:** This first release is just the foundation, expect many improvements and new features soon.
 
 ## Get the app
 
