@@ -153,11 +153,10 @@ function Pricing() {
             </div>
 
             <SecondaryButton
-              className="mx-auto"
               path="mailto:support@linkwarden.app"
               openInNewTab={false}
             >
-              Contact Us
+              <p className="text-center w-full">Contact Us</p>
             </SecondaryButton>
           </div>
         </div>

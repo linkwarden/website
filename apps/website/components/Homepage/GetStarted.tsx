@@ -22,7 +22,7 @@ export default function GetStarted() {
               className="text-sm sm:text-base sm:w-48 w-full text-center justify-center"
               openInNewTab
             >
-              <p className="w-fit">Launch Demo</p>
+              <p className="text-center w-full">Launch Demo</p>
             </SecondaryButton>
           </div>
         </div>
