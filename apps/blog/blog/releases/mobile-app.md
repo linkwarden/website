@@ -61,6 +61,8 @@ After creating an account, download the app from your preferred store:
 [![Download on the App Store](/assets/mobile_announement/app_store.png)](https://apps.apple.com/app/linkwarden/id6752550960)
 [![Get it on Google Play](/assets/mobile_announement/google_play.png)](https://play.google.com/store/apps/details?id=app.linkwarden)
 
+(To get the app as an APK outside Google Play, check out our [builds](https://github.com/linkwarden/builds) repository.)
+
 ## How you can support Linkwarden
 
 Linkwarden exists because of people like you. Other than using our official [Cloud](https://linkwarden.app/#pricing) offering and [dontations](https://opencollective.com/linkwarden), here are the other ways to help us grow and stay sustainable:
