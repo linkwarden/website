@@ -17,6 +17,7 @@ import {
   RssIcon,
   ArrowsClockwiseIcon,
 } from "@phosphor-icons/react";
+import AccentButton from "../AccentButton";
 
 type AccordionItem = { title: string; content: React.ReactNode };
 
@@ -65,7 +66,7 @@ const items: AccordionItem[] = [
 
 const INTERVAL = 7000;
 
-const Accordion: React.FC = () => {
+const Features: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number>(0);
   const [inView, setInView] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -208,7 +209,7 @@ const Accordion: React.FC = () => {
       </div>
 
       <div className="mx-auto max-w-5xl px-5 mt-20">
-        <p className="text-2xl text-center font-bold mb-10">
+        <p className="text-2xl font-bold mb-10 text-center">
           View and{" "}
           <span className="bg-indigo-500/80 px-1 rounded-sm italic relative">
             Highlight
@@ -224,6 +225,55 @@ const Accordion: React.FC = () => {
           playsInline
           preload="auto"
         ></video>
+      </div>
+
+      <div className="mx-auto max-w-5xl w-full sm:flex items-center px-5 mt-20">
+        <div className="sm:w-1/2">
+          <p className="text-2xl font-bold mb-5">Get our Official Mobile App</p>
+
+          <p className="mb-3">
+            New here? You’ll first need to create a Linkwarden account.
+          </p>
+          <AccentButton
+            label="Start Free Trial"
+            href="https://cloud.linkwarden.app/register"
+            className="text-sm sm:text-base w-48 mb-5"
+          />
+
+          <div className="flex gap-3 items-center">
+            <a
+              href="https://apps.apple.com/app/linkwarden/id6752550960"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/app/app_store.png"
+                alt="Download on the App Store"
+                width={200}
+                height={59}
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=app.linkwarden"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/app/google_play.png"
+                alt="Get it on Google Play"
+                width={200}
+                height={59}
+              />
+            </a>
+          </div>
+        </div>
+        <Image
+          src="/app/devices.png"
+          alt="Different screens (iPad, Pixel, and iPhone)"
+          className="sm:w-1/2 w-full max-w-fit mt-10 sm:mt-0"
+          width={640}
+          height={640}
+        />
       </div>
 
       <div className="mx-auto max-w-5xl px-5 mt-20">
@@ -378,4 +428,4 @@ const Accordion: React.FC = () => {
   );
 };
 
-export default Accordion;
+export default Features;
