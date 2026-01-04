@@ -6,7 +6,7 @@ export default function BookmarksVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
       <h1 className="text-4xl font-light mb-20 text-center">
-        Browser Bookmarks vs. Linkwarden
+        Browser bookmarks vs. Linkwarden
       </h1>
 
       <p className="text-lg mb-5">

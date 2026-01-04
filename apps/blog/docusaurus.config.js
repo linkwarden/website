@@ -128,8 +128,16 @@ const config = {
                 to: "https://fosstodon.org/@linkwarden",
               },
               {
-                label: "Twitter",
-                to: "https://twitter.com/LinkwardenHQ",
+                label: "X (Twitter)",
+                to: "https://x.com/LinkwardenHQ",
+              },
+              {
+                label: "LinkedIn",
+                to: "https://www.linkedin.com/company/linkwarden",
+              },
+              {
+                label: "Bluesky",
+                to: "https://bsky.app/profile/linkwarden.bsky.social",
               },
               {
                 label: "GitHub",
