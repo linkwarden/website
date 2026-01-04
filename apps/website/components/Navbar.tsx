@@ -42,8 +42,8 @@ export default function Navbar() {
               <Image
                 src="/linkwarden.png"
                 className="w-40"
-                width={453}
-                height={96}
+                width={640}
+                height={136}
                 alt=""
                 onClick={() => {
                   if (isMenuOpen) toggleMenu();

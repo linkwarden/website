@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function BookmarksVsLinkwarden() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 pt-32 flex flex-col justify-between min-h-screen">
-      <h1 className="text-4xl font-light mb-20 text-center">Comparison</h1>
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-32 flex flex-col justify-between min-h-">
+      <h1 className="text-4xl font-light mb-20 text-center">Compare</h1>
 
       <div>
         <p className="text-lg mb-5">
@@ -16,7 +16,7 @@ export default function BookmarksVsLinkwarden() {
           {[
             {
               href: "https://linkwarden.app/compare/linkwarden-vs-bookmarks",
-              label: "Browser Bookmarks vs Linkwarden",
+              label: "Browser bookmarks vs Linkwarden",
             },
             {
               href: "https://linkwarden.app/compare/linkwarden-vs-pocket",
@@ -34,7 +34,7 @@ export default function BookmarksVsLinkwarden() {
             <Link
               key={link.href}
               href={link.href}
-              className="block w-full text-center bg-slate-800 hover:bg-slate-700 transition-colors rounded px-6 py-3 text-lg font-medium shadow-sm hover:shadow-md"
+              className="block w-full text-center bg-neutral-800 hover:bg-neutral-700 transition-colors rounded px-6 py-3 text-lg font-medium shadow-sm hover:shadow-md"
             >
               {link.label}
             </Link>
