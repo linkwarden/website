@@ -70,23 +70,23 @@ function Pricing() {
               <ul className="mb-10 flex flex-col gap-1">
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Hosted by us.</p>
+                  <p>Hosted by us</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Up to 30,000 Links.</p>
+                  <p>Up to 30,000 Links</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>All the premium features.</p>
+                  <p>All the premium features</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Priority support.</p>
+                  <p>Priority support</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Automatic updates.</p>
+                  <p>Automatic updates</p>
                 </li>
                 <li className="flex items-center gap-2 text-left">
                   <HeartIcon weight="fill" className="text-2xl text-pink-500" />
@@ -119,23 +119,23 @@ function Pricing() {
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Hosted by us/yourself.</p>
+                  <p>Hosted by us/yourself</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Unlimited Links.</p>
+                  <p>Unlimited Links</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>All the premium features.</p>
+                  <p>All the premium features</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Priority support.</p>
+                  <p>Priority support</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Automatic updates.</p>
+                  <p>Automatic updates</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
@@ -143,7 +143,7 @@ function Pricing() {
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Single Sign-On (SSO).</p>
+                  <p>Single Sign-On (SSO)</p>
                 </li>
                 <li className="flex items-center gap-2 text-left">
                   <HeartIcon weight="fill" className="text-2xl text-pink-500" />
