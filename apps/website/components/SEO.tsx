@@ -9,6 +9,7 @@ interface SEOProps {
   path: string;
   ogImage?: string;
   noindex?: boolean;
+  keywords?: string[];
 }
 
 export default function SEO({
@@ -17,6 +18,7 @@ export default function SEO({
   path,
   ogImage,
   noindex,
+  keywords,
 }: SEOProps) {
   const url = `${SITE_URL}${path}`;
   const image = `${SITE_URL}${ogImage ?? DEFAULT_OG}`;
@@ -24,6 +26,9 @@ export default function SEO({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
+      {keywords && keywords.length > 0 && (
+        <meta name="keywords" content={keywords.join(", ")} />
+      )}
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex, follow" />}
       <meta property="og:type" content="website" />

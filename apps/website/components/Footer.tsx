@@ -103,7 +103,7 @@ export default function Footer() {
                 FAQs
               </Link>
               <Link
-                href="https://linkwarden.app/blog"
+                href="/blog"
                 className="duration-100 hover:opacity-80"
               >
                 Blog

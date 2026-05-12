@@ -414,7 +414,7 @@ const Features: React.FC = () => {
               For more information, check out our{" "}
               <Link
                 className="underline decoration-dotted underline-offset-2 text-gray-300 hover:opacity-70 duration-200"
-                href="https://blog.linkwarden.app/tags/release"
+                href="/blog"
               >
                 release notes
               </Link>{" "}
