@@ -85,19 +85,19 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-lg font-semibold">Product</h3>
               <Link
-                href="https://linkwarden.app/#features"
+                href="/#features"
                 className="duration-100 hover:opacity-80"
               >
                 Features
               </Link>
               <Link
-                href="https://linkwarden.app/#pricing"
+                href="/#pricing"
                 className="duration-100 hover:opacity-80"
               >
                 Pricing
               </Link>
               <Link
-                href="https://linkwarden.app/#faqs"
+                href="/#faqs"
                 className="duration-100 hover:opacity-80"
               >
                 FAQs
@@ -121,25 +121,25 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-lg font-semibold">Compare</h3>
               <Link
-                href="https://linkwarden.app/compare/linkwarden-vs-bookmarks"
+                href="/compare/linkwarden-vs-bookmarks"
                 className="duration-100 hover:opacity-80"
               >
                 Bookmarks vs Linkwarden
               </Link>
               <Link
-                href="https://linkwarden.app/compare/linkwarden-vs-pocket"
+                href="/compare/linkwarden-vs-pocket"
                 className="duration-100 hover:opacity-80"
               >
                 Pocket vs Linkwarden
               </Link>
               <Link
-                href="https://linkwarden.app/compare/linkwarden-vs-raindrop"
+                href="/compare/linkwarden-vs-raindrop"
                 className="duration-100 hover:opacity-80"
               >
                 Raindrop vs Linkwarden
               </Link>
               <Link
-                href="https://linkwarden.app/compare/linkwarden-vs-pinboard"
+                href="/compare/linkwarden-vs-pinboard"
                 className="duration-100 hover:opacity-80"
               >
                 Pinboard vs Linkwarden
@@ -214,13 +214,13 @@ export default function Footer() {
 
           <div className="flex justify-center gap-4">
             <Link
-              href="https://linkwarden.app/tos"
+              href="/tos"
               className="duration-100 hover:opacity-80"
             >
               Terms
             </Link>
             <Link
-              href="https://linkwarden.app/privacy-policy"
+              href="/privacy-policy"
               className="duration-100 hover:opacity-80"
             >
               Privacy

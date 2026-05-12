@@ -1,8 +1,15 @@
 import React from "react";
+import SEO from "@/components/SEO";
 
 export default function TOS() {
   return (
     <div className="flex flex-col gap-5 max-w-xl mx-auto p-2 mt-20">
+      <SEO
+        title="Terms of Service — Linkwarden"
+        description="Linkwarden's terms and conditions of service."
+        path="/tos"
+        noindex
+      />
       <p className="text-3xl">Terms and Conditions</p>
       <p>Last updated: July 30, 2023</p>
       <p>

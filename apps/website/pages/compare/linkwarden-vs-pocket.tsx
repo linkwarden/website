@@ -1,17 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import { CheckCircleIcon, XCircleIcon } from "@phosphor-icons/react";
+import SEO from "@/components/SEO";
 
 export default function LinkwardenVsPocket() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
+      <SEO
+        title="Linkwarden vs. Pocket — Comparison"
+        description="Compare archiving, reading view, collaboration, self-hosting, and open-source flexibility for read-it-later workflows."
+        path="/compare/linkwarden-vs-pocket"
+      />
       <h1 className="text-4xl font-light mb-20 text-center">
         Linkwarden vs. Pocket
       </h1>
 
       <p className="text-lg mb-5">
         <Link
-          href="https://linkwarden.app"
+          href="/"
           className="text-violet-300 underline decoration-dotted underline-offset-4"
         >
           Linkwarden
