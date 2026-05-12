@@ -84,28 +84,13 @@ export default function Footer() {
           <div className="flex sm:gap-10 md:flex-row md:gap-20 gap-6">
             <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-lg font-semibold">Product</h3>
-              <Link
-                href="/#features"
-                className="duration-100 hover:opacity-80"
-              >
+              <Link href="/#features" className="duration-100 hover:opacity-80">
                 Features
               </Link>
-              <Link
-                href="/#pricing"
-                className="duration-100 hover:opacity-80"
-              >
+              <Link href="/pricing" className="duration-100 hover:opacity-80">
                 Pricing
               </Link>
-              <Link
-                href="/#faqs"
-                className="duration-100 hover:opacity-80"
-              >
-                FAQs
-              </Link>
-              <Link
-                href="/blog"
-                className="duration-100 hover:opacity-80"
-              >
+              <Link href="/blog" className="duration-100 hover:opacity-80">
                 Blog
               </Link>
               <Link
@@ -213,10 +198,7 @@ export default function Footer() {
           </p>
 
           <div className="flex justify-center gap-4">
-            <Link
-              href="/tos"
-              className="duration-100 hover:opacity-80"
-            >
+            <Link href="/tos" className="duration-100 hover:opacity-80">
               Terms
             </Link>
             <Link
