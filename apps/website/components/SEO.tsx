@@ -3,6 +3,14 @@ import Head from "next/head";
 const SITE_URL = "https://linkwarden.app";
 const DEFAULT_OG = "/og-image.jpg";
 
+export interface ArticleMeta {
+  publishedTime: string;
+  modifiedTime?: string;
+  authorName?: string;
+  authorUrl?: string;
+  tags?: string[];
+}
+
 interface SEOProps {
   title: string;
   description: string;
@@ -10,6 +18,8 @@ interface SEOProps {
   ogImage?: string;
   noindex?: boolean;
   keywords?: string[];
+  article?: ArticleMeta;
+  feeds?: Array<{ href: string; title: string; type: "rss" | "atom" }>;
 }
 
 export default function SEO({
@@ -19,9 +29,44 @@ export default function SEO({
   ogImage,
   noindex,
   keywords,
+  article,
+  feeds,
 }: SEOProps) {
   const url = `${SITE_URL}${path}`;
-  const image = `${SITE_URL}${ogImage ?? DEFAULT_OG}`;
+  const rawImage = ogImage ?? DEFAULT_OG;
+  const image = /^https?:\/\//.test(rawImage) ? rawImage : `${SITE_URL}${rawImage}`;
+  const ogType = article ? "article" : "website";
+
+  const jsonLd = article
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description,
+        image,
+        url,
+        datePublished: article.publishedTime,
+        dateModified: article.modifiedTime ?? article.publishedTime,
+        author: article.authorName
+          ? {
+              "@type": "Person",
+              name: article.authorName,
+              ...(article.authorUrl ? { url: article.authorUrl } : {}),
+            }
+          : undefined,
+        publisher: {
+          "@type": "Organization",
+          name: "Linkwarden",
+          logo: {
+            "@type": "ImageObject",
+            url: `${SITE_URL}/linkwarden.png`,
+          },
+        },
+        keywords: article.tags?.join(", "),
+        mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      }
+    : null;
+
   return (
     <Head>
       <title>{title}</title>
@@ -31,7 +76,7 @@ export default function SEO({
       )}
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex, follow" />}
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content="Linkwarden" />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
@@ -44,6 +89,42 @@ export default function SEO({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      {article && (
+        <>
+          <meta
+            property="article:published_time"
+            content={article.publishedTime}
+          />
+          {article.modifiedTime && (
+            <meta
+              property="article:modified_time"
+              content={article.modifiedTime}
+            />
+          )}
+          {article.authorName && (
+            <meta property="article:author" content={article.authorName} />
+          )}
+          {article.tags?.map((t) => (
+            <meta key={t} property="article:tag" content={t} />
+          ))}
+        </>
+      )}
+      {feeds?.map((f) => (
+        <link
+          key={f.href}
+          rel="alternate"
+          type={f.type === "rss" ? "application/rss+xml" : "application/atom+xml"}
+          href={f.href}
+          title={f.title}
+        />
+      ))}
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
     </Head>
   );
 }

@@ -73,6 +73,24 @@ export default function BlogPost({
             ...(frontmatter.tags ?? []),
           ]),
         )}
+        article={{
+          publishedTime: new Date(frontmatter.date).toISOString(),
+          authorName: author?.name,
+          authorUrl: author?.url,
+          tags: frontmatter.tags,
+        }}
+        feeds={[
+          {
+            href: "/blog/rss.xml",
+            title: "Linkwarden Blog RSS Feed",
+            type: "rss",
+          },
+          {
+            href: "/blog/atom.xml",
+            title: "Linkwarden Blog Atom Feed",
+            type: "atom",
+          },
+        ]}
       />
       <div className="mx-auto max-w-3xl px-5 pt-28 pb-10">
         <Link
