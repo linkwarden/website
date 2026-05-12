@@ -72,7 +72,7 @@ export default function Navbar() {
                 FAQs
               </Link>
               <Link
-                href="https://linkwarden.app/blog"
+                href="/blog"
                 className="hover:opacity-80 duration-100 font-medium text-text flex items-center gap-1"
               >
                 Blog
@@ -177,12 +177,11 @@ export default function Navbar() {
               </Link>
               <Seperator className="-mx-5 -my-4" />
               <Link
-                href="https://blog.linkwarden.app"
-                target="_blank"
+                href="/blog"
+                onClick={toggleMenu}
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4 flex items-center gap-1"
               >
                 Blog
-                <ArrowSquareOutIcon size={18} />
               </Link>
               <Seperator className="-mx-5 -my-4" />
               <Link

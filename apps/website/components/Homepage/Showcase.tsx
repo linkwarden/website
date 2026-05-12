@@ -60,11 +60,7 @@ export default function Showcase() {
       <div className="relative mx-auto max-w-fit">
         <div className="z-10 max-w-5xl px-5 w-fit mx-auto xl:pt-52 lg:pt-40 md:pt-32 pt-24">
           <div className="w-fit mx-auto mb-5">
-            <Link
-              href="https://linkwarden.app/blog/releases/mobile-app"
-              target="_blank"
-              className="rounded-full"
-            >
+            <Link href="/blog/releases/mobile-app" className="rounded-full">
               <div className="border bg-opacity-80 border-[#07334F] hover:border-[#20618a] bg-background duration-200 w-fit py-2 px-3 text-xs rounded-full relative z-10">
                 🎉️ Announcing Linkwarden for iOS & Android! 🚀
               </div>
@@ -164,8 +160,8 @@ export default function Showcase() {
           </h2>
 
           <p className="text-gray-200 sm:text-xl mt-5 max-w-xl mx-auto">
-            Linkwarden's source code is fully public, giving you visibility into
-            how it works and confidence in how your data is handled.
+            Linkwarden&apos;s source code is fully public, giving you visibility
+            into how it works and confidence in how your data is handled.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
