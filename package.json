@@ -8,8 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "all": "yarn workspace @website/website dev -p 3020",
-    "website": "yarn workspace @website/website dev",
-    "build": "rm -rf ./out && yarn workspace @website/website build && mv ./apps/website/out ./out && cp ./out/blog.html ./out/blog/index.html"
+    "all": "node ./scripts/generate-feeds.mjs && yarn workspace @website/website dev -p 3020",
+    "website": "node ./scripts/generate-feeds.mjs && yarn workspace @website/website dev",
+    "generate-feeds": "node ./scripts/generate-feeds.mjs",
+    "build": "node ./scripts/generate-feeds.mjs && rm -rf ./out && yarn workspace @website/website build && mv ./apps/website/out ./out && cp ./out/blog.html ./out/blog/index.html"
   }
 }

@@ -12,6 +12,11 @@ node_modules
 .next
 out
 
+# generated feeds + sitemap (regenerated on every build/dev)
+apps/website/public/sitemap.xml
+apps/website/public/blog/rss.xml
+apps/website/public/blog/atom.xml
+
 # production
 build
 
