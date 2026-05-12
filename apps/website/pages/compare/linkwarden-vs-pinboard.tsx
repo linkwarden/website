@@ -1,17 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import { CheckCircleIcon, XCircleIcon } from "@phosphor-icons/react";
+import SEO from "@/components/SEO";
 
 export default function PinboardVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
+      <SEO
+        title="Linkwarden vs. Pinboard — Comparison"
+        description="Modern UI, full archival, AI tagging, team collaboration, and open-source self-hosting compared with Pinboard."
+        path="/compare/linkwarden-vs-pinboard"
+      />
       <h1 className="text-4xl font-light mb-20 text-center">
         Linkwarden vs. Pinboard
       </h1>
 
       <p className="text-lg mb-5">
         <Link
-          href="https://linkwarden.app"
+          href="/"
           className="text-violet-300 underline decoration-dotted underline-offset-4"
         >
           Linkwarden

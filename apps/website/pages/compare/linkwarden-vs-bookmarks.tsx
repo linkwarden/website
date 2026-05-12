@@ -1,17 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import { CheckCircleIcon, XCircleIcon } from "@phosphor-icons/react";
+import SEO from "@/components/SEO";
 
 export default function BookmarksVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
+      <SEO
+        title="Linkwarden vs. Browser Bookmarks"
+        description="Linkwarden adds full-page archiving, search, organization, and collaboration on top of basic browser bookmarks."
+        path="/compare/linkwarden-vs-bookmarks"
+      />
       <h1 className="text-4xl font-light mb-20 text-center">
         Browser bookmarks vs. Linkwarden
       </h1>
 
       <p className="text-lg mb-5">
         <Link
-          href="https://linkwarden.app"
+          href="/"
           className="text-violet-300 underline decoration-dotted underline-offset-4"
         >
           Linkwarden

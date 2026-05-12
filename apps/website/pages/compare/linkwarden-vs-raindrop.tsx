@@ -1,17 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import { CheckCircleIcon, XCircleIcon } from "@phosphor-icons/react";
+import SEO from "@/components/SEO";
 
 export default function RaindropVsLinkwarden() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 pt-32">
+      <SEO
+        title="Linkwarden vs. Raindrop — Comparison"
+        description="Compare bookmark archiving, collaboration, public collections, and self-hosting between Linkwarden and Raindrop."
+        path="/compare/linkwarden-vs-raindrop"
+      />
       <h1 className="text-4xl font-light mb-20 text-center">
         Linkwarden vs. Raindrop
       </h1>
 
       <p className="text-lg mb-5">
         <Link
-          href="https://linkwarden.app"
+          href="/"
           className="text-violet-300 underline decoration-dotted underline-offset-4"
         >
           Linkwarden

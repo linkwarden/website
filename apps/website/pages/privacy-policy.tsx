@@ -1,8 +1,15 @@
 import React from "react";
+import SEO from "@/components/SEO";
 
 export default function PrivacyPolicy() {
   return (
     <div className="flex flex-col gap-5 max-w-xl mx-auto p-2 mt-20">
+      <SEO
+        title="Privacy Policy — Linkwarden"
+        description="Linkwarden's privacy policy: data collection, use, disclosure, and your privacy rights."
+        path="/privacy-policy"
+        noindex
+      />
       <h1 className="text-3xl">Privacy Policy</h1>
       <p>Last updated: July 31, 2023</p>
       <p>
