@@ -10,8 +10,12 @@ import {
   BookOpenTextIcon,
   HouseIcon,
   InfoIcon,
+  PackageIcon,
+  StarIcon,
   UsersThreeIcon,
 } from "@phosphor-icons/react";
+import CountUp from "../CountUp";
+// import ghStars from "../../public/github-stars.json";
 
 const tabImages = [
   {
@@ -154,61 +158,63 @@ export default function Showcase() {
       </div>
 
       <div className="p-5 py-40">
-        <p className="text-center text-lg opacity-70 mx-auto">
-          Loved by thousands at the world&apos;s most innovative companies
-        </p>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-white text-4xl font-bold mt-6">
+            Open Source Means Transparency
+          </h2>
 
-        <div className="grid md:grid-cols-5 grid-cols-3 items-center mt-10 max-w-3xl mx-auto md:w-3/4 w-5/6 gap-10">
-          <Image
-            src="./company-logos/microsoft.png"
-            width={638}
-            height={136}
-            alt=""
-            draggable={false}
-            className="invert opacity-50"
-            onLoad={() => setImageLoaded(true)}
-            style={{ objectFit: "contain" }}
-          />
-          <Image
-            src="./company-logos/google.png"
-            width={471}
-            height={156}
-            alt=""
-            draggable={false}
-            className="invert opacity-50 w-3/4 justify-self-center"
-            onLoad={() => setImageLoaded(true)}
-            style={{ objectFit: "contain" }}
-          />
-          <Image
-            src="./company-logos/amazon.png"
-            width={471}
-            height={143}
-            alt=""
-            draggable={false}
-            className="invert opacity-50 mt-3 w-3/4 justify-self-center"
-            onLoad={() => setImageLoaded(true)}
-            style={{ objectFit: "contain" }}
-          />
-          <Image
-            src="./company-logos/bytedance.png"
-            width={681}
-            height={119}
-            alt=""
-            draggable={false}
-            className="invert opacity-50 hidden md:block"
-            onLoad={() => setImageLoaded(true)}
-            style={{ objectFit: "contain" }}
-          />
-          <Image
-            src="./company-logos/salesforce.png"
-            width={582}
-            height={134}
-            alt=""
-            draggable={false}
-            className="invert opacity-50 hidden md:block"
-            onLoad={() => setImageLoaded(true)}
-            style={{ objectFit: "contain" }}
-          />
+          <p className="text-gray-200 sm:text-xl mt-5 max-w-xl mx-auto">
+            Linkwarden's source code is fully public, giving you visibility into
+            how it works and confidence in how your data is handled.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4 mt-10">
+            <SecondaryButton
+              path="https://github.com/linkwarden/linkwarden"
+              className="text-sm sm:text-base text-center justify-center font-mono"
+              openInNewTab
+            >
+              <p className="text-center w-full">&gt; view source code</p>
+            </SecondaryButton>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-16 mt-14 text-white">
+            <div className="flex flex-col items-center">
+              <StarIcon size={32} className="text-gray-400 mb-2" />
+              <p className="text-4xl sm:text-5xl font-bold tabular-nums">
+                <CountUp end={18} suffix="k+" />
+              </p>
+              <p className="text-gray-400 mt-2 text-sm sm:text-base">
+                GitHub Stars
+              </p>
+            </div>
+            <div
+              className="hidden sm:block h-14 w-px bg-outline"
+              aria-hidden="true"
+            />
+            <div className="flex flex-col items-center">
+              <UsersThreeIcon size={32} className="text-gray-400 mb-2" />
+              <p className="text-4xl sm:text-5xl font-bold tabular-nums">
+                <CountUp end={50} suffix="+" />
+              </p>
+              <p className="text-gray-400 mt-2 text-sm sm:text-base">
+                Contributors
+              </p>
+            </div>
+            <div
+              className="hidden sm:block h-14 w-px bg-outline"
+              aria-hidden="true"
+            />
+            <div className="flex flex-col items-center">
+              <PackageIcon size={32} className="text-gray-400 mb-2" />
+              <p className="text-4xl sm:text-5xl font-bold tabular-nums">
+                <CountUp end={17} suffix="M+" />
+              </p>
+              <p className="text-gray-400 mt-2 text-sm sm:text-base">
+                Docker Downloads
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

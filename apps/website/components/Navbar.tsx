@@ -5,7 +5,7 @@ import AccentButton from "./AccentButton";
 import { ArrowSquareOutIcon } from "@phosphor-icons/react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import Seperator from "./Separator";
-import ghStars from "../public/github-stars.json";
+// import ghStars from "../public/github-stars.json";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,19 +54,19 @@ export default function Navbar() {
 
             <div className="items-center justify-between gap-10 hidden min-[991px]:flex rounded-2xl px-4 py-1">
               <Link
-                href="/#features"
+                href="https://linkwarden.app/#features"
                 className="hover:opacity-80 duration-100 font-medium text-text"
               >
                 Features
               </Link>
               <Link
-                href="/#pricing"
+                href="https://linkwarden.app/#pricing"
                 className="hover:opacity-80 duration-100 font-medium text-text"
               >
                 Pricing
               </Link>
               <Link
-                href="/#faqs"
+                href="https://linkwarden.app/#faqs"
                 className="hover:opacity-80 duration-100 font-medium text-text"
               >
                 FAQs
@@ -103,11 +103,7 @@ export default function Navbar() {
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
               </svg>
               <p className="font-semibold">Star</p>
-              <p>
-                {(ghStars &&
-                  Math.round((ghStars.stars / 1000) * 10) / 10 + "k") ||
-                  "....."}
-              </p>
+              <p>18k+</p>
             </Link>
             <Link
               href="https://cloud.linkwarden.app/login"
@@ -145,7 +141,7 @@ export default function Navbar() {
             <div className="justify-between flex flex-col gap-5">
               <hr className="-mx-5 border border-1 border-t-0 border-neutral-700 -my-4" />
               <Link
-                href="/#features"
+                href="https://linkwarden.app/#features"
                 onClick={toggleMenu}
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4"
               >
@@ -154,7 +150,7 @@ export default function Navbar() {
               <Seperator className="-mx-5 -my-4" />
 
               <Link
-                href="/#pricing"
+                href="https://linkwarden.app/#pricing"
                 onClick={toggleMenu}
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4"
               >
@@ -163,7 +159,7 @@ export default function Navbar() {
               <Seperator className="-mx-5 -my-4" />
 
               <Link
-                href="/#faqs"
+                href="https://linkwarden.app/#faqs"
                 onClick={toggleMenu}
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4"
               >
