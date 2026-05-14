@@ -30,9 +30,9 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`w-full z-30 backdrop-blur-xl fixed top-0 left-0 right-0 bg-[#111111] ${
+        className={`w-full z-30 backdrop-blur-xl fixed top-0 left-0 right-0 ${
           isMenuOpen
-            ? "bg-opacity-100 min-[991px]:bg-opacity-50"
+            ? "bg-opacity-100 min-[991px]:bg-opacity-50 bg-[#111111]"
             : "bg-opacity-50"
         }`}
       >
@@ -151,9 +151,6 @@ export default function Navbar() {
                 Pricing
               </Link>
               <Seperator className="-mx-5 -my-4" />
-
-              <Seperator className="-mx-5 -my-4" />
-
               <Link
                 href="https://docs.linkwarden.app"
                 target="_blank"

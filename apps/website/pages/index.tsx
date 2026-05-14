@@ -1,6 +1,5 @@
 import Features from "@/components/Homepage/Features";
 import Showcase from "@/components/Homepage/Showcase";
-import FAQs from "@/components/Homepage/FAQs";
 import GetStarted from "@/components/Homepage/GetStarted";
 import Testimonials from "@/components/Testimonials";
 import SEO from "@/components/SEO";
@@ -16,7 +15,6 @@ export default function Home() {
       <Showcase />
       <Features />
       <Testimonials />
-      <FAQs />
       <GetStarted />
     </div>
   );
