@@ -22,7 +22,7 @@ export default function Testimonials({ className }: Props) {
     {
       name: "Ian Howells",
       photo: "./testimonial-profiles/ian_howells.jpeg",
-      text: "Slick lil app to manage bookmarks while archiving the page in case it gets removed/redirected/etc: linkwarden.app",
+      text: "Slick lil app to manage bookmarks while archiving the page in case it gets removed",
       platform: "twitter",
       url: "https://x.com/ianhowells",
     },

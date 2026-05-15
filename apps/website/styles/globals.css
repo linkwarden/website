@@ -131,6 +131,32 @@ body {
   transition: 0.1s ease-in-out;
 }
 
+.animated-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #a78bfa 0%,
+    #c4b5fd 25%,
+    #f0abfc 50%,
+    #c4b5fd 75%,
+    #a78bfa 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradient-shift 6s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 .fade-in {
   animation: fadeIn 200ms ease-in;
 }

@@ -30,9 +30,9 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`w-full z-30 backdrop-blur-xl fixed top-0 left-0 right-0 bg-[#111111] ${
+        className={`w-full z-30 backdrop-blur-xl fixed top-0 left-0 right-0 ${
           isMenuOpen
-            ? "bg-opacity-100 min-[991px]:bg-opacity-50"
+            ? "bg-opacity-100 min-[991px]:bg-opacity-50 bg-[#111111]"
             : "bg-opacity-50"
         }`}
       >
@@ -54,22 +54,16 @@ export default function Navbar() {
 
             <div className="items-center justify-between gap-10 hidden min-[991px]:flex rounded-2xl px-4 py-1">
               <Link
-                href="https://linkwarden.app/#features"
+                href="/#features"
                 className="hover:opacity-80 duration-100 font-medium text-text"
               >
                 Features
               </Link>
               <Link
-                href="https://linkwarden.app/#pricing"
+                href="/pricing"
                 className="hover:opacity-80 duration-100 font-medium text-text"
               >
                 Pricing
-              </Link>
-              <Link
-                href="https://linkwarden.app/#faqs"
-                className="hover:opacity-80 duration-100 font-medium text-text"
-              >
-                FAQs
               </Link>
               <Link
                 href="/blog"
@@ -141,7 +135,7 @@ export default function Navbar() {
             <div className="justify-between flex flex-col gap-5">
               <hr className="-mx-5 border border-1 border-t-0 border-neutral-700 -my-4" />
               <Link
-                href="https://linkwarden.app/#features"
+                href="/#features"
                 onClick={toggleMenu}
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4"
               >
@@ -150,23 +144,13 @@ export default function Navbar() {
               <Seperator className="-mx-5 -my-4" />
 
               <Link
-                href="https://linkwarden.app/#pricing"
+                href="/pricing"
                 onClick={toggleMenu}
                 className="hover:opacity-80 duration-100 font-medium text-xl py-4"
               >
                 Pricing
               </Link>
               <Seperator className="-mx-5 -my-4" />
-
-              <Link
-                href="https://linkwarden.app/#faqs"
-                onClick={toggleMenu}
-                className="hover:opacity-80 duration-100 font-medium text-xl py-4"
-              >
-                FAQs
-              </Link>
-              <Seperator className="-mx-5 -my-4" />
-
               <Link
                 href="https://docs.linkwarden.app"
                 target="_blank"

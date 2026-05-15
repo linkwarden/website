@@ -1,12 +1,9 @@
 import Features from "@/components/Homepage/Features";
-import Navbar from "@/components/Navbar";
 import Showcase from "@/components/Homepage/Showcase";
-import Pricing from "@/components/Homepage/Pricing";
-import FAQs from "@/components/Homepage/FAQs";
 import GetStarted from "@/components/Homepage/GetStarted";
-import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
 import SEO from "@/components/SEO";
+import GitHubStats from "@/components/GitHubStats";
 
 export default function Home() {
   return (
@@ -16,11 +13,14 @@ export default function Home() {
         description="Collect, read, annotate, and fully preserve what matters. Open-source, self-hostable bookmark manager with full-page archival."
         path="/"
       />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-0 left-0 right-0 h-[40rem] bg-gradient-to-b from-[#289DF220] to-transparent"
+      />
       <Showcase />
       <Features />
+      <GitHubStats />
       <Testimonials />
-      <Pricing />
-      <FAQs />
       <GetStarted />
     </div>
   );
