@@ -9,7 +9,7 @@ import CountUp from "@/components/CountUp";
 
 const GitHubStats = () => {
   return (
-    <div className="p-5 py-40">
+    <div className="p-5 py-20">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-white text-4xl font-bold mt-6">
           Open Source Means Transparency
