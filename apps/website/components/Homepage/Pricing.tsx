@@ -110,8 +110,8 @@ function Pricing() {
           <div className="w-full text-center mx-auto flex flex-col gap-5 justify-between p-5 rounded-md border border-outline">
             <div className="flex flex-col gap-5">
               <div>
-                <p className="text-secondary">Custom</p>
-                <p className="text-3xl">Contact Us</p>
+                <p className="text-secondary">Enterprise</p>
+                <p className="text-3xl">Custom</p>
               </div>
 
               <Seperator />
@@ -119,7 +119,7 @@ function Pricing() {
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Hosted by us/yourself</p>
+                  <p>Hosted by us</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
