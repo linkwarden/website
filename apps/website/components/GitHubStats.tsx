@@ -34,7 +34,7 @@ const GitHubStats = () => {
           <div className="flex flex-col items-center">
             <StarIcon size={32} className="text-gray-400 mb-2" />
             <p className="text-4xl sm:text-5xl font-bold tabular-nums">
-              <CountUp end={18} suffix="k+" />
+              <CountUp end={19} suffix="k+" />
             </p>
             <p className="text-gray-400 mt-2 text-sm sm:text-base">
               GitHub Stars
@@ -47,7 +47,7 @@ const GitHubStats = () => {
           <div className="flex flex-col items-center">
             <UsersThreeIcon size={32} className="text-gray-400 mb-2" />
             <p className="text-4xl sm:text-5xl font-bold tabular-nums">
-              <CountUp end={50} suffix="+" />
+              <CountUp end={80} suffix="+" />
             </p>
             <p className="text-gray-400 mt-2 text-sm sm:text-base">
               Contributors
@@ -60,7 +60,7 @@ const GitHubStats = () => {
           <div className="flex flex-col items-center">
             <DownloadSimpleIcon size={32} className="text-gray-400 mb-2" />
             <p className="text-4xl sm:text-5xl font-bold tabular-nums">
-              <CountUp end={17} suffix="M+" />
+              <CountUp end={20} suffix="M+" />
             </p>
             <p className="text-gray-400 mt-2 text-sm sm:text-base">
               Docker Downloads
