@@ -18,7 +18,7 @@ function Pricing() {
 
       <div className="max-w-5xl px-5 mx-auto pt-16">
         <p className="lg:text-4xl text-3xl font-bold text-center">
-          Pick the Right Plan for You
+          Simple Pricing
         </p>
 
         <div className="flex gap-3 border border-solid border-outline w-72 mx-auto p-1 rounded-full relative mt-10 mb-5">
@@ -50,7 +50,7 @@ function Pricing() {
 
         <div className="flex sm:flex-row flex-col items-stretch gap-5 justify-between sm:max-w-2xl max-w-md mx-auto">
           <div
-            className="w-full text-center mx-auto flex flex-col gap-5 justify-between p-5 bg-gradient-to-br from-[#52468544] via-transparent to-[#39316022] rounded-md border border-[#6e4da6]"
+            className="w-full max-w-sm text-center mx-auto flex flex-col gap-5 justify-between p-5 bg-gradient-to-br from-[#52468544] via-transparent to-[#39316022] rounded-md border border-[#6e4da6]"
             style={{
               boxShadow: "#ffffff20 0px 5px 20px 0px",
             }}
@@ -105,59 +105,6 @@ function Pricing() {
                 href="https://cloud.linkwarden.app/register"
               />
             </div>
-          </div>
-
-          <div className="w-full text-center mx-auto flex flex-col gap-5 justify-between p-5 rounded-md border border-outline">
-            <div className="flex flex-col gap-5">
-              <div>
-                <p className="text-secondary">Enterprise</p>
-                <p className="text-3xl">Custom</p>
-              </div>
-
-              <Seperator />
-
-              <ul className="flex flex-col gap-1">
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>Hosted by us</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>Unlimited Links</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>All the premium features</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>Priority support</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>Automatic updates</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>Fully customizable instance.</p>
-                </li>
-                <li className="flex items-start gap-2 text-left">
-                  <CheckIcon className="text-2xl text-secondary" />
-                  <p>Single Sign-On (SSO)</p>
-                </li>
-                <li className="flex items-center gap-2 text-left">
-                  <HeartIcon weight="fill" className="text-2xl text-pink-500" />
-                  <p>Support open source!</p>
-                </li>
-              </ul>
-            </div>
-
-            <SecondaryButton
-              path="mailto:support@linkwarden.app"
-              openInNewTab={false}
-            >
-              <p className="text-center w-full">Contact Us</p>
-            </SecondaryButton>
           </div>
         </div>
       </div>
