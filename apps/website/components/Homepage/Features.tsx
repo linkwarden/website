@@ -85,7 +85,7 @@ const Features: React.FC = () => {
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => setInView(entry.intersectionRatio > 0.5),
-      { threshold: [0.5] }
+      { threshold: [0.5] },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -95,7 +95,7 @@ const Features: React.FC = () => {
     if (!inView || isMobile) return;
     const timer = setTimeout(
       () => setOpenIndex((prev) => (prev + 1) % items.length),
-      INTERVAL
+      INTERVAL,
     );
     return () => clearTimeout(timer);
   }, [openIndex, inView, isMobile]);
@@ -162,10 +162,10 @@ const Features: React.FC = () => {
                         idx === 0
                           ? "/features/preservation.png"
                           : idx === 1
-                          ? "/features/reading.png"
-                          : idx === 2
-                          ? "/features/organization.png"
-                          : "/features/collaboration.png"
+                            ? "/features/reading.png"
+                            : idx === 2
+                              ? "/features/organization.png"
+                              : "/features/collaboration.png"
                       }
                       alt="Feature Illustration"
                       className="w-full max-w-xs"
@@ -193,10 +193,10 @@ const Features: React.FC = () => {
                 openIndex === 0
                   ? "/features/preservation.png"
                   : openIndex === 1
-                  ? "/features/reading.png"
-                  : openIndex === 2
-                  ? "/features/organization.png"
-                  : "/features/collaboration.png"
+                    ? "/features/reading.png"
+                    : openIndex === 2
+                      ? "/features/organization.png"
+                      : "/features/collaboration.png"
               }
               alt="Feature Illustration"
               className="w-[40%] absolute top-0 right-5 hidden sm:block"
@@ -206,25 +206,6 @@ const Features: React.FC = () => {
             />
           </motion.div>
         </AnimatePresence>
-      </div>
-
-      <div className="mx-auto max-w-5xl px-5 mt-20">
-        <p className="text-2xl font-bold mb-10 text-center">
-          View and{" "}
-          <span className="bg-indigo-500/80 px-1 rounded-sm italic relative">
-            Highlight
-          </span>{" "}
-          your saved articles in a distraction-free environment
-        </p>
-        <video
-          className={`rounded-md border border-outline mx-auto w-full z-10 relative`}
-          src="./app/reader.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        ></video>
       </div>
 
       <div className="mx-auto max-w-5xl w-full sm:flex items-center px-5 mt-20">
