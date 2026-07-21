@@ -90,7 +90,7 @@ function Pricing() {
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>All the premium features</p>
+                  <p>RSS feeds</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
