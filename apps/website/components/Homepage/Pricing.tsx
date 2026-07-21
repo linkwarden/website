@@ -74,7 +74,19 @@ function Pricing() {
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
-                  <p>Up to 30,000 Links</p>
+                  <p>Permanent archives</p>
+                </li>
+                <li className="flex items-start gap-2 text-left">
+                  <CheckIcon className="text-2xl text-secondary" />
+                  <p>Optional AI tagging</p>
+                </li>
+                <li className="flex items-start gap-2 text-left">
+                  <CheckIcon className="text-2xl text-secondary" />
+                  <p>Full-text search</p>
+                </li>
+                <li className="flex items-start gap-2 text-left">
+                  <CheckIcon className="text-2xl text-secondary" />
+                  <p>Highlights and annotations</p>
                 </li>
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
@@ -87,6 +99,10 @@ function Pricing() {
                 <li className="flex items-start gap-2 text-left">
                   <CheckIcon className="text-2xl text-secondary" />
                   <p>Automatic updates</p>
+                </li>
+                <li className="flex items-start gap-2 text-left">
+                  <CheckIcon className="text-2xl text-secondary" />
+                  <p>Up to 30,000 Links</p>
                 </li>
                 <li className="flex items-center gap-2 text-left">
                   <HeartIcon weight="fill" className="text-2xl text-pink-500" />
